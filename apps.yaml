@@ -1,0 +1,11 @@
+AuthorName: Ravi Agarwal
+AuthorEmail: 8vim@protonmail.com
+SourceCode: https://github.com/8VIM/8VIM
+IssueTracker: https://github.com/8VIM/8VIM/issues
+
+8vim_rc:
+  git: https://github.com/8VIM/8VIM
+  name: 8Vim Keyboard RC
+8vim_debug:
+  git: https://github.com/8VIM/8VIM
+  name: 8Vim Keyboard Debug
