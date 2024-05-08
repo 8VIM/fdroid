@@ -6,8 +6,7 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
-| <a href="https://github.com/xarantolus/notality"><img src="fdroid/repo/icons/io.github.xarantolus.notality.10.png" alt="Notality icon" width="36px" height="36px"></a> | [**Notality**](https://github.com/xarantolus/notality) | A very simple note taking app for Android | 1.8.1 (10) |
-| <a href="https://github.com/xarantolus/rockit"><img src="fdroid/repo/icons/" alt="Rock It! icon" width="36px" height="36px"></a> | [**Rock It!**](https://github.com/xarantolus/rockit) | Rock It! is an Android app that helps you stay informed on all things space | 1.5.0 (22) |
+| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/icons/" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | 0.17.0-rc.19 (169919) |
 <!-- end apps table -->
 
 ### How to use
@@ -15,7 +14,7 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 2. Now you can copy the following [link](https://raw.githubusercontent.com/xarantolus/fdroid/main/fdroid/repo?fingerprint=080898ae4309aeceb58915e43a4b7c4a3e2cda40c91738e2c02f58339ab2fbd7), then add this repository to your F-Droid client:
 
     ```
-    https://raw.githubusercontent.com/xarantolus/fdroid/main/fdroid/repo?fingerprint=080898ae4309aeceb58915e43a4b7c4a3e2cda40c91738e2c02f58339ab2fbd7
+    https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo? fingerprint=62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d
     ```
 
     Alternatively, you can also scan this QR code:

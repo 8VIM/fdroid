@@ -1,0 +1,1238 @@
+{
+  "repo": {
+    "timestamp": 1715193523000,
+    "version": 20002,
+    "name": "8VIM RCs and nightlies",
+    "icon": "icon.png",
+    "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
+    "description": "Repo for 8VIM RCs and nightlies versions"
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "authorName": "8VIM",
+      "categories": [
+        "System"
+      ],
+      "suggestedVersionName": "0.17.0-rc.19",
+      "suggestedVersionCode": "169919",
+      "license": "Apache-2.0",
+      "name": "8Vim Keyboard RC",
+      "sourceCode": "https://github.com/8VIM/8VIM",
+      "summary": "A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim. ",
+      "added": 1715193377000,
+      "packageName": "inc.flide.vi8.rc",
+      "lastUpdated": 1715193398000,
+      "localized": {
+        "en-US": {
+          "phoneScreenshots": [
+            "1.jpg",
+            "10.png",
+            "11.png",
+            "12.png",
+            "13.png",
+            "14.png",
+            "15.png",
+            "16.png",
+            "17.png",
+            "18.png",
+            "19.png",
+            "2.jpg",
+            "20.png",
+            "3.jpg",
+            "4.jpg",
+            "5.jpg",
+            "6.jpg",
+            "7.jpg",
+            "8.png",
+            "9.png"
+          ],
+          "whatsNew": "## What's Changed\n\n- fix: :bug: Selection gesture not working properly by @MaethorNaur in #492\n\n\n**Full Changelog**: [v0.17.0-rc.18...v0.17.0-rc.19](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.18...v0.17.0-rc.19)"
+        }
+      }
+    }
+  ],
+  "packages": {
+    "inc.flide.vi8.rc": [
+      {
+        "added": 1715193395000,
+        "apkName": "8vim_rc_v0.17.0-rc.19.apk",
+        "hash": "d9eefd479427b33d62f03826c6c6b0104110f669bcc6aad0721d8a4a797d5bbc",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6679784,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169919,
+        "versionName": "0.17.0-rc.19"
+      },
+      {
+        "added": 1715193394000,
+        "apkName": "8vim_rc_v0.17.0-rc.18.apk",
+        "hash": "7f75359d60e2291af17be0f847b970249e57540f6b61054207b41a3da36770c6",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6677352,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169918,
+        "versionName": "0.17.0-rc.18"
+      },
+      {
+        "added": 1715193394000,
+        "apkName": "8vim_rc_v0.17.0-rc.17.apk",
+        "hash": "e560199fef8d2cf7a71362b8b8f21269b060c18823e29ad722444a1cc91fae5d",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6658928,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169917,
+        "versionName": "0.17.0-rc.17"
+      },
+      {
+        "added": 1715193393000,
+        "apkName": "8vim_rc_v0.17.0-rc.16.apk",
+        "hash": "e57eebdea5b54f383e2deb3b6a075b0a2eb5b814e134aa649b040eab2c13a659",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6658936,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169916,
+        "versionName": "0.17.0-rc.16"
+      },
+      {
+        "added": 1715193393000,
+        "apkName": "8vim_rc_v0.17.0-rc.15.apk",
+        "hash": "419cdb6961f7230e51e8124e58818a177d1851707822c0f7f69a61c40517adff",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6569400,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169915,
+        "versionName": "0.17.0-rc.15"
+      },
+      {
+        "added": 1715193392000,
+        "apkName": "8vim_rc_v0.17.0-rc.14.apk",
+        "hash": "e9d0d46d852bf850827cdd3c07183a7a19f19783fba8f66a0c19754b6d09cf96",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6567136,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169914,
+        "versionName": "0.17.0-rc.14"
+      },
+      {
+        "added": 1715193392000,
+        "apkName": "8vim_rc_v0.17.0-rc.12.apk",
+        "hash": "cd71dd5d6df4d761ffe024c51454a337a6adef333b81df49e8d98d5fd6af107d",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6594482,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169912,
+        "versionName": "0.17.0-rc.12"
+      },
+      {
+        "added": 1715193391000,
+        "apkName": "8vim_rc_v0.17.0-rc.11.apk",
+        "hash": "675f2e212dfbe9e0a7701648fdc541551fd6bd292c28dc4f3eb6b280a7d9457e",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6594206,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169911,
+        "versionName": "0.17.0-rc.11"
+      },
+      {
+        "added": 1715193391000,
+        "apkName": "8vim_rc_v0.17.0-rc.10.apk",
+        "hash": "72df2f2fea9fe2340d1b92b26addaf7fe904119a17d3d4669998ebebdb04fe8c",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6594210,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169910,
+        "versionName": "0.17.0-rc.10"
+      },
+      {
+        "added": 1715193398000,
+        "apkName": "8vim_rc_v0.17.0-rc.9.apk",
+        "hash": "c39d79b2aaaa221b9797ffa6fb46abb770e4d9f4bcb36c2da980e08b7a448c3e",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6594202,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169909,
+        "versionName": "0.17.0-rc.9"
+      },
+      {
+        "added": 1715193398000,
+        "apkName": "8vim_rc_v0.17.0-rc.8.apk",
+        "hash": "96a0a0eaa007b60efe44c91e3a24a7e06aa487e0f522fd7c71cb6ec99cb5e1e0",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6593434,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169908,
+        "versionName": "0.17.0-rc.8"
+      },
+      {
+        "added": 1715193397000,
+        "apkName": "8vim_rc_v0.17.0-rc.7.apk",
+        "hash": "cb348655b03a7d631dd387d7b0547cc49450828f184feed7393e3b4f2982aa96",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6593434,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169907,
+        "versionName": "0.17.0-rc.7"
+      },
+      {
+        "added": 1715193397000,
+        "apkName": "8vim_rc_v0.17.0-rc.6.apk",
+        "hash": "f31fbfd352285c2ff7933072255656b17aa7f13f0b335023e914ce02ae8d7ba9",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6593502,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169906,
+        "versionName": "0.17.0-rc.6"
+      },
+      {
+        "added": 1715193396000,
+        "apkName": "8vim_rc_v0.17.0-rc.5.apk",
+        "hash": "9579bd647e4b1c51184d7dc5e5f6edd9fe4e3170f8ea78280c3e3f404e21023b",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6535590,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169905,
+        "versionName": "0.17.0-rc.5"
+      },
+      {
+        "added": 1715193396000,
+        "apkName": "8vim_rc_v0.17.0-rc.4.apk",
+        "hash": "718790c37a70356a78282f04cf6751f3eeb4c651a7c257e26c691f2c536254fc",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6527298,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169904,
+        "versionName": "0.17.0-rc.4"
+      },
+      {
+        "added": 1715193396000,
+        "apkName": "8vim_rc_v0.17.0-rc.3.apk",
+        "hash": "e74de1697ac2b7004b6435eee9375cabf5880d6cd4bc7e4edf78a28bbc135e93",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6526594,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169903,
+        "versionName": "0.17.0-rc.3"
+      },
+      {
+        "added": 1715193395000,
+        "apkName": "8vim_rc_v0.17.0-rc.2.apk",
+        "hash": "7e8805186aa1d5b89a2f5cfe51ce5810b8306057aa38470d1caeb5f555ac25b2",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6526598,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169902,
+        "versionName": "0.17.0-rc.2"
+      },
+      {
+        "added": 1715193391000,
+        "apkName": "8vim_rc_v0.17.0-rc.1.apk",
+        "hash": "adbfaed639283fe9c200b103304ef34d77b42131dfac898899d5358e6a0f9ec9",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6483114,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169901,
+        "versionName": "0.17.0-rc.1"
+      },
+      {
+        "added": 1715193390000,
+        "apkName": "8vim_rc_v0.16.3-rc.2.apk",
+        "hash": "3f8cb31ef4a990eecfad5722ccb738daa5968991276ea2471b898c0f32920f2f",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5974618,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 160202,
+        "versionName": "0.16.3-rc.2"
+      },
+      {
+        "added": 1715193390000,
+        "apkName": "8vim_rc_v0.16.3-rc.1.apk",
+        "hash": "3cf349460c64798198a5c1ce0b04a28295887fb9b64613d1528f20ebaa7b35bf",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5974566,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 160201,
+        "versionName": "0.16.3-rc.1"
+      },
+      {
+        "added": 1715193389000,
+        "apkName": "8vim_rc_v0.16.2-rc.1.apk",
+        "hash": "a2c33f3f80d64cb0eb619cf481e531e1751dcbd99a7d4983a0a86c927561bcfa",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5973298,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 160101,
+        "versionName": "0.16.2-rc.1"
+      },
+      {
+        "added": 1715193389000,
+        "apkName": "8vim_rc_v0.16.1-rc.1.apk",
+        "hash": "9370dfe01c8920690ff3892d318cb2e7eee4769c847bbcc2f7ff75a7106b1ec6",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5973206,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 160001,
+        "versionName": "0.16.1-rc.1"
+      },
+      {
+        "added": 1715193388000,
+        "apkName": "8vim_rc_v0.16.0-rc.1.apk",
+        "hash": "78eb6470b6a8792e2919233778a50de48941e8978202eb1b4e1bdd027954fef0",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5972442,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 159901,
+        "versionName": "0.16.0-rc.1"
+      },
+      {
+        "added": 1715193385000,
+        "apkName": "8vim_rc_v0.15.0-rc.22.apk",
+        "hash": "1ee0d00c2e6e2dd1ff8670432b7a6fa951b3da0afe93b56b46c2c1ca6808ca28",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5972370,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149922,
+        "versionName": "0.15.0-rc.22"
+      },
+      {
+        "added": 1715193384000,
+        "apkName": "8vim_rc_v0.15.0-rc.21.apk",
+        "hash": "db046a190971d7e475fd517cf26e7e6f2b839e61438653e983a3498b1f88df01",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5971966,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149921,
+        "versionName": "0.15.0-rc.21"
+      },
+      {
+        "added": 1715193384000,
+        "apkName": "8vim_rc_v0.15.0-rc.20.apk",
+        "hash": "d017a968033a72ab648034fe98f20a8d4e7ea9dcec9062bc58258f4026052374",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5970654,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149920,
+        "versionName": "0.15.0-rc.20"
+      },
+      {
+        "added": 1715193383000,
+        "apkName": "8vim_rc_v0.15.0-rc.19.apk",
+        "hash": "64d1321713b8645653d67685e313e85168cd6ec93381083d546cbadb8ab9a702",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5970650,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149919,
+        "versionName": "0.15.0-rc.19"
+      },
+      {
+        "added": 1715193382000,
+        "apkName": "8vim_rc_v0.15.0-rc.18.apk",
+        "hash": "25a1aa1ba5db45abe53d42c649bfd3af1d6ea5efde5aed5f7daaed0b727e8fa2",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5970642,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149918,
+        "versionName": "0.15.0-rc.18"
+      },
+      {
+        "added": 1715193382000,
+        "apkName": "8vim_rc_v0.15.0-rc.17.apk",
+        "hash": "24d4b1622b74b5a911ed708a4aecc61639cf89d191996eae7e4a8a50015aed17",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5970213,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149917,
+        "versionName": "0.15.0-rc.17"
+      },
+      {
+        "added": 1715193381000,
+        "apkName": "8vim_rc_v0.15.0-rc.16.apk",
+        "hash": "34d5dad45c5630134330b1d0de62f6d647ceab4f06c1eb7e0c93b4f8dda53164",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5821739,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149916,
+        "versionName": "0.15.0-rc.16"
+      },
+      {
+        "added": 1715193381000,
+        "apkName": "8vim_rc_v0.15.0-rc.15.apk",
+        "hash": "1857e7ea3b908e727e0086dc79b1ff6dc145b890130f3be0c2ea55f4479e63b1",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5768047,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149915,
+        "versionName": "0.15.0-rc.15"
+      },
+      {
+        "added": 1715193380000,
+        "apkName": "8vim_rc_v0.15.0-rc.14.apk",
+        "hash": "0c33a802bbcfc86326040c7977a048c54a346919a3a75d38b4e49d0a1fdca9e4",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5765687,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149914,
+        "versionName": "0.15.0-rc.14"
+      },
+      {
+        "added": 1715193380000,
+        "apkName": "8vim_rc_v0.15.0-rc.13.apk",
+        "hash": "f6de7b5bf2793690bb5c28dba2b6b6bdad24292caa621d037c34a8aa7b0e0e99",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5765695,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149913,
+        "versionName": "0.15.0-rc.13"
+      },
+      {
+        "added": 1715193380000,
+        "apkName": "8vim_rc_v0.15.0-rc.12.apk",
+        "hash": "0bc2d27710264bc6ec89a742559682d84466cbbd0986f09649a178a5ce219a5c",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5765043,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149912,
+        "versionName": "0.15.0-rc.12"
+      },
+      {
+        "added": 1715193379000,
+        "apkName": "8vim_rc_v0.15.0-rc.11.apk",
+        "hash": "882f70ea0da8aac64dbd7fc4a03af1fde16d959556e7fec9d87363113c0c0081",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5765247,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149911,
+        "versionName": "0.15.0-rc.11"
+      },
+      {
+        "added": 1715193379000,
+        "apkName": "8vim_rc_v0.15.0-rc.10.apk",
+        "hash": "c5e4a1dc875d123e4099b0a5c02ce8d66e1eb2aade2d31b7eaa7fd1749a423e1",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5764755,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149910,
+        "versionName": "0.15.0-rc.10"
+      },
+      {
+        "added": 1715193388000,
+        "apkName": "8vim_rc_v0.15.0-rc.9.apk",
+        "hash": "88a196b8943072a948df84b2698d66a945ef15981ac6c7e6822ba7af8c03357a",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5764595,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149909,
+        "versionName": "0.15.0-rc.9"
+      },
+      {
+        "added": 1715193387000,
+        "apkName": "8vim_rc_v0.15.0-rc.8.apk",
+        "hash": "d5da96429b1f1ae1c5f929a08cb243a09c57cdc88f293cc4c0a70bbcb676e17f",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5764122,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149908,
+        "versionName": "0.15.0-rc.8"
+      },
+      {
+        "added": 1715193387000,
+        "apkName": "8vim_rc_v0.15.0-rc.7.apk",
+        "hash": "59536143335096c44777f64a1dc11b7c6aee802a2445a9f4f3db964cc34181ec",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5763805,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149907,
+        "versionName": "0.15.0-rc.7"
+      },
+      {
+        "added": 1715193386000,
+        "apkName": "8vim_rc_v0.15.0-rc.6.apk",
+        "hash": "2d61f32f0e49ea736d670a56fea27174ebba307bb96f20456a0ff47552523dff",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5764053,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149906,
+        "versionName": "0.15.0-rc.6"
+      },
+      {
+        "added": 1715193386000,
+        "apkName": "8vim_rc_v0.15.0-rc.5.apk",
+        "hash": "98a98aee5c8b1c8fad29d46cede0914d2dc73193e3def07d8919e415bbc89a7a",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5763961,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149905,
+        "versionName": "0.15.0-rc.5"
+      },
+      {
+        "added": 1715193385000,
+        "apkName": "8vim_rc_v0.15.0-rc.4.apk",
+        "hash": "8e5f7c95b1def325dd04c735faf41eb49e3b6931cbbb87e10f0bdf3aead4a9e4",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5763841,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149904,
+        "versionName": "0.15.0-rc.4"
+      },
+      {
+        "added": 1715193385000,
+        "apkName": "8vim_rc_v0.15.0-rc.3.apk",
+        "hash": "af80ec6074f25fa466dcf2aef7334fb92fbd7b8873acbc0840f61e178a84c934",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5763921,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149903,
+        "versionName": "0.15.0-rc.3"
+      },
+      {
+        "added": 1715193383000,
+        "apkName": "8vim_rc_v0.15.0-rc.2.apk",
+        "hash": "f8b95c7e9caf714f552c102c21ef3767804c76b246f5b4bdf240c2869ea9c316",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5764049,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149902,
+        "versionName": "0.15.0-rc.2"
+      },
+      {
+        "added": 1715193378000,
+        "apkName": "8vim_rc_v0.15.0-rc.1.apk",
+        "hash": "6cc3bb3d85cd74919f7e488076d8d035079c71eb8c7775747475a22391109a1a",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 5410312,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 149901,
+        "versionName": "0.15.0-rc.1"
+      },
+      {
+        "added": 1715193378000,
+        "apkName": "8vim_rc_v0.14.0-rc.6.apk",
+        "hash": "4f97169c95997b66553280a84f0bd22011d828758522c4ebe7fe0482483e5cd8",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 3468668,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 139906,
+        "versionName": "0.14.0-rc.6"
+      },
+      {
+        "added": 1715193377000,
+        "apkName": "8vim_rc_v0.14.0-rc.5.apk",
+        "hash": "e02ea57ee56e2c78bcdd6e109442d1c7b5a71499eafb715dc3b78ad321ebea22",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 3465292,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 139905,
+        "versionName": "0.14.0-rc.5"
+      },
+      {
+        "added": 1715193377000,
+        "apkName": "8vim_rc_v0.14.0-rc.4.apk",
+        "hash": "e528f5bb807f7ddf936b99bea02b2c44c4d550ad3f507f03bf2918886c60ff02",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 3465288,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 139904,
+        "versionName": "0.14.0-rc.4"
+      },
+      {
+        "added": 1715193377000,
+        "apkName": "8vim_rc_v0.14.0-rc.3.apk",
+        "hash": "dd15b6c6f357c15b17c9eedb05e72c89d22877c72255cc8c0664c7cf8c8bb3a5",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 3464884,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 139903,
+        "versionName": "0.14.0-rc.3"
+      }
+    ]
+  }
+}

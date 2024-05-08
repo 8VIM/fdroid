@@ -1,0 +1,11 @@
+AuthorName: 8VIM
+Categories:
+    - System
+CurrentVersion: 0.17.0-rc.19
+CurrentVersionCode: 169919
+IssueTracker: ""
+License: Apache-2.0
+Name: 8Vim Keyboard RC
+SourceCode: https://github.com/8VIM/8VIM
+Summary: 'A Text Editor inside a keyboard, drawing it''s inspiration from 8pen and Vim. '
+WebSite: ""

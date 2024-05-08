@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: :bug: Selection gesture not working properly by @MaethorNaur in #492
+
+
+**Full Changelog**: [v0.17.0-rc.18...v0.17.0-rc.19](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.18...v0.17.0-rc.19)

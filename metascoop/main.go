@@ -15,12 +15,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/go-github/v39/github"
-	"golang.org/x/oauth2"
 	"metascoop/apps"
 	"metascoop/file"
 	"metascoop/git"
 	"metascoop/md"
+
+	"github.com/google/go-github/v39/github"
+	"golang.org/x/mod/semver"
+	"golang.org/x/oauth2"
 )
 
 func main() {
@@ -107,16 +109,8 @@ func main() {
 			func() {
 				defer fmt.Println("::endgroup::")
 
-				if release.GetPrerelease() {
-					log.Printf("Skipping prerelease %q", release.GetTagName())
-					return
-				}
-				if release.GetDraft() {
-					log.Printf("Skipping draft %q", release.GetTagName())
-					return
-				}
-				if release.GetTagName() == "" {
-					log.Printf("Skipping release with empty tag name")
+				if !release.GetPrerelease() {
+					log.Printf("Skipping non prerelease %q", release.GetTagName())
 					return
 				}
 
@@ -125,6 +119,11 @@ func main() {
 				apk := apps.FindAPKRelease(release)
 				if apk == nil {
 					log.Printf("Couldn't find a release asset with extension \".apk\"")
+					return
+				}
+
+				if !semver.IsValid(release.GetTagName()) {
+					log.Printf("%q is not a semver", release.GetTagName())
 					return
 				}
 

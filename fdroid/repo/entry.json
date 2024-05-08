@@ -1,0 +1,30 @@
+{
+  "timestamp": 1715193523000,
+  "version": 20002,
+  "index": {
+    "name": "/index-v2.json",
+    "sha256": "e61753d271d545dd8f2e86cf788fbcb4b3f0a04c7eea326c8a8cc6ec5846cb3f",
+    "size": 52942,
+    "numPackages": 1
+  },
+  "diffs": {
+    "1715193398000": {
+      "name": "/diff/1715193398000.json",
+      "sha256": "f410eff66172741956b1b3e14dcf1feed553e5e953095eb4e87e586baea780cb",
+      "size": 5250,
+      "numPackages": 1
+    },
+    "1715193434000": {
+      "name": "/diff/1715193434000.json",
+      "sha256": "9aaff3c42f2b547d5fa964f3a94b04cddca4515859de97521a4c74fb9e711e28",
+      "size": 50,
+      "numPackages": 0
+    },
+    "1715193488000": {
+      "name": "/diff/1715193488000.json",
+      "sha256": "d9f2c215ebe199b591242924f35e9483f28a40b1ee370f00fe1b354f877cebec",
+      "size": 4881,
+      "numPackages": 1
+    }
+  }
+}
