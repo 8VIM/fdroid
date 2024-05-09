@@ -1,0 +1,68 @@
+name: Generate F-Droid repo
+
+on:
+  repository_dispatch:
+    types: [rc, pr, merge]
+
+jobs:
+  apps:
+    name: "Generate repo from apps listing"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: ./metascoop/go.mod
+          cache-dependency-path: ./metascoop/go.sum
+      - name: Install dependencies
+        run: go get .
+        working-directory: ./metascoop
+      - name: Build
+        run: go build -o metascoop
+        working-directory: ./metascoop
+      - name: Restore correct mtime
+        run: |
+          sudo apt install git-restore-mtime 
+          git restore-mtime
+
+      - name: Install F-Droid server software
+        run: |
+         sudo add-apt-repository ppa:fdroid/fdroidserver
+         sudo apt-get update
+         sudo apt-get install fdroidserver
+
+      - name: Set up repo secrets
+        run: |
+          echo "${{ secrets.KEYSTORE_P12 }}" | base64 -d - > fdroid/keystore.p12
+          echo "${{ secrets.CONFIG_YML }}" | base64 -d - > fdroid/config.yml
+      - name: Generate RC
+        if: ${{github.event.action=='rc'}}
+        working-directory: ./metascoop
+        run: |
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} release 8vim_rc ${{github.event.client_payload.tag}}
+      - name: Generate Pr
+        if: ${{github.event.action=='pr'}}
+        working-directory: ./metascoop
+        run: |
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{github.event.client_payload.pr}} add ${{github.event.client_payload.artifact}}
+      - name: Merge Pr
+        if: ${{github.event.action=='merge'}}
+        working-directory: ./metascoop
+        run: |
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{github.event.client_payload.pr}} delete
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -a -m "chore: Update repo"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
