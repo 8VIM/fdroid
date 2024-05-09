@@ -3,7 +3,10 @@
   name: 8Vim Keyboard RC
   categories:
     - System
-  Licence: Apache-2.0
-# 8vim_debug:
-#   git: https://github.com/8VIM/8VIM
-#   name: 8Vim Keyboard Debug
+  License: Apache-2.0
+8vim_debug:
+  git: https://github.com/8VIM/8VIM
+  name: 8Vim Keyboard Debug
+  categories:
+    - System
+  License: Apache-2.0

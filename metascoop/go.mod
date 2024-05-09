@@ -1,6 +1,8 @@
 module metascoop
 
-go 1.17
+go 1.21
+
+toolchain go1.22.3
 
 require gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 
@@ -13,7 +15,9 @@ require (
 )
 
 require (
+	github.com/alecthomas/kong v0.9.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/google/go-github/v61 v61.0.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect

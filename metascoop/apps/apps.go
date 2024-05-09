@@ -9,6 +9,12 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+type AppFile struct {
+	apps map[string]*AppInfo
+}
+
+func (a *AppFile) Apks() map[string]*AppInfo { return a.apps }
+
 type AppInfo struct {
 	GitURL  string `yaml:"git"`
 	Summary string `yaml:"summary"`
@@ -30,11 +36,11 @@ type AppInfo struct {
 	License string
 }
 
-func (a AppInfo) Name() string {
+func (a *AppInfo) Name() string {
 	return a.keyName
 }
 
-func (a AppInfo) Author() string {
+func (a *AppInfo) Author() string {
 	if a.AuthorName != "" {
 		return a.AuthorName
 	}
@@ -42,14 +48,14 @@ func (a AppInfo) Author() string {
 }
 
 // ParseAppFile returns the list of apps from the app file
-func ParseAppFile(filepath string) (list []AppInfo, err error) {
+func ParseAppFile(filepath string) (appFile *AppFile, err error) {
 	f, err := os.Open(filepath)
 	if err != nil {
 		return
 	}
 	defer f.Close()
 
-	var apps map[string]AppInfo
+	var apps map[string]*AppInfo
 
 	err = yaml.NewDecoder(f).Decode(&apps)
 	if err != nil {
@@ -70,9 +76,7 @@ func ParseAppFile(filepath string) (list []AppInfo, err error) {
 			return
 		}
 		a.repoAuthor = split[0]
-
-		list = append(list, a)
 	}
-
+	appFile = &AppFile{apps: apps}
 	return
 }

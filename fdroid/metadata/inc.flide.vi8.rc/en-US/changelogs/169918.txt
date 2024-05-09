@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: Swipe-out gestures involuntarily applied on swipe-out termination by @MaethorNaur in #471
+
+
+**Full Changelog**: [v0.17.0-rc.17...v0.17.0-rc.18](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.17...v0.17.0-rc.18)

@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1715193523000,
+    "timestamp": 1715275423000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,6 +17,49 @@
       "categories": [
         "System"
       ],
+      "suggestedVersionName": "pr-490+1715274388",
+      "suggestedVersionCode": "1715274388",
+      "license": "Apache-2.0",
+      "name": "8Vim Keyboard Debug",
+      "sourceCode": "https://github.com/8VIM/8VIM",
+      "summary": "A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim. ",
+      "added": 1715260917000,
+      "packageName": "inc.flide.vi8.debug",
+      "lastUpdated": 1715275162000,
+      "localized": {
+        "en-US": {
+          "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
+          "phoneScreenshots": [
+            "1.jpg",
+            "10.png",
+            "11.png",
+            "12.png",
+            "13.png",
+            "14.png",
+            "15.png",
+            "16.png",
+            "17.png",
+            "18.png",
+            "19.png",
+            "2.jpg",
+            "20.png",
+            "3.jpg",
+            "4.jpg",
+            "5.jpg",
+            "6.jpg",
+            "7.jpg",
+            "8.png",
+            "9.png"
+          ],
+          "whatsNew": "Add the ability for the keyboard to float around the screen"
+        }
+      }
+    },
+    {
+      "authorName": "8VIM",
+      "categories": [
+        "System"
+      ],
       "suggestedVersionName": "0.17.0-rc.19",
       "suggestedVersionCode": "169919",
       "license": "Apache-2.0",
@@ -28,6 +71,7 @@
       "lastUpdated": 1715193398000,
       "localized": {
         "en-US": {
+          "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
           "phoneScreenshots": [
             "1.jpg",
             "10.png",
@@ -56,6 +100,56 @@
     }
   ],
   "packages": {
+    "inc.flide.vi8.debug": [
+      {
+        "added": 1715275162000,
+        "apkName": "8vim_debug_pr_490_33.apk",
+        "hash": "4bf2093addb96494d10920360518687c6894b9e7f276281b8eb2415dda5b7a77",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.debug",
+        "sig": "0dfea8b0faef6dfcbb15defa7e16b835",
+        "signer": "53a3b10fa30feda5d9533e3e4ca1942b5eeaf675ab53b710c22274d9626d5f53",
+        "size": 18440896,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1715274388,
+        "versionName": "pr-490+1715274388"
+      },
+      {
+        "added": 1715260917000,
+        "apkName": "8vim_debug_pr_490_32.apk",
+        "hash": "7e1b280bd32df485d3e82b053fc2c6d4569d12acadd027d2a2fb245f0526a012",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.debug",
+        "sig": "9650c11bcd12ea39e75e76f0aa672307",
+        "signer": "eb9e51b5e17999948a9140c88f9d04697ee05a2e1f3e422ccffc5027d21e9595",
+        "size": 18440708,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1715260627,
+        "versionName": "pr-490+1715260627"
+      }
+    ],
     "inc.flide.vi8.rc": [
       {
         "added": 1715193395000,

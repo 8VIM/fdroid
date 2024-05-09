@@ -6,7 +6,8 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
-| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/icons/" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | 0.17.0-rc.19 (169919) |
+|<a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.debug/en-US/icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png" alt="8Vim Keyboard Debug icon" width="36px" height="36px"></a>| [**8Vim Keyboard Debug**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | pr-490&#43;1715274388 (1715274388) |
+|<a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a>| [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | 0.17.0-rc.19 (169919) |
 <!-- end apps table -->
 
 ### How to use
@@ -14,7 +15,7 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 2. Now you can copy the following [link](https://raw.githubusercontent.com/xarantolus/fdroid/main/fdroid/repo?fingerprint=080898ae4309aeceb58915e43a4b7c4a3e2cda40c91738e2c02f58339ab2fbd7), then add this repository to your F-Droid client:
 
     ```
-    https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo? fingerprint=62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d
+    https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo?fingerprint=62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d
     ```
 
     Alternatively, you can also scan this QR code:
