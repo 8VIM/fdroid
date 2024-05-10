@@ -27,6 +27,7 @@ type Globals struct {
 	AppFile      string `help:"Path to apps.yaml file" type:"path" short:"a" default:"apps.yaml"`
 	RepoDir      string `help:"path to fdroid \"repo\" directory" type:"path" short:"r" default:"fdroid/repo"`
 	AccessToken  string `help:"GitHub personal access token" short:"t"`
+	Debug        bool   `help:"Debug mode won't run the fdroid command" short:"d" default:"false"`
 }
 
 type CLI struct {
@@ -299,23 +300,36 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	if err != nil {
 		return err
 	}
+
+	toRemovePaths := make([]string, 0)
+
 	for _, packages := range fdroidIndex.Packages {
 		for _, p := range packages {
 			if strings.HasPrefix(p.ApkName, prefix) {
 				file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
-				os.Remove(file)
-				os.Remove(filepath.Join(g.RepoDir, p.ApkName))
+				toRemovePaths = append(toRemovePaths, file)
+				toRemovePaths = append(toRemovePaths, filepath.Join(g.RepoDir, p.ApkName))
 			}
 		}
 	}
+
 	if err := filepath.WalkDir(g.RepoDir, func(path string, d fs.DirEntry, err error) error {
 		if base := filepath.Base(path); !d.IsDir() && strings.HasPrefix(base, prefix) {
-			os.Remove(path)
+			toRemovePaths = append(toRemovePaths, path)
 		}
 		return nil
 	}); err != nil {
 		return err
 	}
+	if len(toRemovePaths) == 0 {
+		log.Printf("No files found for %d\n", c.Number)
+		return nil
+	}
+
+	for _, path := range toRemovePaths {
+		_ = os.Remove(path)
+	}
+
 	return runFdroidUpdate(g.RepoDir)
 }
 
