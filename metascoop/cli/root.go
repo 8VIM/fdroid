@@ -25,9 +25,8 @@ type Globals struct {
 	appFile      *apps.AppFile
 	loader       *apps.AppLoader
 	AppFile      string `help:"Path to apps.yaml file" type:"path" short:"a" default:"apps.yaml"`
-	RepoDir      string `help:"path to fdroid \"repo\" directory" type:"path" short:"r" default: "fdroid/repo"`
+	RepoDir      string `help:"path to fdroid \"repo\" directory" type:"path" short:"r" default:"fdroid/repo"`
 	AccessToken  string `help:"GitHub personal access token" short:"t"`
-	Debug        bool   `help: "Debug mode won't run the fdroid command" short:"d" default:"false"`
 }
 
 type CLI struct {
@@ -50,7 +49,8 @@ type PrCmd struct {
 }
 
 type PrAddCmd struct {
-	ArtifactID int `arg:"" help:"Artifact id"`
+	ArtifactID int    `arg:"" help:"Artifact id"`
+	SHA        string `arg:"" help:"SHA ref"`
 }
 
 type PrDeleteCmd struct {
@@ -283,7 +283,7 @@ func (c *ReleaseCmd) Run(g *Globals) (err error) {
 }
 
 func (a *PrAddCmd) Run(g *Globals, c *PrCmd) (err error) {
-	err = g.loader.FromPR(g.RepoDir, c.App, c.Number, a.ArtifactID)
+	err = g.loader.FromPR(g.RepoDir, c.App, c.Number, a.ArtifactID, a.SHA)
 	if err != nil {
 		return
 	}
