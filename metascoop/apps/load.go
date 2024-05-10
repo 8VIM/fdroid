@@ -217,7 +217,9 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	}
 
 	apkInfoMap := make(map[string]*AppInfo)
-	app.ReleaseDescription = pr.GetBody()
+	app.ReleaseDescription = fmt.Sprintf(`#%d (%s)
+%s`, prNumber, sha, pr.GetBody())
+
 	if app.ReleaseDescription != "" {
 		log.Printf("Release notes: %s", app.ReleaseDescription)
 	}
