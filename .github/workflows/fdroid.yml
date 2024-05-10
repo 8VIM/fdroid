@@ -1,4 +1,6 @@
 name: Generate F-Droid repo
+concurrency: 
+  group: update
 
 on:
   repository_dispatch:
