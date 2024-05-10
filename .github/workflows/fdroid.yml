@@ -50,7 +50,7 @@ jobs:
         if: ${{github.event.action=='pr'}}
         working-directory: ./metascoop
         run: |
-          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{github.event.client_payload.pr}} add ${{github.event.client_payload.artifact}}
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{github.event.client_payload.pr}} add ${{github.event.client_payload.artifact}} ${{github.event.client_payload.sha}}
       - name: Merge Pr
         if: ${{github.event.action=='merge'}}
         working-directory: ./metascoop
