@@ -262,8 +262,7 @@ func (g *Globals) updateAndPull() error {
 			log.Fatalf("removing path %q: %s\n", rmpath, err.Error())
 		}
 	}
-	readmePath := filepath.Join(filepath.Dir(filepath.Dir(g.RepoDir)), "README.md")
-	if err := md.RegenerateReadme(readmePath, fdroidIndex); err != nil {
+	if err := md.RegenerateReadme(g.RepoDir); err != nil {
 		return err
 	}
 	return nil
@@ -330,7 +329,11 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 		_ = os.Remove(path)
 	}
 
-	return runFdroidUpdate(g.RepoDir)
+	if err := runFdroidUpdate(g.RepoDir); err != nil {
+		return err
+	}
+
+	return md.RegenerateReadme(g.RepoDir)
 }
 
 func runFdroidUpdate(repoDir string) error {

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"html/template"
 	"os"
+	"path/filepath"
 
 	"metascoop/apps"
 )
@@ -29,20 +30,29 @@ const (
 
 var tmpl = template.Must(template.New("").Parse(tableTmpl))
 
-func RegenerateReadme(readMePath string, index *apps.RepoIndex) (err error) {
-	content, err := os.ReadFile(readMePath)
+func RegenerateReadme(repoDir string) (err error) {
+	readmePath := filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "README.md")
+	content, err := os.ReadFile(readmePath)
 	if err != nil {
+		return
+	}
+
+	fdroidIndexFilePath := filepath.Join(repoDir, "index-v1.json")
+	var index *apps.RepoIndex
+	index, err = apps.ReadIndex(fdroidIndexFilePath)
+	if err != nil {
+		err = fmt.Errorf("reading f-droid repo index: %s\n::endgroup::\n", err.Error())
 		return
 	}
 
 	var tableStartIndex = bytes.Index(content, []byte(tableStart))
 	if tableStartIndex < 0 {
-		return fmt.Errorf("cannot find table start in %q", readMePath)
+		return fmt.Errorf("cannot find table start in %q", readmePath)
 	}
 
 	var tableEndIndex = bytes.Index(content, []byte(tableEnd))
 	if tableEndIndex < 0 {
-		return fmt.Errorf("cannot find table end in %q", readMePath)
+		return fmt.Errorf("cannot find table end in %q", readmePath)
 	}
 
 	var table bytes.Buffer
@@ -60,5 +70,5 @@ func RegenerateReadme(readMePath string, index *apps.RepoIndex) (err error) {
 	newContent = append(newContent, table.Bytes()...)
 	newContent = append(newContent, content[tableEndIndex:]...)
 
-	return os.WriteFile(readMePath, newContent, os.ModePerm)
+	return os.WriteFile(readmePath, newContent, os.ModePerm)
 }
