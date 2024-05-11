@@ -1,8 +1,8 @@
 AuthorName: 8VIM
 Categories:
     - System
-CurrentVersion: pr-490+
-CurrentVersionCode: 1715409985
+CurrentVersion: pr-490+3bd7e97802ba77e6cd44d01cd4000276a2db1cb3
+CurrentVersionCode: 1715411626
 IssueTracker: ""
 License: Apache-2.0
 Name: 8Vim Keyboard Debug
