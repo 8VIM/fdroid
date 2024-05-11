@@ -79,8 +79,8 @@ func (g *Globals) AfterApply() error {
 }
 func (c *BadgesCmd) Run(g *Globals) error {
 	return g.appFile.GenerateBadges(g.RepoDir)
-
 }
+
 func (g *Globals) updateAndPull() error {
 	if !g.Debug {
 		if err := runFdroidUpdate(g.RepoDir); err != nil {
@@ -336,10 +336,9 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	for _, path := range toRemovePaths {
 		_ = os.Remove(path)
 	}
-
 	if len(fdroidIndex.Packages[packageName]) == len(toRemovePaths)/2 {
-		_ = os.Remove(filepath.Join(filepath.Dir(g.RepoDir), "metadata", packageName))
-		_ = os.Remove(filepath.Join(g.RepoDir, packageName))
+		_ = os.RemoveAll(filepath.Join(filepath.Dir(g.RepoDir), "metadata", packageName))
+		_ = os.RemoveAll(filepath.Join(g.RepoDir, packageName))
 	}
 
 	if err := runFdroidUpdate(g.RepoDir); err != nil {
