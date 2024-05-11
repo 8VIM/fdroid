@@ -220,9 +220,6 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	app.ReleaseDescription = fmt.Sprintf(`#%d (%s)
 %s`, prNumber, sha, pr.GetBody())
 
-	if app.ReleaseDescription != "" {
-		log.Printf("Release notes: %s", app.ReleaseDescription)
-	}
 	appName := fmt.Sprintf("%s_pr_%d_%s.apk", app.Name(), prNumber, sha)
 	appTargetPath := filepath.Join(repoDir, appName)
 	_, err = os.Stat(appTargetPath)
@@ -273,14 +270,38 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 				return
 			}
 			downloadStream(appTargetPath, rc)
-			break
+			continue
+		}
+
+		if zipFile.Name == "commit" {
+			var rc io.ReadCloser
+			rc, err = zipFile.Open()
+			if err != nil {
+				return
+			}
+			var str string
+			str, err = readFile(rc)
+			if err != nil {
+				return
+			}
+			app.ReleaseDescription = str
 		}
 	}
+
 	apkInfoMap[appName] = app
 	l.apps.apps = apkInfoMap
 
 	return
 }
+
+func readFile(rc io.ReadCloser) (res string, err error) {
+	defer rc.Close()
+	var b []byte
+	b, err = io.ReadAll(rc)
+	res = string(b)
+	return
+}
+
 func downloadStream(targetFile string, rc io.ReadCloser) (err error) {
 	defer rc.Close()
 
