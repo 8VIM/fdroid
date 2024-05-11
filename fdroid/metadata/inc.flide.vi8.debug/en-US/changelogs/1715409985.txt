@@ -1,2 +1,0 @@
-#490 (c41453504010a4aade7958ef8e5b566271a8bd6a)
-Add the ability for the keyboard to float around the screen
