@@ -6,8 +6,8 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
-|<a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.debug/en-US/icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png" alt="8Vim Keyboard Debug icon" width="36px" height="36px"></a>| [**8Vim Keyboard Debug**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | pr-490&#43;3bd7e97802ba77e6cd44d01cd4000276a2db1cb3 (1715411626) |
-|<a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a>| [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | 0.17.0-rc.19 (169919) |
+| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.debug/en-US/icon.png" alt="8Vim Keyboard Debug icon" width="36px" height="36px"></a> | [**8Vim Keyboard Debug**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | pr-490&#43;a7e0fdd8d00943809acddb91e7c398d19bb15e0b |
+| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | 0.17.0-rc.19 |
 <!-- end apps table -->
 
 ### How to use
