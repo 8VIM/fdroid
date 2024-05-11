@@ -1,13 +1,13 @@
 package apps
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
 
 	"golang.org/x/mod/semver"
-	"gopkg.in/yaml.v3"
 )
 
 func (a *AppFile) GenerateBadges(repoDir string) (err error) {
@@ -33,11 +33,11 @@ func (a *AppFile) GenerateBadges(repoDir string) (err error) {
 			}
 		}
 	}
-	f, err := os.Create(filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "badges.yaml"))
+	f, err := os.Create(filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "badges.json"))
 	if err != nil {
 		return
 	}
 	defer f.Close()
-	err = yaml.NewEncoder(f).Encode(badges)
+	err = json.NewEncoder(f).Encode(badges)
 	return
 }
