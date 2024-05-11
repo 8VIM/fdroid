@@ -35,8 +35,9 @@ type CLI struct {
 
 	Release ReleaseCmd `cmd:"" help:"Get releases"`
 	Pr      PrCmd      `cmd:"" help:"Get apk from a PR"`
+	Badges  BadgesCmd  `cmd:"" help"Generate badges"`
 }
-
+type BadgesCmd struct{}
 type ReleaseCmd struct {
 	App     string `arg:"" help:"app" optional:""`
 	Version string `arg:"" help:"Release version" optional:""`
@@ -76,7 +77,10 @@ func (g *Globals) AfterApply() error {
 	g.loader = g.appFile.NewLoader(g.githubClient)
 	return nil
 }
+func (c *BadgesCmd) Run(g *Globals) error {
+	return g.appFile.GenerateBadges(g.RepoDir)
 
+}
 func (g *Globals) updateAndPull() error {
 	if !g.Debug {
 		if err := runFdroidUpdate(g.RepoDir); err != nil {
@@ -262,6 +266,9 @@ func (g *Globals) updateAndPull() error {
 			log.Fatalf("removing path %q: %s\n", rmpath, err.Error())
 		}
 	}
+	if err := g.appFile.GenerateBadges(g.RepoDir); err != nil {
+		return err
+	}
 	if err := md.RegenerateReadme(g.RepoDir); err != nil {
 		return err
 	}
@@ -336,6 +343,9 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	}
 
 	if err := runFdroidUpdate(g.RepoDir); err != nil {
+		return err
+	}
+	if err := g.appFile.GenerateBadges(g.RepoDir); err != nil {
 		return err
 	}
 
