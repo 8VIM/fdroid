@@ -6,6 +6,7 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
+| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.debug/en-US/icon.png" alt="8Vim Keyboard Debug icon" width="36px" height="36px"></a> | [**8Vim Keyboard Debug**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | pr-490&#43;659384e0c26dbf617b6f3673b1d5f8e3174fbb3e |
 | <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it&#39;s inspiration from 8pen and Vim.  | 0.17.0-rc.19 |
 <!-- end apps table -->
 
