@@ -299,27 +299,28 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	if err != nil {
 		return err
 	}
+	packageName := ""
+	for _, packages := range fdroidIndex.Packages {
+		if strings.HasPrefix(packages[0].ApkName, c.App) {
+			packageName = packages[0].PackageName
+			break
+		}
+	}
+
+	if packageName == "" {
+		return nil
+	}
 
 	toRemovePaths := make([]string, 0)
 
-	for _, packages := range fdroidIndex.Packages {
-		for _, p := range packages {
-			if strings.HasPrefix(p.ApkName, prefix) {
-				file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
-				toRemovePaths = append(toRemovePaths, file)
-				toRemovePaths = append(toRemovePaths, filepath.Join(g.RepoDir, p.ApkName))
-			}
+	for _, p := range fdroidIndex.Packages[packageName] {
+		if strings.HasPrefix(p.ApkName, prefix) {
+			file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
+			toRemovePaths = append(toRemovePaths, file)
+			toRemovePaths = append(toRemovePaths, filepath.Join(g.RepoDir, p.ApkName))
 		}
 	}
 
-	if err := filepath.WalkDir(g.RepoDir, func(path string, d fs.DirEntry, err error) error {
-		if base := filepath.Base(path); !d.IsDir() && strings.HasPrefix(base, prefix) {
-			toRemovePaths = append(toRemovePaths, path)
-		}
-		return nil
-	}); err != nil {
-		return err
-	}
 	if len(toRemovePaths) == 0 {
 		log.Printf("No files found for %d\n", c.Number)
 		return nil
@@ -327,6 +328,11 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 
 	for _, path := range toRemovePaths {
 		_ = os.Remove(path)
+	}
+
+	if len(fdroidIndex.Packages[packageName]) == len(toRemovePaths)/2 {
+		_ = os.Remove(filepath.Join(filepath.Dir(g.RepoDir), "metadata", packageName))
+		_ = os.Remove(filepath.Join(g.RepoDir, packageName))
 	}
 
 	if err := runFdroidUpdate(g.RepoDir); err != nil {
