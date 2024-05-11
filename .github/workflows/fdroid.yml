@@ -16,7 +16,6 @@ jobs:
         with:
           ref: main
           persist-credentials: false
-          lfs: true
           fetch-depth: 0
       - name: Set up Go
         uses: actions/setup-go@v5
