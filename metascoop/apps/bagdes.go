@@ -23,9 +23,9 @@ func (a *AppFile) GenerateBadges(repoDir string) (err error) {
 			for name := range a.apps {
 				if _, ok := badges[name]; !ok && strings.HasPrefix(p.ApkName, name) {
 					latest, _ := index.FindLatestPackage(p.PackageName)
-					version := latest.VersionName
-					if semver.IsValid(version) {
-						version = fmt.Sprintf("v%s", version)
+					version := fmt.Sprintf("v%s", latest.VersionName)
+					if !semver.IsValid(version) {
+						version = latest.VersionName
 					}
 					badges[name] = version
 					break next
@@ -33,7 +33,7 @@ func (a *AppFile) GenerateBadges(repoDir string) (err error) {
 			}
 		}
 	}
-	f, err := os.Create(filepath.Join(filepath.Dir(repoDir), "badges.yaml"))
+	f, err := os.Create(filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "badges.yaml"))
 	if err != nil {
 		return
 	}
