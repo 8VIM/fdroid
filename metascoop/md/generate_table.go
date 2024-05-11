@@ -18,13 +18,7 @@ const (
 	tableTmpl = `
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |{{range .Apps}}
-| 
-{{- $name := .name -}}
-{{- $sourceCode := .sourceCode -}}
-{{- $packageName := .packageName -}}
-{{- with (index .localized "en-US").icon -}}
-<a href="{{$sourceCode}}"><img src="fdroid/repo/{{$packageName}}/en-US/{{.}}" alt="{{$name}} icon" width="36px" height="36px"></a>
-{{- end -}} | [**{{$name}}**]({{$sourceCode}}) | {{.summary}} | {{.suggestedVersionName}} ({{.suggestedVersionCode}}) |{{end}}
+| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{$name}}**]({{.sourceCode}}) | {{.summary}} | {{.suggestedVersionName}} ({{.suggestedVersionCode}}) |{{end}}
 ` + tableEnd
 )
 
