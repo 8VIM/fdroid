@@ -239,9 +239,9 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	if err != nil {
 		return
 	}
-	app.ReleaseDescription = fmt.Sprintf(`#%d (%s)
+	app.ReleaseDescription = fmt.Sprintf(`PR #%d
 %s
-%s`, prNumber, sha, pr.GetBody(), str)
+Commit (%s): %s`, prNumber, pr.GetBody(), sha, str)
 	apkInfoMap[appName] = app
 	l.apps.apps = apkInfoMap
 
