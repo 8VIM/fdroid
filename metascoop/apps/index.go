@@ -138,6 +138,7 @@ func SyncV2(repoDir string) (err error) {
 	h.Write(b)
 	sum := h.Sum(nil)
 	e.Index["sha256"] = fmt.Sprintf("%x", sum)
+	e.Index["size"] = len(b)
 
 	b, err = json.Marshal(e)
 	if err != nil {
