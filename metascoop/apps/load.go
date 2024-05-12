@@ -209,22 +209,41 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 			app.License = *gitHubRepo.License.SPDXID
 		}
 	}
-	dlCtx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
-	defer cancel()
 
 	apkInfoMap := make(map[string]*AppInfo)
 
 	appName := fmt.Sprintf("%s_pr_%d_%s.apk", app.Name(), prNumber, sha)
 	appTargetPath := filepath.Join(repoDir, appName)
+
 	_, err = os.Stat(appTargetPath)
 	// If the app file already exists for this version, we continue
 	if !errors.Is(err, os.ErrNotExist) {
 		log.Printf("Already have APK for version %q at %q", appName, appTargetPath)
-		err = nil
+	} else {
+		err = l.downloadArtifact(appTargetPath, repo.Author, repo.Name, prNumber, artifact)
+		if err != nil {
+			return
+		}
+	}
+
+	var str string
+	str, err = git.GetPrCommit(app.GitURL, prNumber, sha)
+	if err != nil {
+		log.Printf("Error cloning %s for %d on %s: %s\n", app.GitURL, prNumber, sha, err.Error())
 		return
 	}
+	app.ReleaseDescription = str
+	apkInfoMap[appName] = app
+	l.apps.apps = apkInfoMap
+
+	return
+}
+
+func (l *AppLoader) downloadArtifact(appTargetPath, author, name string, prNumber, artifact int) (err error) {
+	dlCtx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+	defer cancel()
 	var u *url.URL
-	u, _, err = l.githubClient.Actions.DownloadArtifact(dlCtx, repo.Author, repo.Name, int64(artifact), 1)
+	u, _, err = l.githubClient.Actions.DownloadArtifact(dlCtx, author, name, int64(artifact), 1)
 	if err != nil {
 		return
 	}
@@ -267,15 +286,6 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 			break
 		}
 	}
-	var str string
-	str, err = git.GetPrCommit(app.GitURL, prNumber, sha)
-	if err != nil {
-		return
-	}
-	app.ReleaseDescription = str
-	apkInfoMap[appName] = app
-	l.apps.apps = apkInfoMap
-
 	return
 }
 
