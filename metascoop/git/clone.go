@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strings"
 )
 
 func CloneRepo(gitUrl string) (dirPath string, err error) {
@@ -55,6 +56,6 @@ func GetPrCommit(gitUrl string, prNumber int, sha string) (commit string, err er
 	if err != nil {
 		return
 	}
-	commit = string(b)
+	commit = strings.Trim(string(b), "\n")
 	return
 }
