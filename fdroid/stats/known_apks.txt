@@ -4,6 +4,7 @@
 8vim_debug_pr_490_84cc357a6c8d9bcce69b6ea78bbac3f110e25e22.apk inc.flide.vi8.debug 2024-05-12
 8vim_debug_pr_490_8339d040ed8840a685cf2a1ab88852fcfd1bef41.apk inc.flide.vi8.debug 2024-05-12
 8vim_debug_pr_490_c5a52cdd636c1ffdef7f26fee3bd7fd86c52aa5a.apk inc.flide.vi8.debug 2024-05-12
+8vim_debug_pr_490_f1b6ee13b6f5851327e6f08488219316abc9a940.apk inc.flide.vi8.debug 2024-05-12
 8vim_rc_v0.14.0-rc.3.apk inc.flide.vi8.rc 2024-05-12
 8vim_rc_v0.14.0-rc.4.apk inc.flide.vi8.rc 2024-05-12
 8vim_rc_v0.14.0-rc.5.apk inc.flide.vi8.rc 2024-05-12
