@@ -137,7 +137,7 @@ func SyncV2(repoDir string) (err error) {
 	h := sha256.New()
 	h.Write(b)
 	sum := h.Sum(nil)
-	e.Index["sha256"] = string(sum)
+	e.Index["sha256"] = fmt.Sprintf("%x", sum)
 
 	b, err = json.Marshal(e)
 	if err != nil {
