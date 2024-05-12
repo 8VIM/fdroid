@@ -269,10 +269,6 @@ func (g *Globals) updateAndPull() error {
 		}
 	}
 
-	if err := apps.SyncV2(g.RepoDir); err != nil {
-		return err
-	}
-
 	if err := g.appFile.GenerateBadges(g.RepoDir); err != nil {
 		return err
 	}
