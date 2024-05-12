@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"metascoop/git"
 	"net/http"
 	"net/url"
 	"os"
@@ -217,8 +218,6 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	}
 
 	apkInfoMap := make(map[string]*AppInfo)
-	app.ReleaseDescription = fmt.Sprintf(`#%d (%s)
-%s`, prNumber, sha, pr.GetBody())
 
 	appName := fmt.Sprintf("%s_pr_%d_%s.apk", app.Name(), prNumber, sha)
 	appTargetPath := filepath.Join(repoDir, appName)
@@ -270,35 +269,18 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 				return
 			}
 			downloadStream(appTargetPath, rc)
-			continue
-		}
-
-		if zipFile.Name == "commit" {
-			var rc io.ReadCloser
-			rc, err = zipFile.Open()
-			if err != nil {
-				return
-			}
-			var str string
-			str, err = readFile(rc)
-			if err != nil {
-				return
-			}
-			app.ReleaseDescription = str
+			break
 		}
 	}
-
+	var str string
+	str, err = git.GetPrCommit(app.GitURL, prNumber, sha)
+	if err != nil {
+		return
+	}
+	app.ReleaseDescription = str
 	apkInfoMap[appName] = app
 	l.apps.apps = apkInfoMap
 
-	return
-}
-
-func readFile(rc io.ReadCloser) (res string, err error) {
-	defer rc.Close()
-	var b []byte
-	b, err = io.ReadAll(rc)
-	res = string(b)
 	return
 }
 
