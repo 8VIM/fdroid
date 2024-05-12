@@ -14,16 +14,16 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1715461948000
+    "timestamp": 1715481838000
   },
   "packages": {
     "inc.flide.vi8.debug": {
       "metadata": {
-        "added": 1715461900000,
+        "added": 1715481789000,
         "categories": [
           "System"
         ],
-        "lastUpdated": 1715461902000,
+        "lastUpdated": 1715481793000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -150,7 +150,7 @@
       },
       "versions": {
         "d45ac07c262f73f2257a3bced274a87d2dab3c793ba2cf05bdd5ae5af2d1bae1": {
-          "added": 1715461900000,
+          "added": 1715481789000,
           "file": {
             "name": "/8vim_debug_pr_490_1e0f14424504880c463e9f0ba5ac577a1539b5db.apk",
             "sha256": "d45ac07c262f73f2257a3bced274a87d2dab3c793ba2cf05bdd5ae5af2d1bae1",
@@ -179,7 +179,7 @@
           }
         },
         "000581e16020682a00714da541ffe9114924913157ea323d0cb66460105cf1ec": {
-          "added": 1715461902000,
+          "added": 1715481793000,
           "file": {
             "name": "/8vim_debug_pr_490_e2ae713bac6a70688e5e3d003b7675987609cdda.apk",
             "sha256": "000581e16020682a00714da541ffe9114924913157ea323d0cb66460105cf1ec",
@@ -208,7 +208,7 @@
           }
         },
         "0617ca650b9a86edb883e6bf85ae87e8a5e2ebc32b61b4a9f7e333984bccd967": {
-          "added": 1715461902000,
+          "added": 1715481791000,
           "file": {
             "name": "/8vim_debug_pr_490_55e11b0c17826e632f8019c58127c6cf2cb02347.apk",
             "sha256": "0617ca650b9a86edb883e6bf85ae87e8a5e2ebc32b61b4a9f7e333984bccd967",
@@ -236,8 +236,37 @@
             ]
           }
         },
+        "fd972b7f48918a94d35dbd8671e787224e556a759e9de7f52fdca7c669d7a38b": {
+          "added": 1715481792000,
+          "file": {
+            "name": "/8vim_debug_pr_490_bb623f5aa1992913bfb3d52c2f5768e760ae07fd.apk",
+            "sha256": "fd972b7f48918a94d35dbd8671e787224e556a759e9de7f52fdca7c669d7a38b",
+            "size": 18441824
+          },
+          "manifest": {
+            "versionName": "pr-490+bb623f5aa1992913bfb3d52c2f5768e760ae07fd",
+            "versionCode": 1715481525,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "7d33cf63417df754856d00365dd76c8c674dcdbdf1221fc012654f207329b33f"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
         "9597bf0711144867beff98c40c13ef12794d8f60a5ed4d7d2c03487aefd46fae": {
-          "added": 1715461900000,
+          "added": 1715481790000,
           "file": {
             "name": "/8vim_debug_pr_490_2313d35dcce2a9b26a2e7fb1dd55f21eebc89160.apk",
             "sha256": "9597bf0711144867beff98c40c13ef12794d8f60a5ed4d7d2c03487aefd46fae",
@@ -266,7 +295,7 @@
           }
         },
         "12952b639b434f31aff7a11cb13ad4883eecaa34ac742013075ebe411288affe": {
-          "added": 1715461901000,
+          "added": 1715481791000,
           "file": {
             "name": "/8vim_debug_pr_490_42b860d858ac3161fab340dda34ba38aefba8f80.apk",
             "sha256": "12952b639b434f31aff7a11cb13ad4883eecaa34ac742013075ebe411288affe",
@@ -298,11 +327,11 @@
     },
     "inc.flide.vi8.rc": {
       "metadata": {
-        "added": 1715461903000,
+        "added": 1715481793000,
         "categories": [
           "System"
         ],
-        "lastUpdated": 1715461935000,
+        "lastUpdated": 1715481824000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -429,7 +458,7 @@
       },
       "versions": {
         "d9eefd479427b33d62f03826c6c6b0104110f669bcc6aad0721d8a4a797d5bbc": {
-          "added": 1715461929000,
+          "added": 1715481819000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.19.apk",
             "sha256": "d9eefd479427b33d62f03826c6c6b0104110f669bcc6aad0721d8a4a797d5bbc",
@@ -458,7 +487,7 @@
           }
         },
         "7f75359d60e2291af17be0f847b970249e57540f6b61054207b41a3da36770c6": {
-          "added": 1715461928000,
+          "added": 1715481818000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.18.apk",
             "sha256": "7f75359d60e2291af17be0f847b970249e57540f6b61054207b41a3da36770c6",
@@ -487,7 +516,7 @@
           }
         },
         "e560199fef8d2cf7a71362b8b8f21269b060c18823e29ad722444a1cc91fae5d": {
-          "added": 1715461928000,
+          "added": 1715481818000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.17.apk",
             "sha256": "e560199fef8d2cf7a71362b8b8f21269b060c18823e29ad722444a1cc91fae5d",
@@ -516,7 +545,7 @@
           }
         },
         "e57eebdea5b54f383e2deb3b6a075b0a2eb5b814e134aa649b040eab2c13a659": {
-          "added": 1715461927000,
+          "added": 1715481817000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.16.apk",
             "sha256": "e57eebdea5b54f383e2deb3b6a075b0a2eb5b814e134aa649b040eab2c13a659",
@@ -545,7 +574,7 @@
           }
         },
         "419cdb6961f7230e51e8124e58818a177d1851707822c0f7f69a61c40517adff": {
-          "added": 1715461926000,
+          "added": 1715481816000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.15.apk",
             "sha256": "419cdb6961f7230e51e8124e58818a177d1851707822c0f7f69a61c40517adff",
@@ -574,7 +603,7 @@
           }
         },
         "e9d0d46d852bf850827cdd3c07183a7a19f19783fba8f66a0c19754b6d09cf96": {
-          "added": 1715461926000,
+          "added": 1715481816000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.14.apk",
             "sha256": "e9d0d46d852bf850827cdd3c07183a7a19f19783fba8f66a0c19754b6d09cf96",
@@ -603,7 +632,7 @@
           }
         },
         "cd71dd5d6df4d761ffe024c51454a337a6adef333b81df49e8d98d5fd6af107d": {
-          "added": 1715461925000,
+          "added": 1715481815000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.12.apk",
             "sha256": "cd71dd5d6df4d761ffe024c51454a337a6adef333b81df49e8d98d5fd6af107d",
@@ -632,7 +661,7 @@
           }
         },
         "675f2e212dfbe9e0a7701648fdc541551fd6bd292c28dc4f3eb6b280a7d9457e": {
-          "added": 1715461924000,
+          "added": 1715481814000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.11.apk",
             "sha256": "675f2e212dfbe9e0a7701648fdc541551fd6bd292c28dc4f3eb6b280a7d9457e",
@@ -661,7 +690,7 @@
           }
         },
         "72df2f2fea9fe2340d1b92b26addaf7fe904119a17d3d4669998ebebdb04fe8c": {
-          "added": 1715461924000,
+          "added": 1715481814000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.10.apk",
             "sha256": "72df2f2fea9fe2340d1b92b26addaf7fe904119a17d3d4669998ebebdb04fe8c",
@@ -690,7 +719,7 @@
           }
         },
         "c39d79b2aaaa221b9797ffa6fb46abb770e4d9f4bcb36c2da980e08b7a448c3e": {
-          "added": 1715461935000,
+          "added": 1715481824000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.9.apk",
             "sha256": "c39d79b2aaaa221b9797ffa6fb46abb770e4d9f4bcb36c2da980e08b7a448c3e",
@@ -719,7 +748,7 @@
           }
         },
         "96a0a0eaa007b60efe44c91e3a24a7e06aa487e0f522fd7c71cb6ec99cb5e1e0": {
-          "added": 1715461934000,
+          "added": 1715481824000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.8.apk",
             "sha256": "96a0a0eaa007b60efe44c91e3a24a7e06aa487e0f522fd7c71cb6ec99cb5e1e0",
@@ -748,7 +777,7 @@
           }
         },
         "cb348655b03a7d631dd387d7b0547cc49450828f184feed7393e3b4f2982aa96": {
-          "added": 1715461933000,
+          "added": 1715481823000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.7.apk",
             "sha256": "cb348655b03a7d631dd387d7b0547cc49450828f184feed7393e3b4f2982aa96",
@@ -777,7 +806,7 @@
           }
         },
         "f31fbfd352285c2ff7933072255656b17aa7f13f0b335023e914ce02ae8d7ba9": {
-          "added": 1715461932000,
+          "added": 1715481822000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.6.apk",
             "sha256": "f31fbfd352285c2ff7933072255656b17aa7f13f0b335023e914ce02ae8d7ba9",
@@ -806,7 +835,7 @@
           }
         },
         "9579bd647e4b1c51184d7dc5e5f6edd9fe4e3170f8ea78280c3e3f404e21023b": {
-          "added": 1715461932000,
+          "added": 1715481822000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.5.apk",
             "sha256": "9579bd647e4b1c51184d7dc5e5f6edd9fe4e3170f8ea78280c3e3f404e21023b",
@@ -835,7 +864,7 @@
           }
         },
         "718790c37a70356a78282f04cf6751f3eeb4c651a7c257e26c691f2c536254fc": {
-          "added": 1715461931000,
+          "added": 1715481821000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.4.apk",
             "sha256": "718790c37a70356a78282f04cf6751f3eeb4c651a7c257e26c691f2c536254fc",
@@ -864,7 +893,7 @@
           }
         },
         "e74de1697ac2b7004b6435eee9375cabf5880d6cd4bc7e4edf78a28bbc135e93": {
-          "added": 1715461930000,
+          "added": 1715481820000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.3.apk",
             "sha256": "e74de1697ac2b7004b6435eee9375cabf5880d6cd4bc7e4edf78a28bbc135e93",
@@ -893,7 +922,7 @@
           }
         },
         "7e8805186aa1d5b89a2f5cfe51ce5810b8306057aa38470d1caeb5f555ac25b2": {
-          "added": 1715461930000,
+          "added": 1715481820000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.2.apk",
             "sha256": "7e8805186aa1d5b89a2f5cfe51ce5810b8306057aa38470d1caeb5f555ac25b2",
@@ -922,7 +951,7 @@
           }
         },
         "adbfaed639283fe9c200b103304ef34d77b42131dfac898899d5358e6a0f9ec9": {
-          "added": 1715461923000,
+          "added": 1715481813000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.1.apk",
             "sha256": "adbfaed639283fe9c200b103304ef34d77b42131dfac898899d5358e6a0f9ec9",
@@ -951,7 +980,7 @@
           }
         },
         "3f8cb31ef4a990eecfad5722ccb738daa5968991276ea2471b898c0f32920f2f": {
-          "added": 1715461922000,
+          "added": 1715481812000,
           "file": {
             "name": "/8vim_rc_v0.16.3-rc.2.apk",
             "sha256": "3f8cb31ef4a990eecfad5722ccb738daa5968991276ea2471b898c0f32920f2f",
@@ -980,7 +1009,7 @@
           }
         },
         "3cf349460c64798198a5c1ce0b04a28295887fb9b64613d1528f20ebaa7b35bf": {
-          "added": 1715461922000,
+          "added": 1715481812000,
           "file": {
             "name": "/8vim_rc_v0.16.3-rc.1.apk",
             "sha256": "3cf349460c64798198a5c1ce0b04a28295887fb9b64613d1528f20ebaa7b35bf",
@@ -1009,7 +1038,7 @@
           }
         },
         "a2c33f3f80d64cb0eb619cf481e531e1751dcbd99a7d4983a0a86c927561bcfa": {
-          "added": 1715461921000,
+          "added": 1715481811000,
           "file": {
             "name": "/8vim_rc_v0.16.2-rc.1.apk",
             "sha256": "a2c33f3f80d64cb0eb619cf481e531e1751dcbd99a7d4983a0a86c927561bcfa",
@@ -1038,7 +1067,7 @@
           }
         },
         "9370dfe01c8920690ff3892d318cb2e7eee4769c847bbcc2f7ff75a7106b1ec6": {
-          "added": 1715461920000,
+          "added": 1715481810000,
           "file": {
             "name": "/8vim_rc_v0.16.1-rc.1.apk",
             "sha256": "9370dfe01c8920690ff3892d318cb2e7eee4769c847bbcc2f7ff75a7106b1ec6",
@@ -1067,7 +1096,7 @@
           }
         },
         "78eb6470b6a8792e2919233778a50de48941e8978202eb1b4e1bdd027954fef0": {
-          "added": 1715461920000,
+          "added": 1715481810000,
           "file": {
             "name": "/8vim_rc_v0.16.0-rc.1.apk",
             "sha256": "78eb6470b6a8792e2919233778a50de48941e8978202eb1b4e1bdd027954fef0",
@@ -1096,7 +1125,7 @@
           }
         },
         "1ee0d00c2e6e2dd1ff8670432b7a6fa951b3da0afe93b56b46c2c1ca6808ca28": {
-          "added": 1715461914000,
+          "added": 1715481805000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.22.apk",
             "sha256": "1ee0d00c2e6e2dd1ff8670432b7a6fa951b3da0afe93b56b46c2c1ca6808ca28",
@@ -1125,7 +1154,7 @@
           }
         },
         "db046a190971d7e475fd517cf26e7e6f2b839e61438653e983a3498b1f88df01": {
-          "added": 1715461914000,
+          "added": 1715481804000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.21.apk",
             "sha256": "db046a190971d7e475fd517cf26e7e6f2b839e61438653e983a3498b1f88df01",
@@ -1154,7 +1183,7 @@
           }
         },
         "d017a968033a72ab648034fe98f20a8d4e7ea9dcec9062bc58258f4026052374": {
-          "added": 1715461913000,
+          "added": 1715481803000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.20.apk",
             "sha256": "d017a968033a72ab648034fe98f20a8d4e7ea9dcec9062bc58258f4026052374",
@@ -1183,7 +1212,7 @@
           }
         },
         "64d1321713b8645653d67685e313e85168cd6ec93381083d546cbadb8ab9a702": {
-          "added": 1715461912000,
+          "added": 1715481802000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.19.apk",
             "sha256": "64d1321713b8645653d67685e313e85168cd6ec93381083d546cbadb8ab9a702",
@@ -1212,7 +1241,7 @@
           }
         },
         "25a1aa1ba5db45abe53d42c649bfd3af1d6ea5efde5aed5f7daaed0b727e8fa2": {
-          "added": 1715461911000,
+          "added": 1715481801000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.18.apk",
             "sha256": "25a1aa1ba5db45abe53d42c649bfd3af1d6ea5efde5aed5f7daaed0b727e8fa2",
@@ -1241,7 +1270,7 @@
           }
         },
         "24d4b1622b74b5a911ed708a4aecc61639cf89d191996eae7e4a8a50015aed17": {
-          "added": 1715461911000,
+          "added": 1715481801000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.17.apk",
             "sha256": "24d4b1622b74b5a911ed708a4aecc61639cf89d191996eae7e4a8a50015aed17",
@@ -1270,7 +1299,7 @@
           }
         },
         "34d5dad45c5630134330b1d0de62f6d647ceab4f06c1eb7e0c93b4f8dda53164": {
-          "added": 1715461910000,
+          "added": 1715481800000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.16.apk",
             "sha256": "34d5dad45c5630134330b1d0de62f6d647ceab4f06c1eb7e0c93b4f8dda53164",
@@ -1299,7 +1328,7 @@
           }
         },
         "1857e7ea3b908e727e0086dc79b1ff6dc145b890130f3be0c2ea55f4479e63b1": {
-          "added": 1715461909000,
+          "added": 1715481799000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.15.apk",
             "sha256": "1857e7ea3b908e727e0086dc79b1ff6dc145b890130f3be0c2ea55f4479e63b1",
@@ -1328,7 +1357,7 @@
           }
         },
         "0c33a802bbcfc86326040c7977a048c54a346919a3a75d38b4e49d0a1fdca9e4": {
-          "added": 1715461909000,
+          "added": 1715481799000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.14.apk",
             "sha256": "0c33a802bbcfc86326040c7977a048c54a346919a3a75d38b4e49d0a1fdca9e4",
@@ -1357,7 +1386,7 @@
           }
         },
         "f6de7b5bf2793690bb5c28dba2b6b6bdad24292caa621d037c34a8aa7b0e0e99": {
-          "added": 1715461908000,
+          "added": 1715481798000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.13.apk",
             "sha256": "f6de7b5bf2793690bb5c28dba2b6b6bdad24292caa621d037c34a8aa7b0e0e99",
@@ -1386,7 +1415,7 @@
           }
         },
         "0bc2d27710264bc6ec89a742559682d84466cbbd0986f09649a178a5ce219a5c": {
-          "added": 1715461907000,
+          "added": 1715481798000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.12.apk",
             "sha256": "0bc2d27710264bc6ec89a742559682d84466cbbd0986f09649a178a5ce219a5c",
@@ -1415,7 +1444,7 @@
           }
         },
         "882f70ea0da8aac64dbd7fc4a03af1fde16d959556e7fec9d87363113c0c0081": {
-          "added": 1715461907000,
+          "added": 1715481797000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.11.apk",
             "sha256": "882f70ea0da8aac64dbd7fc4a03af1fde16d959556e7fec9d87363113c0c0081",
@@ -1444,7 +1473,7 @@
           }
         },
         "c5e4a1dc875d123e4099b0a5c02ce8d66e1eb2aade2d31b7eaa7fd1749a423e1": {
-          "added": 1715461906000,
+          "added": 1715481796000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.10.apk",
             "sha256": "c5e4a1dc875d123e4099b0a5c02ce8d66e1eb2aade2d31b7eaa7fd1749a423e1",
@@ -1473,7 +1502,7 @@
           }
         },
         "88a196b8943072a948df84b2698d66a945ef15981ac6c7e6822ba7af8c03357a": {
-          "added": 1715461919000,
+          "added": 1715481809000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.9.apk",
             "sha256": "88a196b8943072a948df84b2698d66a945ef15981ac6c7e6822ba7af8c03357a",
@@ -1502,7 +1531,7 @@
           }
         },
         "d5da96429b1f1ae1c5f929a08cb243a09c57cdc88f293cc4c0a70bbcb676e17f": {
-          "added": 1715461918000,
+          "added": 1715481808000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.8.apk",
             "sha256": "d5da96429b1f1ae1c5f929a08cb243a09c57cdc88f293cc4c0a70bbcb676e17f",
@@ -1531,7 +1560,7 @@
           }
         },
         "59536143335096c44777f64a1dc11b7c6aee802a2445a9f4f3db964cc34181ec": {
-          "added": 1715461918000,
+          "added": 1715481808000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.7.apk",
             "sha256": "59536143335096c44777f64a1dc11b7c6aee802a2445a9f4f3db964cc34181ec",
@@ -1560,7 +1589,7 @@
           }
         },
         "2d61f32f0e49ea736d670a56fea27174ebba307bb96f20456a0ff47552523dff": {
-          "added": 1715461917000,
+          "added": 1715481807000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.6.apk",
             "sha256": "2d61f32f0e49ea736d670a56fea27174ebba307bb96f20456a0ff47552523dff",
@@ -1589,7 +1618,7 @@
           }
         },
         "98a98aee5c8b1c8fad29d46cede0914d2dc73193e3def07d8919e415bbc89a7a": {
-          "added": 1715461916000,
+          "added": 1715481807000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.5.apk",
             "sha256": "98a98aee5c8b1c8fad29d46cede0914d2dc73193e3def07d8919e415bbc89a7a",
@@ -1618,7 +1647,7 @@
           }
         },
         "8e5f7c95b1def325dd04c735faf41eb49e3b6931cbbb87e10f0bdf3aead4a9e4": {
-          "added": 1715461916000,
+          "added": 1715481806000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.4.apk",
             "sha256": "8e5f7c95b1def325dd04c735faf41eb49e3b6931cbbb87e10f0bdf3aead4a9e4",
@@ -1647,7 +1676,7 @@
           }
         },
         "af80ec6074f25fa466dcf2aef7334fb92fbd7b8873acbc0840f61e178a84c934": {
-          "added": 1715461915000,
+          "added": 1715481805000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.3.apk",
             "sha256": "af80ec6074f25fa466dcf2aef7334fb92fbd7b8873acbc0840f61e178a84c934",
@@ -1676,7 +1705,7 @@
           }
         },
         "f8b95c7e9caf714f552c102c21ef3767804c76b246f5b4bdf240c2869ea9c316": {
-          "added": 1715461912000,
+          "added": 1715481803000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.2.apk",
             "sha256": "f8b95c7e9caf714f552c102c21ef3767804c76b246f5b4bdf240c2869ea9c316",
@@ -1705,7 +1734,7 @@
           }
         },
         "6cc3bb3d85cd74919f7e488076d8d035079c71eb8c7775747475a22391109a1a": {
-          "added": 1715461905000,
+          "added": 1715481796000,
           "file": {
             "name": "/8vim_rc_v0.15.0-rc.1.apk",
             "sha256": "6cc3bb3d85cd74919f7e488076d8d035079c71eb8c7775747475a22391109a1a",
@@ -1734,7 +1763,7 @@
           }
         },
         "4f97169c95997b66553280a84f0bd22011d828758522c4ebe7fe0482483e5cd8": {
-          "added": 1715461905000,
+          "added": 1715481795000,
           "file": {
             "name": "/8vim_rc_v0.14.0-rc.6.apk",
             "sha256": "4f97169c95997b66553280a84f0bd22011d828758522c4ebe7fe0482483e5cd8",
@@ -1763,7 +1792,7 @@
           }
         },
         "e02ea57ee56e2c78bcdd6e109442d1c7b5a71499eafb715dc3b78ad321ebea22": {
-          "added": 1715461904000,
+          "added": 1715481794000,
           "file": {
             "name": "/8vim_rc_v0.14.0-rc.5.apk",
             "sha256": "e02ea57ee56e2c78bcdd6e109442d1c7b5a71499eafb715dc3b78ad321ebea22",
@@ -1792,7 +1821,7 @@
           }
         },
         "e528f5bb807f7ddf936b99bea02b2c44c4d550ad3f507f03bf2918886c60ff02": {
-          "added": 1715461903000,
+          "added": 1715481794000,
           "file": {
             "name": "/8vim_rc_v0.14.0-rc.4.apk",
             "sha256": "e528f5bb807f7ddf936b99bea02b2c44c4d550ad3f507f03bf2918886c60ff02",
@@ -1821,7 +1850,7 @@
           }
         },
         "dd15b6c6f357c15b17c9eedb05e72c89d22877c72255cc8c0664c7cf8c8bb3a5": {
-          "added": 1715461903000,
+          "added": 1715481793000,
           "file": {
             "name": "/8vim_rc_v0.14.0-rc.3.apk",
             "sha256": "dd15b6c6f357c15b17c9eedb05e72c89d22877c72255cc8c0664c7cf8c8bb3a5",
