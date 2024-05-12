@@ -211,11 +211,6 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	}
 	dlCtx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
 	defer cancel()
-	var pr *github.PullRequest
-	pr, _, err = l.githubClient.PullRequests.Get(dlCtx, repo.Author, repo.Name, prNumber)
-	if err != nil {
-		return
-	}
 
 	apkInfoMap := make(map[string]*AppInfo)
 
