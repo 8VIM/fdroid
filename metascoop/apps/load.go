@@ -220,7 +220,7 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	if !errors.Is(err, os.ErrNotExist) {
 		log.Printf("Already have APK for version %q at %q", appName, appTargetPath)
 	} else {
-		err = l.downloadArtifact(appTargetPath, repo.Author, repo.Name, prNumber, artifact)
+		err = l.downloadArtifact(appTargetPath, repo.Author, repo.Name, artifact)
 		if err != nil {
 			return
 		}
@@ -239,7 +239,7 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	return
 }
 
-func (l *AppLoader) downloadArtifact(appTargetPath, author, name string, prNumber, artifact int) (err error) {
+func (l *AppLoader) downloadArtifact(appTargetPath, author, name string, artifact int) (err error) {
 	dlCtx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
 	defer cancel()
 	var u *url.URL
