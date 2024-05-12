@@ -1,0 +1,5 @@
+#509 (df06c22c067f99b33938a7bc0f58cad546bfcc2b)
+Cursor movements was moving the cursor out of the input box
+
+refs: #426
+update gradle build

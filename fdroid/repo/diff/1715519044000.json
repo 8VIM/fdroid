@@ -1,0 +1,14 @@
+{
+  "repo": {
+    "timestamp": 1715519060000
+  },
+  "packages": {
+    "inc.flide.vi8.debug": {
+      "versions": {
+        "29305871efda4f477b94537a587997ed72dcabc0454e093cd0482b114b03e0e8": {
+          "releaseChannels": null
+        }
+      }
+    }
+  }
+}

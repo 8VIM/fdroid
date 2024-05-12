@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1715518155000
+    "timestamp": 1715519060000
   },
   "packages": {
     "inc.flide.vi8.debug": {
@@ -23,7 +23,7 @@
         "categories": [
           "System"
         ],
-        "lastUpdated": 1715500237000,
+        "lastUpdated": 1715518997000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -146,9 +146,38 @@
             "size": 33354
           }
         },
-        "preferredSigner": "5cd1f01f0093a481619d83158181cf1a95037e01dc25ce89c0d8e9881a2acd09"
+        "preferredSigner": "349db30a3016df0c6cbd06c022dcbe2b339da1a4e1fa5ad7b0112dce4c1f1154"
       },
       "versions": {
+        "29305871efda4f477b94537a587997ed72dcabc0454e093cd0482b114b03e0e8": {
+          "added": 1715518997000,
+          "file": {
+            "name": "/8vim_debug_pr_509_df06c22c067f99b33938a7bc0f58cad546bfcc2b.apk",
+            "sha256": "29305871efda4f477b94537a587997ed72dcabc0454e093cd0482b114b03e0e8",
+            "size": 18397821
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-509-df06c22c06",
+            "versionCode": 1715518620,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "349db30a3016df0c6cbd06c022dcbe2b339da1a4e1fa5ad7b0112dce4c1f1154"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
         "48fbb229eabf0c812084aed558412651fbd6657f6a235cd5b5714b2a1261cfad": {
           "added": 1715493207000,
           "file": {
