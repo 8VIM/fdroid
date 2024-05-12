@@ -2,13 +2,12 @@ package apps
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
-	"reflect"
+	"path/filepath"
 	"sort"
-	"strings"
 
 	"github.com/hashicorp/go-version"
-	"github.com/r3labs/diff/v2"
 )
 
 type RepoIndex struct {
@@ -33,6 +32,78 @@ type PackageInfo struct {
 	TargetSdkVersion int      `json:"targetSdkVersion"`
 	VersionCode      int      `json:"versionCode,omitempty"`
 	VersionName      string   `json:"versionName"`
+}
+
+type indexV2 struct {
+	Repo     map[string]interface{}    `json:"repo"`
+	Packages map[string]indexV2Package `json:"packages"`
+}
+
+type indexV2Package struct {
+	Metadata map[string]interface{}    `json:"metadata"`
+	Versions map[string]indexV2Version `json:"versions"`
+}
+
+type indexV2Version struct {
+	Added    int                    `json:"added"`
+	File     map[string]interface{} `json:"file"`
+	Manifest map[string]interface{} `json:"manifest"`
+}
+
+func readIndexV2(path string) (index *indexV2, err error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return
+	}
+	defer f.Close()
+
+	err = json.NewDecoder(f).Decode(&index)
+
+	return
+}
+
+func SyncV2(repoDir string) (err error) {
+	fdroidIndexFilePath := filepath.Join(repoDir, "index-v1.json")
+	path := filepath.Join(repoDir, "index-v2.json")
+
+	r, err := ReadIndex(fdroidIndexFilePath)
+
+	if err != nil {
+		return
+	}
+
+	var index *indexV2
+	index, err = readIndexV2(path)
+	if err != nil {
+		return
+	}
+	for name, packages := range r.Packages {
+		for _, p := range packages {
+			b, e := os.ReadFile(filepath.Join(
+				filepath.Dir(filepath.Dir(path)),
+				"metadata",
+				name,
+				"en-US",
+				"changelogs",
+				fmt.Sprintf("%d.txt", p.VersionCode)),
+			)
+			if e != nil {
+				continue
+			}
+			whatsNew := make(map[string]string)
+			whatsNew["en-US"] = string(b)
+			index.Packages[name].Versions[p.Hash].Manifest["whatsNew"] = whatsNew
+		}
+	}
+	var f *os.File
+	f, err = os.Create(path)
+	if err != nil {
+		return
+	}
+	defer f.Close()
+	err = json.NewEncoder(f).Encode(index)
+
+	return
 }
 
 func (r *RepoIndex) FindLatestPackage(pkgName string) (p PackageInfo, ok bool) {
@@ -73,35 +144,4 @@ func ReadIndex(path string) (index *RepoIndex, err error) {
 	err = json.NewDecoder(f).Decode(&index)
 
 	return
-}
-
-func HasSignificantChanges(old, new *RepoIndex) (changedPath string, changed bool) {
-	changelog, err := diff.Diff(old, new)
-	if err != nil {
-		panic("diffing fdroid index structs: " + err.Error())
-	}
-
-	for _, change := range changelog {
-		if change.Type != diff.UPDATE {
-			return strings.Join(change.Path, "."), true
-		}
-
-		var isIgnoredChange = false
-
-		// Fdroid seems to update the "added" timestamp of apps every time we run the command
-		if len(change.Path) > 0 && (strings.EqualFold(change.Path[len(change.Path)-1], "added") || strings.EqualFold(change.Path[len(change.Path)-1], "lastUpdated")) {
-			isIgnoredChange = true
-		}
-
-		// Also it updates the repo timestamp
-		if reflect.DeepEqual(change.Path, []string{"Repo", "timestamp"}) {
-			isIgnoredChange = true
-		}
-
-		if !isIgnoredChange {
-			return strings.Join(change.Path, "."), true
-		}
-	}
-
-	return "", false
 }

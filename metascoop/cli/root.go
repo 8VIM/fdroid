@@ -35,9 +35,11 @@ type CLI struct {
 
 	Release ReleaseCmd `cmd:"" help:"Get releases"`
 	Pr      PrCmd      `cmd:"" help:"Get apk from a PR"`
-	Badges  BadgesCmd  `cmd:"" help"Generate badges"`
+	Badges  BadgesCmd  `cmd:"" help:"Generate badges"`
 }
+
 type BadgesCmd struct{}
+
 type ReleaseCmd struct {
 	App     string `arg:"" help:"app" optional:""`
 	Version string `arg:"" help:"Release version" optional:""`
@@ -266,6 +268,11 @@ func (g *Globals) updateAndPull() error {
 			log.Fatalf("removing path %q: %s\n", rmpath, err.Error())
 		}
 	}
+
+	if err := apps.SyncV2(g.RepoDir); err != nil {
+		return err
+	}
+
 	if err := g.appFile.GenerateBadges(g.RepoDir); err != nil {
 		return err
 	}
