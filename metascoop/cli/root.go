@@ -374,7 +374,7 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 }
 
 func runFdroidUpdate(repoDir string) error {
-	cmd := exec.Command("fdroid", "update", "--pretty", "--create-metadata", "--delete-unknown")
+	cmd := exec.Command("fdroid", "update", "--pretty", "--create-metadata", "--delete-unknown", "--use-date-from-apk")
 	cmd.Stderr = os.Stderr
 	cmd.Stdout = os.Stdout
 	cmd.Stdin = os.Stdin
