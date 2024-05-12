@@ -232,7 +232,16 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 		log.Printf("Error cloning %s for %d on %s: %s\n", app.GitURL, prNumber, sha, err.Error())
 		return
 	}
-	app.ReleaseDescription = str
+	dlCtx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+	defer cancel()
+	var pr *github.PullRequest
+	pr, _, err = l.githubClient.PullRequests.Get(dlCtx, repo.Author, repo.Name, prNumber)
+	if err != nil {
+		return
+	}
+	app.ReleaseDescription = fmt.Sprintf(`#%d (%s)
+%s
+%s`, prNumber, sha, pr.GetBody(), str)
 	apkInfoMap[appName] = app
 	l.apps.apps = apkInfoMap
 
