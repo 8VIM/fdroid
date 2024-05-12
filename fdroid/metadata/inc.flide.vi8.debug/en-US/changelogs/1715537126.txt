@@ -1,0 +1,7 @@
+PR #509
+Cursor movements was moving the cursor out of the input box
+
+refs: #426
+Commit (6a0ca084d96a0f49b9f7edc5f9422629b7312b19): Revert "sign debug version"
+
+73a4d176c9a254286922a1be3f710c9731399a75
