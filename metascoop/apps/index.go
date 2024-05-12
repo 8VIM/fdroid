@@ -144,7 +144,7 @@ func SyncV2(repoDir string) (err error) {
 		return
 	}
 
-	err = os.WriteFile(path, b, 0644)
+	err = os.WriteFile(entryPath, b, 0644)
 
 	return
 }
