@@ -1,6 +1,7 @@
 package apps
 
 import (
+	"crypto/sha256"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -50,6 +51,25 @@ type indexV2Version struct {
 	Manifest map[string]interface{} `json:"manifest"`
 }
 
+type entry struct {
+	Timestamp int                    `json:"timestamp"`
+	Version   int                    `json:"version"`
+	Index     map[string]interface{} `json:"index"`
+	Diffs     map[string]interface{} `json:"diffs"`
+}
+
+func readEntry(path string) (e *entry, err error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return
+	}
+	defer f.Close()
+
+	err = json.NewDecoder(f).Decode(&e)
+
+	return
+}
+
 func readIndexV2(path string) (index *indexV2, err error) {
 	f, err := os.Open(path)
 	if err != nil {
@@ -65,6 +85,7 @@ func readIndexV2(path string) (index *indexV2, err error) {
 func SyncV2(repoDir string) (err error) {
 	fdroidIndexFilePath := filepath.Join(repoDir, "index-v1.json")
 	path := filepath.Join(repoDir, "index-v2.json")
+	entryPath := filepath.Join(repoDir, "entry.json")
 
 	r, err := ReadIndex(fdroidIndexFilePath)
 
@@ -73,10 +94,17 @@ func SyncV2(repoDir string) (err error) {
 	}
 
 	var index *indexV2
+	var e *entry
 	index, err = readIndexV2(path)
 	if err != nil {
 		return
 	}
+
+	e, err = readEntry(entryPath)
+	if err != nil {
+		return
+	}
+
 	for name, packages := range r.Packages {
 		for _, p := range packages {
 			b, e := os.ReadFile(filepath.Join(
@@ -95,13 +123,28 @@ func SyncV2(repoDir string) (err error) {
 			index.Packages[name].Versions[p.Hash].Manifest["whatsNew"] = whatsNew
 		}
 	}
-	var f *os.File
-	f, err = os.Create(path)
+	var b []byte
+	b, err = json.Marshal(index)
 	if err != nil {
 		return
 	}
-	defer f.Close()
-	err = json.NewEncoder(f).Encode(index)
+
+	err = os.WriteFile(path, b, 0644)
+	if err != nil {
+		return
+	}
+
+	h := sha256.New()
+	h.Write(b)
+	sum := h.Sum(nil)
+	e.Index["sha256"] = string(sum)
+
+	b, err = json.Marshal(e)
+	if err != nil {
+		return
+	}
+
+	err = os.WriteFile(path, b, 0644)
 
 	return
 }
