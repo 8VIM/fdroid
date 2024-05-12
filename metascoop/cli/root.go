@@ -344,6 +344,28 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	if err := runFdroidUpdate(g.RepoDir); err != nil {
 		return err
 	}
+
+	fdroidIndex, _ = apps.ReadIndex(fdroidIndexFilePath)
+	if lastest, ok := fdroidIndex.FindLatestPackage(packageName); ok {
+		path := filepath.Join(filepath.Dir(g.RepoDir), "metadata", fmt.Sprintf("%s.yml", packageName))
+
+		meta, err := apps.ReadMetaFile(path)
+		if err != nil {
+			log.Printf("Reading meta file %q: %s", path, err.Error())
+			return err
+		}
+		meta["CurrentVersion"] = lastest.VersionName
+		meta["CurrentVersionCode"] = lastest.VersionCode
+		err = apps.WriteMetaFile(path, meta)
+		if err != nil {
+			log.Printf("Writing meta file %q: %s", path, err.Error())
+			return err
+		}
+		if err := runFdroidUpdate(g.RepoDir); err != nil {
+			return err
+		}
+	}
+
 	if err := g.appFile.GenerateBadges(g.RepoDir); err != nil {
 		return err
 	}
