@@ -1,0 +1,314 @@
+{
+  "repo": {
+    "timestamp": 1715668165000
+  },
+  "packages": {
+    "inc.flide.vi8.debug": {
+      "metadata": {
+        "added": 1715668305000,
+        "issueTracker": "https://github.com/8VIM/8VIM/issues",
+        "lastUpdated": 1715671334000,
+        "webSite": "https://github.com/8VIM/8VIM",
+        "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+      },
+      "versions": {
+        "1990edbfc0e80ab42f1cbeed8a09827155fdd4d540f2c401c0a98bad962269d0": null,
+        "48fbb229eabf0c812084aed558412651fbd6657f6a235cd5b5714b2a1261cfad": null,
+        "8f84f0085391b7ba1de94b933f8ec0bd2d42af46c9d9f5fe9c69f36c1597ded0": null,
+        "58e53c21f694860be804c333254cbaf1c05929a882c15d533bf59877d527146d": null,
+        "e2d2a5aef8b978e954f9ea2362ee373e3723ca48efbb4c1e752828d33c2511be": null,
+        "9277a2c4e8158a0dfffbc7e3f02379a55d47fb761a1235daac1c8d1a8659da41": null,
+        "bdc77282e4ff06440679cb69b48d2bda26d288c971647f0bee9d43f3ad102fb1": null,
+        "2091abb4d42de38974aaf28e7fdc94535e6ef02c5075fe966f1153e78996af2f": null,
+        "b0c2154056599867961306d5dab79b4ee87742a8ba15dd812b838a96347e7c80": {
+          "added": 1715671328000,
+          "file": {
+            "name": "/8vim_debug_pr_490_49d71eb508a60820627f975fbce00f7ab7a606e8.apk",
+            "sha256": "b0c2154056599867961306d5dab79b4ee87742a8ba15dd812b838a96347e7c80",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-49d71eb508",
+            "versionCode": 1715659735,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "PR #490\nAdd the ability for the keyboard to float around the screen\nCommit (49d71eb508a60820627f975fbce00f7ab7a606e8): fix color picker"
+          }
+        },
+        "e75f00450b982e6509717ae037445dd13aa412c25136158b064bed8cf070ce71": {
+          "added": 1715668305000,
+          "file": {
+            "name": "/8vim_debug_pr_509_6a0ca084d96a0f49b9f7edc5f9422629b7312b19.apk",
+            "sha256": "e75f00450b982e6509717ae037445dd13aa412c25136158b064bed8cf070ce71",
+            "size": 18502668
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-509-6a0ca084d9",
+            "versionCode": 1715537126,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "PR #509\nCursor movements was moving the cursor out of the input box\n\nrefs: #426\nCommit (6a0ca084d96a0f49b9f7edc5f9422629b7312b19): Revert \"sign debug version\""
+          }
+        },
+        "0c55fee11f0d83232f3bec8c6e4988fee31f06f318dda18a2476dd3e36ad65e2": {
+          "added": 1715671334000,
+          "file": {
+            "name": "/8vim_debug_pr_490_f1b6ee13b6f5851327e6f08488219316abc9a940.apk",
+            "sha256": "0c55fee11f0d83232f3bec8c6e4988fee31f06f318dda18a2476dd3e36ad65e2",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-f1b6ee13b6",
+            "versionCode": 1715499507,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "update workflow"
+          }
+        },
+        "99cae685748f15ec1650c851bba4507481ce1e8721b0f4c65ab61cf87fae1383": {
+          "added": 1715671330000,
+          "file": {
+            "name": "/8vim_debug_pr_490_8339d040ed8840a685cf2a1ab88852fcfd1bef41.apk",
+            "sha256": "99cae685748f15ec1650c851bba4507481ce1e8721b0f4c65ab61cf87fae1383",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-8339d040ed",
+            "versionCode": 1715497745,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "workflow cast type"
+          }
+        },
+        "b19ba3b032fb33e71aa5db5fb36c8f7b0ad5c1b54ad446c8b227b1767057cf0e": {
+          "added": 1715671331000,
+          "file": {
+            "name": "/8vim_debug_pr_490_84cc357a6c8d9bcce69b6ea78bbac3f110e25e22.apk",
+            "sha256": "b19ba3b032fb33e71aa5db5fb36c8f7b0ad5c1b54ad446c8b227b1767057cf0e",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-84cc357a6c",
+            "versionCode": 1715490886,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "add layout label when needed"
+          }
+        },
+        "7510962b6c1f151042e3ec16c43a3f02b634785c488505f8a50856471a2a0c6f": {
+          "added": 1715671333000,
+          "file": {
+            "name": "/8vim_debug_pr_490_c5a52cdd636c1ffdef7f26fee3bd7fd86c52aa5a.apk",
+            "sha256": "7510962b6c1f151042e3ec16c43a3f02b634785c488505f8a50856471a2a0c6f",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-c5a52cdd63",
+            "versionCode": 1715486092,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "get all history"
+          }
+        },
+        "cd4cfd5e23a80c05b7a279a63e6fd0dee306b10f27b93d2580f3517958778678": {
+          "added": 1715671328000,
+          "file": {
+            "name": "/8vim_debug_pr_490_2c73e38ff884f83bbd8692cce591afe3eaccaaa9.apk",
+            "sha256": "cd4cfd5e23a80c05b7a279a63e6fd0dee306b10f27b93d2580f3517958778678",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-2c73e38ff8",
+            "versionCode": 1715485501,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "limit to 1 commit"
+          }
+        },
+        "c406f778a5f9aecab7979eeb8983e09d82365ca60af5a5511f5b1876a0eefa0b": {
+          "added": 1715671329000,
+          "file": {
+            "name": "/8vim_debug_pr_490_4afcb99352e37d6f3042dc2f6e93e2b38c548180.apk",
+            "sha256": "c406f778a5f9aecab7979eeb8983e09d82365ca60af5a5511f5b1876a0eefa0b",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-4afcb99352",
+            "versionCode": 1715484546,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "limit changed files detection to the last commit"
+          }
+        },
+        "30032f55e467df1fa714ab7c1561e3424e5097910912dbccd69fd14f3384f19b": {
+          "added": 1715671332000,
+          "file": {
+            "name": "/8vim_debug_pr_490_9f802891d61f113c6840d7c0b2bac323ff87fbfe.apk",
+            "sha256": "30032f55e467df1fa714ab7c1561e3424e5097910912dbccd69fd14f3384f19b",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20-490-9f802891d6",
+            "versionCode": 1715483164,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "update pr debug versionName"
+          }
+        }
+      }
+    }
+  }
+}
