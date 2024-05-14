@@ -1,11 +1,30 @@
 AuthorName: 8VIM
+Builds:
+    - versionCode: 1715483164
+      versionName: 0.17.0-rc.20-490-9f802891d6
+    - versionCode: 1715484546
+      versionName: 0.17.0-rc.20-490-4afcb99352
+    - versionCode: 1715485501
+      versionName: 0.17.0-rc.20-490-2c73e38ff8
+    - versionCode: 1715486092
+      versionName: 0.17.0-rc.20-490-c5a52cdd63
+    - versionCode: 1715490886
+      versionName: 0.17.0-rc.20-490-84cc357a6c
+    - versionCode: 1715497745
+      versionName: 0.17.0-rc.20-490-8339d040ed
+    - versionCode: 1715499507
+      versionName: 0.17.0-rc.20-490-f1b6ee13b6
+    - versionCode: 1715537126
+      versionName: 0.17.0-rc.20-509-6a0ca084d9
+    - versionCode: 1715659735
+      versionName: 0.17.0-rc.20-490-49d71eb508
 Categories:
     - System
-CurrentVersion: 0.17.0-rc.20-509-6a0ca084d9
-CurrentVersionCode: 1715537126
-IssueTracker: ""
+CurrentVersion: 0.17.0-rc.20-490-49d71eb508
+CurrentVersionCode: 1715659735
+IssueTracker: https://github.com/8VIM/8VIM/issues
 License: Apache-2.0
 Name: 8Vim Keyboard Debug
 SourceCode: https://github.com/8VIM/8VIM
 Summary: 'A Text Editor inside a keyboard, drawing it''s inspiration from 8pen and Vim. '
-WebSite: ""
+WebSite: https://github.com/8VIM/8VIM

@@ -1,0 +1,61 @@
+{
+  "repo": {
+    "timestamp": 1715660556000
+  },
+  "packages": {
+    "inc.flide.vi8.debug": {
+      "metadata": {
+        "issueTracker": "https://github.com/8VIM/8VIM/issues",
+        "webSite": "https://github.com/8VIM/8VIM"
+      },
+      "versions": {
+        "080b9240efe0c29893af1e919f39ad160062b9b8d5f2b8ed2f643cdf9aaa595a": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "PR #490\nAdd the ability for the keyboard to float around the screen\nCommit (49d71eb508a60820627f975fbce00f7ab7a606e8): fix color picker"
+          }
+        },
+        "1990edbfc0e80ab42f1cbeed8a09827155fdd4d540f2c401c0a98bad962269d0": {
+          "whatsNew": {
+            "en-US": "PR #509\nCursor movements was moving the cursor out of the input box\n\nrefs: #426\nCommit (6a0ca084d96a0f49b9f7edc5f9422629b7312b19): Revert \"sign debug version\"\n\n73a4d176c9a254286922a1be3f710c9731399a75"
+          }
+        },
+        "48fbb229eabf0c812084aed558412651fbd6657f6a235cd5b5714b2a1261cfad": {
+          "whatsNew": {
+            "en-US": "add layout label when needed\n\n"
+          }
+        },
+        "8f84f0085391b7ba1de94b933f8ec0bd2d42af46c9d9f5fe9c69f36c1597ded0": {
+          "whatsNew": {
+            "en-US": "workflow cast type\n\n"
+          }
+        },
+        "58e53c21f694860be804c333254cbaf1c05929a882c15d533bf59877d527146d": {
+          "whatsNew": {
+            "en-US": "limit changed files detection to the last commit\n"
+          }
+        },
+        "e2d2a5aef8b978e954f9ea2362ee373e3723ca48efbb4c1e752828d33c2511be": {
+          "whatsNew": {
+            "en-US": "limit to 1 commit\n"
+          }
+        },
+        "9277a2c4e8158a0dfffbc7e3f02379a55d47fb761a1235daac1c8d1a8659da41": {
+          "whatsNew": {
+            "en-US": "update pr debug versionName\n"
+          }
+        },
+        "bdc77282e4ff06440679cb69b48d2bda26d288c971647f0bee9d43f3ad102fb1": {
+          "whatsNew": {
+            "en-US": "update workflow\n\n"
+          }
+        },
+        "2091abb4d42de38974aaf28e7fdc94535e6ef02c5075fe966f1153e78996af2f": {
+          "whatsNew": {
+            "en-US": "get all history\n"
+          }
+        }
+      }
+    }
+  }
+}
