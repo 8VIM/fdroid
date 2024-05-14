@@ -48,7 +48,7 @@ func GetPrCommit(gitUrl string, prNumber int, sha string) (commit string, err er
 	if err != nil {
 		return
 	}
-	cmd = exec.Command("git", "log", "-1", "--no-merges", "--pretty=%B")
+	cmd = exec.Command("git", "show", "-s", "--format=%s")
 	cmd.Dir = dirPath
 
 	var b []byte
