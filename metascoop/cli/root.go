@@ -140,7 +140,7 @@ func (g *Globals) updateAndPull() error {
 			setNonEmpty(meta, "Name", fn)
 			setNonEmpty(meta, "SourceCode", apkInfo.GitURL)
 			setNonEmpty(meta, "License", apkInfo.License)
-			setNonEmpty(meta, "Website", apkInfo.Website)
+			setNonEmpty(meta, "WebSite", apkInfo.Website)
 			setNonEmpty(meta, "IssueTracker", apkInfo.IssueTracker)
 			setNonEmpty(meta, "Description", apkInfo.Description)
 
