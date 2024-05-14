@@ -163,7 +163,14 @@ func (g *Globals) updateAndPull() error {
 
 			meta["CurrentVersion"] = latestPackage.VersionName
 			meta["CurrentVersionCode"] = latestPackage.VersionCode
-
+			builds := make([]interface{}, 0)
+			for _, p := range fdroidIndex.Packages[pkgname] {
+				build := make(map[string]interface{})
+				build["versionCode"] = p.VersionCode
+				build["versionName"] = p.VersionName
+				builds = append(builds, build)
+			}
+			meta["Builds"] = builds
 			log.Printf("Set current version info to versionName=%q, versionCode=%d", latestPackage.VersionName, latestPackage.VersionCode)
 
 			err = apps.WriteMetaFile(path, meta)
@@ -259,6 +266,7 @@ func (g *Globals) updateAndPull() error {
 	if err != nil {
 		return err
 	}
+
 	if err := runFdroidUpdate(g.RepoDir); err != nil {
 		return err
 	}
