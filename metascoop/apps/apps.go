@@ -16,8 +16,9 @@ type AppFile struct {
 func (a *AppFile) Apks() map[string]*AppInfo { return a.apps }
 
 type AppInfo struct {
-	GitURL  string `yaml:"git"`
-	Summary string `yaml:"summary"`
+	BuildToolsVersion string `yaml:"build_tools_version"`
+	GitURL            string `yaml:"git"`
+	Summary           string `yaml:"summary"`
 
 	AuthorName string `yaml:"author"`
 	repoAuthor string
