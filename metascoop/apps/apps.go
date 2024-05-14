@@ -33,7 +33,9 @@ type AppInfo struct {
 
 	ReleaseDescription string
 
-	License string
+	License      string
+	Website      string `yaml:"website"`
+	IssueTracker string `yaml:"issue_tracker"`
 }
 
 func (a *AppInfo) Name() string {

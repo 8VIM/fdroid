@@ -3,10 +3,14 @@
   name: 8Vim Keyboard RC
   categories:
     - System
+  website: https://github.com/8VIM/8VIM
+  issue_tracker: https://github.com/8VIM/8VIM/issues
   License: Apache-2.0
 8vim_debug:
   git: https://github.com/8VIM/8VIM
   name: 8Vim Keyboard Debug
   categories:
     - System
+  website: https://github.com/8VIM/8VIM
+  issue_tracker: https://github.com/8VIM/8VIM/issues
   License: Apache-2.0
