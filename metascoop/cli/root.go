@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"cmp"
 	"context"
 	"fmt"
 	"io/fs"
@@ -13,6 +14,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"slices"
 	"strings"
 
 	"github.com/alecthomas/kong"
@@ -165,13 +167,16 @@ func (g *Globals) updateAndPull() error {
 
 			meta["CurrentVersion"] = latestPackage.VersionName
 			meta["CurrentVersionCode"] = latestPackage.VersionCode
-			builds := make([]interface{}, 0)
+			builds := make([]map[string]interface{}, 0)
 			for _, p := range fdroidIndex.Packages[pkgname] {
 				build := make(map[string]interface{})
 				build["versionCode"] = p.VersionCode
 				build["versionName"] = p.VersionName
 				builds = append(builds, build)
 			}
+
+			sortBuilds(builds)
+
 			meta["Builds"] = builds
 			log.Printf("Set current version info to versionName=%q, versionCode=%d", latestPackage.VersionName, latestPackage.VersionCode)
 
@@ -332,12 +337,14 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	}
 
 	toRemovePaths := make([]string, 0)
+	versionCodes := make(map[int]struct{})
 
 	for _, p := range fdroidIndex.Packages[packageName] {
 		if strings.HasPrefix(p.ApkName, prefix) {
 			file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
 			toRemovePaths = append(toRemovePaths, file)
 			toRemovePaths = append(toRemovePaths, filepath.Join(g.RepoDir, p.ApkName))
+			versionCodes[p.VersionCode] = struct{}{}
 		}
 	}
 
@@ -349,6 +356,7 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	for _, path := range toRemovePaths {
 		_ = os.Remove(path)
 	}
+
 	if len(fdroidIndex.Packages[packageName]) == len(toRemovePaths)/2 {
 		_ = os.RemoveAll(filepath.Join(filepath.Dir(g.RepoDir), "metadata", packageName))
 		_ = os.RemoveAll(filepath.Join(g.RepoDir, packageName))
@@ -367,9 +375,23 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 			log.Printf("Reading meta file %q: %s", path, err.Error())
 			return err
 		}
+
+		builds := make([]map[string]interface{}, 0)
+		for _, build := range meta["Builds"].([]map[string]interface{}) {
+			versionCode := build["versionCode"].(int)
+			if _, ok := versionCodes[versionCode]; !ok {
+				builds = append(builds, build)
+			}
+		}
+
+		sortBuilds(builds)
+
 		meta["CurrentVersion"] = lastest.VersionName
 		meta["CurrentVersionCode"] = lastest.VersionCode
+		meta["Builds"] = builds
+
 		err = apps.WriteMetaFile(path, meta)
+
 		if err != nil {
 			log.Printf("Writing meta file %q: %s", path, err.Error())
 			return err
@@ -396,6 +418,13 @@ func runFdroidUpdate(repoDir string) error {
 	log.Printf("Running %q in %s", cmd.String(), cmd.Dir)
 	return cmd.Run()
 }
+
+func sortBuilds(builds []map[string]interface{}) {
+	slices.SortFunc(builds, func(a, b map[string]interface{}) int {
+		return cmp.Compare(a["versionCode"].(int), b["versionCode"].(int))
+	})
+}
+
 func setNonEmpty(m map[string]interface{}, key string, value string) {
 	if value != "" || m[key] == "Unknown" {
 		m[key] = value
