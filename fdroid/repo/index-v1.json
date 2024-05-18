@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716053948000,
+    "timestamp": 1716055663000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,8 +17,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-rc.20-509-6a0ca084d9",
-      "suggestedVersionCode": "1715537126",
+      "suggestedVersionName": "0.17.0490-8ac83d553f",
+      "suggestedVersionCode": "1716055321",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard Debug",
@@ -27,7 +27,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715667880000,
       "packageName": "inc.flide.vi8.debug",
-      "lastUpdated": 1715667880000,
+      "lastUpdated": 1716055617000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -53,7 +53,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "PR #509\nCursor movements was moving the cursor out of the input box\n\nrefs: #426\nCommit (6a0ca084d96a0f49b9f7edc5f9422629b7312b19): Revert \"sign debug version\""
+          "whatsNew": "PR #490\nAdd the ability for the keyboard to float around the screen\nCommit (8ac83d553f5cea05ad549288b15a2edfd8c479eb): fix color picker"
         }
       }
     },
@@ -103,6 +103,30 @@
   ],
   "packages": {
     "inc.flide.vi8.debug": [
+      {
+        "added": 1716055617000,
+        "apkName": "8vim_debug_pr_490_8ac83d553f5cea05ad549288b15a2edfd8c479eb.apk",
+        "hash": "08e2e84e9e0b4020570a0f684268c09a94cec27d36084fc2ad39991f48ec8157",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.debug",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18547803,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1716055321,
+        "versionName": "0.17.0490-8ac83d553f"
+      },
       {
         "added": 1715667880000,
         "apkName": "8vim_debug_pr_509_6a0ca084d96a0f49b9f7edc5f9422629b7312b19.apk",
