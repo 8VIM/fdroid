@@ -346,84 +346,79 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 	if err != nil {
 		return err
 	}
-	packageName := ""
 	for _, packages := range fdroidIndex.Packages {
 		if strings.HasPrefix(packages[0].ApkName, c.App) {
-			packageName = packages[0].PackageName
-			break
+			packageName := packages[0].PackageName
+			toRemovePaths := make([]string, 0)
+			versionCodes := make(map[int]struct{})
+
+			for _, p := range fdroidIndex.Packages[packageName] {
+				if strings.HasPrefix(p.ApkName, prefix) {
+					file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
+					toRemovePaths = append(toRemovePaths, file)
+					toRemovePaths = append(toRemovePaths, filepath.Join(g.RepoDir, p.ApkName))
+					versionCodes[p.VersionCode] = struct{}{}
+				}
+			}
+
+			if len(toRemovePaths) == 0 {
+				log.Printf("No files found for %d\n", c.Number)
+				return nil
+			}
+
+			for _, path := range toRemovePaths {
+				_ = os.Remove(path)
+			}
+
+			if len(fdroidIndex.Packages[packageName]) == len(toRemovePaths)/2 {
+				_ = os.RemoveAll(filepath.Join(filepath.Dir(g.RepoDir), "metadata", packageName))
+				_ = os.RemoveAll(filepath.Join(g.RepoDir, packageName))
+			}
+
+			if err := runFdroidUpdate(g.RepoDir); err != nil {
+				return err
+			}
+
+			fdroidIndex, _ = apps.ReadIndex(fdroidIndexFilePath)
+			if lastest, ok := fdroidIndex.FindLatestPackage(packageName); ok {
+				path := filepath.Join(filepath.Dir(g.RepoDir), "metadata", fmt.Sprintf("%s.yml", packageName))
+
+				meta, err := apps.ReadMetaFile(path)
+				if err != nil {
+					log.Printf("Reading meta file %q: %s", path, err.Error())
+					return err
+				}
+
+				builds := make([]map[string]interface{}, 0)
+				for _, b := range meta["Builds"].([]interface{}) {
+					build := b.(map[string]interface{})
+					versionCode := build["versionCode"].(int)
+					if _, ok := versionCodes[versionCode]; !ok {
+						builds = append(builds, build)
+					}
+				}
+
+				sortBuilds(builds)
+
+				meta["CurrentVersion"] = lastest.VersionName
+				meta["CurrentVersionCode"] = lastest.VersionCode
+				meta["Builds"] = builds
+
+				err = apps.WriteMetaFile(path, meta)
+
+				if err != nil {
+					log.Printf("Writing meta file %q: %s", path, err.Error())
+					return err
+				}
+
+			}
+
 		}
-	}
-
-	if packageName == "" {
-		return nil
-	}
-
-	toRemovePaths := make([]string, 0)
-	versionCodes := make(map[int]struct{})
-
-	for _, p := range fdroidIndex.Packages[packageName] {
-		if strings.HasPrefix(p.ApkName, prefix) {
-			file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
-			toRemovePaths = append(toRemovePaths, file)
-			toRemovePaths = append(toRemovePaths, filepath.Join(g.RepoDir, p.ApkName))
-			versionCodes[p.VersionCode] = struct{}{}
-		}
-	}
-
-	if len(toRemovePaths) == 0 {
-		log.Printf("No files found for %d\n", c.Number)
-		return nil
-	}
-
-	for _, path := range toRemovePaths {
-		_ = os.Remove(path)
-	}
-
-	if len(fdroidIndex.Packages[packageName]) == len(toRemovePaths)/2 {
-		_ = os.RemoveAll(filepath.Join(filepath.Dir(g.RepoDir), "metadata", packageName))
-		_ = os.RemoveAll(filepath.Join(g.RepoDir, packageName))
 	}
 
 	if err := runFdroidUpdate(g.RepoDir); err != nil {
 		return err
 	}
-
-	fdroidIndex, _ = apps.ReadIndex(fdroidIndexFilePath)
-	if lastest, ok := fdroidIndex.FindLatestPackage(packageName); ok {
-		path := filepath.Join(filepath.Dir(g.RepoDir), "metadata", fmt.Sprintf("%s.yml", packageName))
-
-		meta, err := apps.ReadMetaFile(path)
-		if err != nil {
-			log.Printf("Reading meta file %q: %s", path, err.Error())
-			return err
-		}
-
-		builds := make([]map[string]interface{}, 0)
-		for _, b := range meta["Builds"].([]interface{}) {
-			build := b.(map[string]interface{})
-			versionCode := build["versionCode"].(int)
-			if _, ok := versionCodes[versionCode]; !ok {
-				builds = append(builds, build)
-			}
-		}
-
-		sortBuilds(builds)
-
-		meta["CurrentVersion"] = lastest.VersionName
-		meta["CurrentVersionCode"] = lastest.VersionCode
-		meta["Builds"] = builds
-
-		err = apps.WriteMetaFile(path, meta)
-
-		if err != nil {
-			log.Printf("Writing meta file %q: %s", path, err.Error())
-			return err
-		}
-		if err := runFdroidUpdate(g.RepoDir); err != nil {
-			return err
-		}
-	}
-
 	if err := g.appFile.GenerateBadges(g.RepoDir); err != nil {
 		return err
 	}
