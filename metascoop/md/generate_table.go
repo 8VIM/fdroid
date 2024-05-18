@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"fmt"
 	"html/template"
+	"metascoop/apps"
 	"os"
 	"path/filepath"
 
-	"metascoop/apps"
+	"github.com/Masterminds/sprig/v3"
 )
 
 const (
@@ -18,11 +19,11 @@ const (
 	tableTmpl = `
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |{{range .Apps}}
-| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{.name}}**]({{.sourceCode}}) | {{.summary}} | {{.suggestedVersionName}} |{{end}}
+| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{.name}}**]({{.sourceCode}}) | {{.summary | replace "\n" "<br />"}} | {{.suggestedVersionName}} |{{end}}
 ` + tableEnd
 )
 
-var tmpl = template.Must(template.New("").Parse(tableTmpl))
+var tmpl = template.Must(template.New("").Funcs(sprig.FuncMap()).Parse(tableTmpl))
 
 func RegenerateReadme(repoDir string) (err error) {
 	readmePath := filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "README.md")
