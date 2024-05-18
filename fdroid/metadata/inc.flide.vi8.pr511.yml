@@ -10,5 +10,7 @@ IssueTracker: https://github.com/8VIM/8VIM/issues
 License: Apache-2.0
 Name: 8Vim Keyboard Debug
 SourceCode: https://github.com/8VIM/8VIM
-Summary: 'A Text Editor inside a keyboard, drawing it''s inspiration from 8pen and Vim. '
+Summary: |-
+    PR #511
+    refs: #494
 WebSite: https://github.com/8VIM/8VIM
