@@ -1,1 +1,0 @@
-limit changed files detection to the last commit
