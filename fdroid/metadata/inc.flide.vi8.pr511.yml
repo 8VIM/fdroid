@@ -1,0 +1,14 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1716070468
+      versionName: 0.17.0-pr.511-bed930933a
+Categories:
+    - System
+CurrentVersion: 0.17.0-pr.511-bed930933a
+CurrentVersionCode: 1716070468
+IssueTracker: https://github.com/8VIM/8VIM/issues
+License: Apache-2.0
+Name: 8Vim Keyboard Debug
+SourceCode: https://github.com/8VIM/8VIM
+Summary: 'A Text Editor inside a keyboard, drawing it''s inspiration from 8pen and Vim. '
+WebSite: https://github.com/8VIM/8VIM
