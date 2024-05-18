@@ -17,6 +17,16 @@ jobs:
           ref: main
           persist-credentials: false
           fetch-depth: 0
+      - name: Restore correct mtime
+        run: |
+          sudo apt install git-restore-mtime 
+          git restore-mtime
+
+      - name: Install F-Droid server software
+        run: |
+         sudo add-apt-repository ppa:fdroid/fdroidserver
+         sudo apt-get update
+         sudo apt-get install fdroidserver
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
@@ -28,16 +38,6 @@ jobs:
       - name: Build
         run: go build -o metascoop
         working-directory: ./metascoop
-      - name: Restore correct mtime
-        run: |
-          sudo apt install git-restore-mtime 
-          git restore-mtime
-
-      - name: Install F-Droid server software
-        run: |
-         sudo add-apt-repository ppa:fdroid/fdroidserver
-         sudo apt-get update
-         sudo apt-get install fdroidserver
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
