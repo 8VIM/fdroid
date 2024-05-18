@@ -202,12 +202,6 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 
 	if err != nil {
 		log.Printf("Error while looking up repo: %s", err.Error())
-	} else {
-		app.Summary = gitHubRepo.GetDescription()
-
-		if gitHubRepo.License != nil && gitHubRepo.License.SPDXID != nil {
-			app.License = *gitHubRepo.License.SPDXID
-		}
 	}
 
 	apkInfoMap := make(map[string]*AppInfo)
@@ -239,9 +233,10 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 	if err != nil {
 		return
 	}
-	app.ReleaseDescription = fmt.Sprintf(`PR #%d
-%s
-Commit (%s): %s`, prNumber, pr.GetBody(), sha, str)
+	app.Summary = fmt.Sprintf(`PR #%d
+%s`, prNumber, pr.GetBody())
+	app.keyName = fmt.Sprintf("%s PR: %d", app.Name(), prNumber)
+	app.ReleaseDescription = fmt.Sprintf(`Commit (%s): %s`, sha, str)
 	apkInfoMap[appName] = app
 	l.apps.Apps = apkInfoMap
 
