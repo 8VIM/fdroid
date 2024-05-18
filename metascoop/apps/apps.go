@@ -10,8 +10,8 @@ import (
 )
 
 type AppFile struct {
-	BuildToolsVersion string `yaml:"build_tools_version"`
-	apps              map[string]*AppInfo
+	BuildToolsVersion string              `yaml:"build_tools_version"`
+	Apps              map[string]*AppInfo `yaml:"apps"`
 }
 
 func (a *AppFile) Apks() map[string]*AppInfo { return a.apps }
