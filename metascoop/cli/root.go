@@ -399,7 +399,8 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 		}
 
 		builds := make([]map[string]interface{}, 0)
-		for _, build := range meta["Builds"].([]map[string]interface{}) {
+		for _, b := range meta["Builds"].([]interface{}) {
+			build := b.(map[string]interface{})
 			versionCode := build["versionCode"].(int)
 			if _, ok := versionCodes[versionCode]; !ok {
 				builds = append(builds, build)
