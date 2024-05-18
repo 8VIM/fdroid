@@ -38,11 +38,9 @@ type CLI struct {
 	Release ReleaseCmd `cmd:"" help:"Get releases"`
 	Pr      PrCmd      `cmd:"" help:"Get apk from a PR"`
 	Badges  BadgesCmd  `cmd:"" help:"Generate badges"`
-	Sign    SignCmd    `cmd:"" help:"Sign"`
 }
 
 type BadgesCmd struct{}
-type SignCmd struct{}
 
 type ReleaseCmd struct {
 	App     string `arg:"" help:"app" optional:""`
@@ -82,35 +80,6 @@ func (g *Globals) AfterApply() error {
 	g.githubClient = github.NewClient(authenticatedClient)
 	g.loader = g.appFile.NewLoader(g.githubClient)
 	return nil
-}
-
-func (c *SignCmd) Run(g *Globals) error {
-	path := filepath.Dir(g.RepoDir)
-	config, err := apps.ParseFdroidConfig(filepath.Join(path, "config.yml"))
-	if err != nil {
-		return err
-	}
-	jks := fmt.Sprintf("%s.jks", strings.TrimSuffix(config.Keystore, ".p12"))
-	cmd := exec.Command("keytool", "-importkeystore", "-srckeystore", config.Keystore, "-srcstoretype", "pkcs12", "-srckeypass", config.Keypass, "-srcstorepass", config.Keystorepass, "-srcalias", config.Alias, "-destkeystore", jks, "-destkeypass", config.Keypass, "-deststorepass", config.Keystorepass, "-destalias", config.Alias)
-	cmd.Dir = path
-	_ = cmd.Run()
-
-	tools := os.ExpandEnv(filepath.Join(config.SdkPath, "build-tools", "34.0.0", "apksigner"))
-	return filepath.WalkDir(g.RepoDir, func(path string, info fs.DirEntry, err error) error {
-		if err != nil || info.IsDir() || !strings.HasPrefix(filepath.Base(path), "8vim_debug") {
-			return err
-		}
-		out := fmt.Sprintf("%s.apk", path)
-		cmd := exec.Command(tools, "sign", "--ks", filepath.Join(filepath.Dir(g.RepoDir), jks), "--ks-key-alias", config.Alias, "--ks-pass", fmt.Sprintf("pass:%s", config.Keystorepass), "--ks-pass", fmt.Sprintf("pass:%s", config.Keypass), "--out", out, path)
-		cmd.Stderr = os.Stderr
-		cmd.Stdout = os.Stdout
-		if err := cmd.Run(); err != nil {
-			return err
-		}
-		_ = file.Move(out, path)
-		_ = os.Remove(fmt.Sprintf("%s.idsig", out))
-		return nil
-	})
 }
 
 func (c *BadgesCmd) Run(g *Globals) error {
@@ -340,10 +309,31 @@ func (c *ReleaseCmd) Run(g *Globals) (err error) {
 }
 
 func (a *PrAddCmd) Run(g *Globals, c *PrCmd) (err error) {
-	err = g.loader.FromPR(g.RepoDir, c.App, c.Number, a.ArtifactID, a.SHA)
+	var appName string
+	appName, err = g.loader.FromPR(g.RepoDir, c.App, c.Number, a.ArtifactID, a.SHA)
 	if err != nil {
 		return
 	}
+
+	path := filepath.Dir(g.RepoDir)
+	app := filepath.Join(g.RepoDir, appName)
+	out := fmt.Sprintf("%s.apk", app)
+	config, err := apps.ParseFdroidConfig(filepath.Join(path, "config.yml"))
+	if err != nil {
+		return err
+	}
+	jks := fmt.Sprintf("%s.jks", strings.TrimSuffix(config.Keystore, ".p12"))
+	cmd := exec.Command("keytool", "-importkeystore", "-srckeystore", config.Keystore, "-srcstoretype", "pkcs12", "-srckeypass", config.Keypass, "-srcstorepass", config.Keystorepass, "-srcalias", config.Alias, "-destkeystore", jks, "-destkeypass", config.Keypass, "-deststorepass", config.Keystorepass, "-destalias", config.Alias)
+	cmd.Dir = path
+	_ = cmd.Run()
+
+	tools := os.ExpandEnv(filepath.Join(config.SdkPath, "build-tools", g.appFile.BuildToolsVersion, "apksigner"))
+	cmd = exec.Command(tools, "sign", "--ks", filepath.Join(filepath.Dir(g.RepoDir), jks), "--ks-key-alias", config.Alias, "--ks-pass", fmt.Sprintf("pass:%s", config.Keystorepass), "--ks-pass", fmt.Sprintf("pass:%s", config.Keypass), "--out", out, app)
+	if err := cmd.Run(); err != nil {
+		return err
+	}
+	_ = file.Move(out, app)
+	_ = os.Remove(fmt.Sprintf("%s.idsig", out))
 	err = g.updateAndPull()
 	return
 }

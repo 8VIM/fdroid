@@ -10,15 +10,15 @@ import (
 )
 
 type AppFile struct {
-	apps map[string]*AppInfo
+	BuildToolsVersion string `yaml:"build_tools_version"`
+	apps              map[string]*AppInfo
 }
 
 func (a *AppFile) Apks() map[string]*AppInfo { return a.apps }
 
 type AppInfo struct {
-	BuildToolsVersion string `yaml:"build_tools_version"`
-	GitURL            string `yaml:"git"`
-	Summary           string `yaml:"summary"`
+	GitURL  string `yaml:"git"`
+	Summary string `yaml:"summary"`
 
 	AuthorName string `yaml:"author"`
 	repoAuthor string
@@ -58,14 +58,12 @@ func ParseAppFile(filepath string) (appFile *AppFile, err error) {
 	}
 	defer f.Close()
 
-	var apps map[string]*AppInfo
-
-	err = yaml.NewDecoder(f).Decode(&apps)
+	err = yaml.NewDecoder(f).Decode(&appFile)
 	if err != nil {
 		return
 	}
 
-	for k, a := range apps {
+	for k, a := range appFile.apps {
 		a.keyName = k
 
 		u, uerr := url.ParseRequestURI(a.GitURL)

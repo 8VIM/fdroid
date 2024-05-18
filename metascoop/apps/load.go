@@ -184,7 +184,7 @@ func (l *AppLoader) FromRelease(repoDir string, appKey string, version string) (
 	return
 
 }
-func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact int, sha string) (err error) {
+func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact int, sha string) (appName string, err error) {
 	app, ok := l.apps.apps[appKey]
 	if !ok {
 		err = fmt.Errorf("unknown app: %s", appKey)
@@ -212,7 +212,7 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 
 	apkInfoMap := make(map[string]*AppInfo)
 
-	appName := fmt.Sprintf("%s_pr_%d_%s.apk", app.Name(), prNumber, sha)
+	appName = fmt.Sprintf("%s_pr_%d_%s.apk", app.Name(), prNumber, sha)
 	appTargetPath := filepath.Join(repoDir, appName)
 
 	_, err = os.Stat(appTargetPath)
