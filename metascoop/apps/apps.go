@@ -14,7 +14,7 @@ type AppFile struct {
 	Apps              map[string]*AppInfo `yaml:"apps"`
 }
 
-func (a *AppFile) Apks() map[string]*AppInfo { return a.apps }
+func (a *AppFile) Apks() map[string]*AppInfo { return a.Apps }
 
 type AppInfo struct {
 	GitURL  string `yaml:"git"`
@@ -63,7 +63,7 @@ func ParseAppFile(filepath string) (appFile *AppFile, err error) {
 		return
 	}
 
-	for k, a := range appFile.apps {
+	for k, a := range appFile.Apps {
 		a.keyName = k
 
 		u, uerr := url.ParseRequestURI(a.GitURL)

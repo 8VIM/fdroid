@@ -32,7 +32,7 @@ func (a *AppFile) NewLoader(githubClient *github.Client) *AppLoader {
 
 func (l *AppLoader) All(repoDir string) (err error) {
 	apkInfoMap := make(map[string]*AppInfo)
-	for _, app := range l.apps.apps {
+	for _, app := range l.apps.Apps {
 		fmt.Printf("App: %s/%s\n", app.Author(), app.Name())
 		var repo Repo
 
@@ -96,7 +96,7 @@ func (l *AppLoader) All(repoDir string) (err error) {
 				apkInfoMap[appName] = app
 			}()
 		}
-		l.apps.apps = apkInfoMap
+		l.apps.Apps = apkInfoMap
 	}
 	return
 }
@@ -143,7 +143,7 @@ func (app *AppInfo) Download(githubClient *github.Client, release *github.Reposi
 }
 
 func (l *AppLoader) FromRelease(repoDir string, appKey string, version string) (err error) {
-	app, ok := l.apps.apps[appKey]
+	app, ok := l.apps.Apps[appKey]
 	if !ok {
 		err = fmt.Errorf("unknown app: %s", appKey)
 		return
@@ -180,12 +180,12 @@ func (l *AppLoader) FromRelease(repoDir string, appKey string, version string) (
 	if _, ok := apkInfoMap[appName]; !ok {
 		apkInfoMap[appName] = app
 	}
-	l.apps.apps = apkInfoMap
+	l.apps.Apps = apkInfoMap
 	return
 
 }
 func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact int, sha string) (appName string, err error) {
-	app, ok := l.apps.apps[appKey]
+	app, ok := l.apps.Apps[appKey]
 	if !ok {
 		err = fmt.Errorf("unknown app: %s", appKey)
 		return
@@ -243,7 +243,7 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 %s
 Commit (%s): %s`, prNumber, pr.GetBody(), sha, str)
 	apkInfoMap[appName] = app
-	l.apps.apps = apkInfoMap
+	l.apps.Apps = apkInfoMap
 
 	return
 }

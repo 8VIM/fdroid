@@ -20,7 +20,7 @@ func (a *AppFile) GenerateBadges(repoDir string) (err error) {
 	for _, packages := range index.Packages {
 	next:
 		for _, p := range packages {
-			for name := range a.apps {
+			for name := range a.Apps {
 				if _, ok := badges[name]; !ok && strings.HasPrefix(p.ApkName, name) {
 					latest, _ := index.FindLatestPackage(p.PackageName)
 					version := fmt.Sprintf("v%s", latest.VersionName)
