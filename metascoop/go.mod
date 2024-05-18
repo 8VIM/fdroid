@@ -7,6 +7,7 @@ toolchain go1.22.3
 require gopkg.in/yaml.v3 v3.0.1
 
 require (
+	github.com/Masterminds/sprig/v3 v3.2.3
 	github.com/alecthomas/kong v0.9.0
 	github.com/google/go-github/v39 v39.1.0
 	github.com/google/go-github/v61 v61.0.0
@@ -20,7 +21,6 @@ require (
 require (
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver/v3 v3.2.0 // indirect
-	github.com/Masterminds/sprig/v3 v3.2.3 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/uuid v1.1.1 // indirect

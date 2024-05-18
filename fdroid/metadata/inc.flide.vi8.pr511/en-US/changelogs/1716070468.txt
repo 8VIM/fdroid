@@ -1,1 +1,0 @@
-Commit (bed930933a0daa1a605b5d16a76d1e713e2e862d): ci: build app per pr
