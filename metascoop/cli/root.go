@@ -352,7 +352,6 @@ func (d *PrDeleteCmd) Run(g *Globals, c *PrCmd) error {
 			toRemovePaths := make([]string, 0)
 			versionCodes := make(map[int]struct{})
 
-			log.Printf("%s ", packageName)
 			for _, p := range fdroidIndex.Packages[packageName] {
 				if strings.HasPrefix(p.ApkName, prefix) {
 					file := filepath.Join(filepath.Dir(g.RepoDir), "metadata", p.PackageName, "en-US", "changelogs", fmt.Sprintf("%d.txt", p.VersionCode))
