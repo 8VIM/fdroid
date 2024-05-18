@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1716056912000
+  },
+  "packages": {
+    "inc.flide.vi8.debug": {
+      "versions": {
+        "7bc43d1a4491ae0e8533d712d758738dc6864747298cd126a5f8d003c7e6801c": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "PR #490\nAdd the ability for the keyboard to float around the screen\nCommit (76e7b33e754336a435c5007ff3ab46947708225f): fix color picker"
+          }
+        }
+      }
+    }
+  }
+}

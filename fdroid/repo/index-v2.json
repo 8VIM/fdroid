@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716056309000
+    "timestamp": 1716056912000
   },
   "packages": {
     "inc.flide.vi8.debug": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1715667880000,
+        "lastUpdated": 1716056864000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -151,6 +151,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "7bc43d1a4491ae0e8533d712d758738dc6864747298cd126a5f8d003c7e6801c": {
+          "added": 1716056864000,
+          "file": {
+            "name": "/8vim_debug_pr_490_76e7b33e754336a435c5007ff3ab46947708225f.apk",
+            "sha256": "7bc43d1a4491ae0e8533d712d758738dc6864747298cd126a5f8d003c7e6801c",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.490-76e7b33e75",
+            "versionCode": 1716056529,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "PR #490\nAdd the ability for the keyboard to float around the screen\nCommit (76e7b33e754336a435c5007ff3ab46947708225f): fix color picker"
+          }
+        },
         "e75f00450b982e6509717ae037445dd13aa412c25136158b064bed8cf070ce71": {
           "added": 1715667880000,
           "file": {
