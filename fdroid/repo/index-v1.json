@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716056912000,
+    "timestamp": 1716062054000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,8 +17,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.490-76e7b33e75",
-      "suggestedVersionCode": "1716056529",
+      "suggestedVersionName": "0.17.0-pr.511-43a59d6d44",
+      "suggestedVersionCode": "1716061725",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard Debug",
@@ -27,7 +27,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715667880000,
       "packageName": "inc.flide.vi8.debug",
-      "lastUpdated": 1716056864000,
+      "lastUpdated": 1716062008000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -53,7 +53,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "PR #490\nAdd the ability for the keyboard to float around the screen\nCommit (76e7b33e754336a435c5007ff3ab46947708225f): fix color picker"
+          "whatsNew": "PR #511\nrefs: #494\nCommit (43a59d6d44c87d7a25e2a9a321e09e0385a9f8d7): add options for crossing"
         }
       }
     },
@@ -104,7 +104,31 @@
   "packages": {
     "inc.flide.vi8.debug": [
       {
-        "added": 1716056864000,
+        "added": 1716062008000,
+        "apkName": "8vim_debug_pr_511_43a59d6d44c87d7a25e2a9a321e09e0385a9f8d7.apk",
+        "hash": "a621cc8350ae6738b2e08acffdbe28d2a6e52584e76e1d9307869fdf1e539d23",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.debug",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18502668,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1716061725,
+        "versionName": "0.17.0-pr.511-43a59d6d44"
+      },
+      {
+        "added": 1716056917000,
         "apkName": "8vim_debug_pr_490_76e7b33e754336a435c5007ff3ab46947708225f.apk",
         "hash": "7bc43d1a4491ae0e8533d712d758738dc6864747298cd126a5f8d003c7e6801c",
         "hashType": "sha256",
