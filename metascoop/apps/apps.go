@@ -78,6 +78,5 @@ func ParseAppFile(filepath string) (appFile *AppFile, err error) {
 		}
 		a.repoAuthor = split[0]
 	}
-	appFile = &AppFile{apps: apps}
 	return
 }
