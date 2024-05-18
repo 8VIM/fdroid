@@ -197,13 +197,6 @@ func (l *AppLoader) FromPR(repoDir string, appKey string, prNumber int, artifact
 		return
 	}
 	log.Printf("Looking up %s/%s on GitHub", repo.Author, repo.Name)
-	var gitHubRepo *github.Repository
-	gitHubRepo, _, err = l.githubClient.Repositories.Get(context.Background(), repo.Author, repo.Name)
-
-	if err != nil {
-		log.Printf("Error while looking up repo: %s", err.Error())
-	}
-
 	apkInfoMap := make(map[string]*AppInfo)
 
 	appName = fmt.Sprintf("%s_pr_%d_%s.apk", app.Name(), prNumber, sha)
