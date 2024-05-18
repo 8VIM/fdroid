@@ -1,3 +1,0 @@
-PR #511
-refs: #494
-Commit (43a59d6d44c87d7a25e2a9a321e09e0385a9f8d7): add options for crossing

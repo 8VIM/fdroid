@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716070836000
+    "timestamp": 1716071391000
   },
   "packages": {
     "inc.flide.vi8.debug": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716068862000,
+        "lastUpdated": 1716056917000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -151,70 +151,6 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
-        "bb0af3239cb7f5bd9010da7d593d43a4fbf7337c5e11b35d14cf8658faf70da7": {
-          "added": 1716068862000,
-          "file": {
-            "name": "/8vim_debug_pr_511_b52d28b64166d18ce967f487ecad0cb29ab62d0e.apk",
-            "sha256": "bb0af3239cb7f5bd9010da7d593d43a4fbf7337c5e11b35d14cf8658faf70da7",
-            "size": 18502668
-          },
-          "manifest": {
-            "versionName": "0.17.0-pr.511-b52d28b641",
-            "versionCode": 1716068533,
-            "usesSdk": {
-              "minSdkVersion": 24,
-              "targetSdkVersion": 34
-            },
-            "signer": {
-              "sha256": [
-                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
-              ]
-            },
-            "usesPermission": [
-              {
-                "name": "android.permission.VIBRATE"
-              },
-              {
-                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-              }
-            ]
-          },
-          "whatsNew": {
-            "en-US": "PR #511\nrefs: #494\nCommit (b52d28b64166d18ce967f487ecad0cb29ab62d0e): test: update tests"
-          }
-        },
-        "a621cc8350ae6738b2e08acffdbe28d2a6e52584e76e1d9307869fdf1e539d23": {
-          "added": 1716062059000,
-          "file": {
-            "name": "/8vim_debug_pr_511_43a59d6d44c87d7a25e2a9a321e09e0385a9f8d7.apk",
-            "sha256": "a621cc8350ae6738b2e08acffdbe28d2a6e52584e76e1d9307869fdf1e539d23",
-            "size": 18502668
-          },
-          "manifest": {
-            "versionName": "0.17.0-pr.511-43a59d6d44",
-            "versionCode": 1716061725,
-            "usesSdk": {
-              "minSdkVersion": 24,
-              "targetSdkVersion": 34
-            },
-            "signer": {
-              "sha256": [
-                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
-              ]
-            },
-            "usesPermission": [
-              {
-                "name": "android.permission.VIBRATE"
-              },
-              {
-                "name": "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-              }
-            ]
-          },
-          "whatsNew": {
-            "en-US": "PR #511\nrefs: #494\nCommit (43a59d6d44c87d7a25e2a9a321e09e0385a9f8d7): add options for crossing"
-          }
-        },
         "7bc43d1a4491ae0e8533d712d758738dc6864747298cd126a5f8d003c7e6801c": {
           "added": 1716056917000,
           "file": {
@@ -283,12 +219,12 @@
     },
     "inc.flide.vi8.pr511": {
       "metadata": {
-        "added": 1716070787000,
+        "added": 1716070841000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716070787000,
+        "lastUpdated": 1716070841000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -416,7 +352,7 @@
       },
       "versions": {
         "17e5dc2b7c4911f7fddb02acb5007c994be09a0b1078df2b2e046ea1dfca3675": {
-          "added": 1716070787000,
+          "added": 1716070841000,
           "file": {
             "name": "/8vim_debug_pr_511_bed930933a0daa1a605b5d16a76d1e713e2e862d.apk",
             "sha256": "17e5dc2b7c4911f7fddb02acb5007c994be09a0b1078df2b2e046ea1dfca3675",
