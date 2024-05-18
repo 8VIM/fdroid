@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1716068857000
+  },
+  "packages": {
+    "inc.flide.vi8.debug": {
+      "versions": {
+        "bb0af3239cb7f5bd9010da7d593d43a4fbf7337c5e11b35d14cf8658faf70da7": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "PR #511\nrefs: #494\nCommit (b52d28b64166d18ce967f487ecad0cb29ab62d0e): test: update tests"
+          }
+        }
+      }
+    }
+  }
+}
