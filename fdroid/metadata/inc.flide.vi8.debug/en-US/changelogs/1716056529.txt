@@ -1,3 +1,0 @@
-PR #490
-Add the ability for the keyboard to float around the screen
-Commit (76e7b33e754336a435c5007ff3ab46947708225f): fix color picker
