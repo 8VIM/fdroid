@@ -8,7 +8,7 @@ apps:
     website: https://github.com/8VIM/8VIM
     issue_tracker: https://github.com/8VIM/8VIM/issues
     License: Apache-2.0
-    Debug: false
+    debug: false
   8vim_debug:
     git: https://github.com/8VIM/8VIM
     name: 8Vim Keyboard Debug
@@ -17,4 +17,4 @@ apps:
     website: https://github.com/8VIM/8VIM
     issue_tracker: https://github.com/8VIM/8VIM/issues
     License: Apache-2.0
-    Debug: true
+    debug: true

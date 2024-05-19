@@ -37,7 +37,7 @@ type AppInfo struct {
 	License      string
 	Website      string `yaml:"website"`
 	IssueTracker string `yaml:"issue_tracker"`
-	Debug        bool
+	Debug        bool   `yaml:"debug"`
 }
 
 func (a *AppInfo) Name() string {

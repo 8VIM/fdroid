@@ -47,12 +47,13 @@ func GenerateBadges(appFile, repoDir string) (err error) {
 						debugs[name] = append(debugs[name], debugVersion{versionCode: latest.VersionCode, versionName: version})
 					} else {
 						badges[name] = version
+						break next
 					}
-					break next
 				}
 			}
 		}
 	}
+
 	for name, debug := range debugs {
 		if len(debug) == 0 {
 			continue
