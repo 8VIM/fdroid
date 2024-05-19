@@ -17,8 +17,12 @@ type debugVersion struct {
 	versionName string
 }
 
-func (a *AppFile) GenerateBadges(repoDir string) (err error) {
+func GenerateBadges(appFile, repoDir string) (err error) {
 	badges := make(map[string]string)
+	a, err := ParseAppFile(appFile)
+	if err != nil {
+		return err
+	}
 	fdroidIndexFilePath := filepath.Join(repoDir, "index-v1.json")
 	index, err := ReadIndex(fdroidIndexFilePath)
 	if err != nil {
