@@ -1,11 +1,112 @@
 AuthorName: 8VIM
+Builds:
+    - versionCode: 139903
+      versionName: 0.14.0-rc.3
+    - versionCode: 139904
+      versionName: 0.14.0-rc.4
+    - versionCode: 139905
+      versionName: 0.14.0-rc.5
+    - versionCode: 139906
+      versionName: 0.14.0-rc.6
+    - versionCode: 149901
+      versionName: 0.15.0-rc.1
+    - versionCode: 149902
+      versionName: 0.15.0-rc.2
+    - versionCode: 149903
+      versionName: 0.15.0-rc.3
+    - versionCode: 149904
+      versionName: 0.15.0-rc.4
+    - versionCode: 149905
+      versionName: 0.15.0-rc.5
+    - versionCode: 149906
+      versionName: 0.15.0-rc.6
+    - versionCode: 149907
+      versionName: 0.15.0-rc.7
+    - versionCode: 149908
+      versionName: 0.15.0-rc.8
+    - versionCode: 149909
+      versionName: 0.15.0-rc.9
+    - versionCode: 149910
+      versionName: 0.15.0-rc.10
+    - versionCode: 149911
+      versionName: 0.15.0-rc.11
+    - versionCode: 149912
+      versionName: 0.15.0-rc.12
+    - versionCode: 149913
+      versionName: 0.15.0-rc.13
+    - versionCode: 149914
+      versionName: 0.15.0-rc.14
+    - versionCode: 149915
+      versionName: 0.15.0-rc.15
+    - versionCode: 149916
+      versionName: 0.15.0-rc.16
+    - versionCode: 149917
+      versionName: 0.15.0-rc.17
+    - versionCode: 149918
+      versionName: 0.15.0-rc.18
+    - versionCode: 149919
+      versionName: 0.15.0-rc.19
+    - versionCode: 149920
+      versionName: 0.15.0-rc.20
+    - versionCode: 149921
+      versionName: 0.15.0-rc.21
+    - versionCode: 149922
+      versionName: 0.15.0-rc.22
+    - versionCode: 159901
+      versionName: 0.16.0-rc.1
+    - versionCode: 160001
+      versionName: 0.16.1-rc.1
+    - versionCode: 160101
+      versionName: 0.16.2-rc.1
+    - versionCode: 160201
+      versionName: 0.16.3-rc.1
+    - versionCode: 160202
+      versionName: 0.16.3-rc.2
+    - versionCode: 169901
+      versionName: 0.17.0-rc.1
+    - versionCode: 169902
+      versionName: 0.17.0-rc.2
+    - versionCode: 169903
+      versionName: 0.17.0-rc.3
+    - versionCode: 169904
+      versionName: 0.17.0-rc.4
+    - versionCode: 169905
+      versionName: 0.17.0-rc.5
+    - versionCode: 169906
+      versionName: 0.17.0-rc.6
+    - versionCode: 169907
+      versionName: 0.17.0-rc.7
+    - versionCode: 169908
+      versionName: 0.17.0-rc.8
+    - versionCode: 169909
+      versionName: 0.17.0-rc.9
+    - versionCode: 169910
+      versionName: 0.17.0-rc.10
+    - versionCode: 169911
+      versionName: 0.17.0-rc.11
+    - versionCode: 169912
+      versionName: 0.17.0-rc.12
+    - versionCode: 169914
+      versionName: 0.17.0-rc.14
+    - versionCode: 169915
+      versionName: 0.17.0-rc.15
+    - versionCode: 169916
+      versionName: 0.17.0-rc.16
+    - versionCode: 169917
+      versionName: 0.17.0-rc.17
+    - versionCode: 169918
+      versionName: 0.17.0-rc.18
+    - versionCode: 169919
+      versionName: 0.17.0-rc.19
+    - versionCode: 169920
+      versionName: 0.17.0-rc.20
 Categories:
     - System
-CurrentVersion: 0.17.0-rc.19
-CurrentVersionCode: 169919
-IssueTracker: ""
+CurrentVersion: 0.17.0-rc.20
+CurrentVersionCode: 169920
+IssueTracker: https://github.com/8VIM/8VIM/issues
 License: Apache-2.0
 Name: 8Vim Keyboard RC
 SourceCode: https://github.com/8VIM/8VIM
 Summary: 'A Text Editor inside a keyboard, drawing it''s inspiration from 8pen and Vim. '
-WebSite: ""
+WebSite: https://github.com/8VIM/8VIM

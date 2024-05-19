@@ -14,17 +14,17 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716078196000
+    "timestamp": 1716079397000
   },
   "packages": {
     "inc.flide.vi8.pr490": {
       "metadata": {
-        "added": 1716078149000,
+        "added": 1716078200000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716078149000,
+        "lastUpdated": 1716078200000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -151,7 +151,7 @@
       },
       "versions": {
         "fe235b511d0bee4d6f546cc994c9f0223d8018490c35b9f4781a38f3909c5254": {
-          "added": 1716078149000,
+          "added": 1716078200000,
           "file": {
             "name": "/8vim_debug_pr_490_8bf8e93e18278cc8a14badf125a59fefe9a8d4da.apk",
             "sha256": "fe235b511d0bee4d6f546cc994c9f0223d8018490c35b9f4781a38f3909c5254",
@@ -358,9 +358,11 @@
         "categories": [
           "System"
         ],
-        "lastUpdated": 1715454082000,
+        "issueTracker": "https://github.com/8VIM/8VIM/issues",
+        "lastUpdated": 1716079350000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
+        "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
           "phone": {
             "en-US": [
@@ -484,6 +486,38 @@
         "preferredSigner": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
       },
       "versions": {
+        "fbfd4fc682a6031f56284497712f65d464c21bc196996666c213518e1a602e1b": {
+          "added": 1716079350000,
+          "file": {
+            "name": "/8vim_rc_v0.17.0-rc.20.apk",
+            "sha256": "fbfd4fc682a6031f56284497712f65d464c21bc196996666c213518e1a602e1b",
+            "size": 6705679
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.20",
+            "versionCode": 169920,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.0-rc.19...v0.17.0-rc.20](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.19...v0.17.0-rc.20)"
+          }
+        },
         "d9eefd479427b33d62f03826c6c6b0104110f669bcc6aad0721d8a4a797d5bbc": {
           "added": 1715454082000,
           "file": {
@@ -511,6 +545,9 @@
                 "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
               }
             ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Selection gesture not working properly by @MaethorNaur in #492\n\n\n**Full Changelog**: [v0.17.0-rc.18...v0.17.0-rc.19](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.18...v0.17.0-rc.19)"
           }
         },
         "7f75359d60e2291af17be0f847b970249e57540f6b61054207b41a3da36770c6": {
@@ -540,6 +577,9 @@
                 "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
               }
             ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: Swipe-out gestures involuntarily applied on swipe-out termination by @MaethorNaur in #471\n\n\n**Full Changelog**: [v0.17.0-rc.17...v0.17.0-rc.18](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.17...v0.17.0-rc.18)"
           }
         },
         "e560199fef8d2cf7a71362b8b8f21269b060c18823e29ad722444a1cc91fae5d": {

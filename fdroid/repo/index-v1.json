@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716078196000,
+    "timestamp": 1716079397000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,15 +17,17 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-rc.19",
-      "suggestedVersionCode": "169919",
+      "suggestedVersionName": "0.17.0-rc.20",
+      "suggestedVersionCode": "169920",
+      "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard RC",
       "sourceCode": "https://github.com/8VIM/8VIM",
       "summary": "A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim. ",
+      "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1715454082000,
+      "lastUpdated": 1716079350000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -51,7 +53,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "## What's Changed\n\n- fix: :bug: Selection gesture not working properly by @MaethorNaur in #492\n\n\n**Full Changelog**: [v0.17.0-rc.18...v0.17.0-rc.19](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.18...v0.17.0-rc.19)"
+          "whatsNew": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.0-rc.19...v0.17.0-rc.20](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.19...v0.17.0-rc.20)"
         }
       }
     },
@@ -68,9 +70,9 @@
       "sourceCode": "https://github.com/8VIM/8VIM",
       "summary": "PR #490\nAdd the ability for the keyboard to float around the screen",
       "webSite": "https://github.com/8VIM/8VIM",
-      "added": 1716078149000,
+      "added": 1716078200000,
       "packageName": "inc.flide.vi8.pr490",
-      "lastUpdated": 1716078149000,
+      "lastUpdated": 1716078200000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -149,7 +151,7 @@
   "packages": {
     "inc.flide.vi8.pr490": [
       {
-        "added": 1716078149000,
+        "added": 1716078200000,
         "apkName": "8vim_debug_pr_490_8bf8e93e18278cc8a14badf125a59fefe9a8d4da.apk",
         "hash": "fe235b511d0bee4d6f546cc994c9f0223d8018490c35b9f4781a38f3909c5254",
         "hashType": "sha256",
@@ -200,6 +202,30 @@
       }
     ],
     "inc.flide.vi8.rc": [
+      {
+        "added": 1716079350000,
+        "apkName": "8vim_rc_v0.17.0-rc.20.apk",
+        "hash": "fbfd4fc682a6031f56284497712f65d464c21bc196996666c213518e1a602e1b",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6705679,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169920,
+        "versionName": "0.17.0-rc.20"
+      },
       {
         "added": 1715454082000,
         "apkName": "8vim_rc_v0.17.0-rc.19.apk",

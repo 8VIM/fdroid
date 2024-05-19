@@ -1,0 +1,31 @@
+{
+  "repo": {
+    "timestamp": 1716079397000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "metadata": {
+        "issueTracker": "https://github.com/8VIM/8VIM/issues",
+        "webSite": "https://github.com/8VIM/8VIM"
+      },
+      "versions": {
+        "fbfd4fc682a6031f56284497712f65d464c21bc196996666c213518e1a602e1b": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.0-rc.19...v0.17.0-rc.20](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.19...v0.17.0-rc.20)"
+          }
+        },
+        "d9eefd479427b33d62f03826c6c6b0104110f669bcc6aad0721d8a4a797d5bbc": {
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Selection gesture not working properly by @MaethorNaur in #492\n\n\n**Full Changelog**: [v0.17.0-rc.18...v0.17.0-rc.19](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.18...v0.17.0-rc.19)"
+          }
+        },
+        "7f75359d60e2291af17be0f847b970249e57540f6b61054207b41a3da36770c6": {
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: Swipe-out gestures involuntarily applied on swipe-out termination by @MaethorNaur in #471\n\n\n**Full Changelog**: [v0.17.0-rc.17...v0.17.0-rc.18](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.17...v0.17.0-rc.18)"
+          }
+        }
+      }
+    }
+  }
+}
