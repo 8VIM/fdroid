@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716077264000,
+    "timestamp": 1716077467000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -12,51 +12,6 @@
     "uninstall": []
   },
   "apps": [
-    {
-      "authorName": "8VIM",
-      "categories": [
-        "System"
-      ],
-      "suggestedVersionName": "0.17.0-rc.20-509-6a0ca084d9",
-      "suggestedVersionCode": "1715537126",
-      "issueTracker": "https://github.com/8VIM/8VIM/issues",
-      "license": "Apache-2.0",
-      "name": "8Vim Keyboard Debug",
-      "sourceCode": "https://github.com/8VIM/8VIM",
-      "summary": "A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim. ",
-      "webSite": "https://github.com/8VIM/8VIM",
-      "added": 1715667880000,
-      "packageName": "inc.flide.vi8.debug",
-      "lastUpdated": 1715667880000,
-      "localized": {
-        "en-US": {
-          "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
-          "phoneScreenshots": [
-            "1.jpg",
-            "10.png",
-            "11.png",
-            "12.png",
-            "13.png",
-            "14.png",
-            "15.png",
-            "16.png",
-            "17.png",
-            "18.png",
-            "19.png",
-            "2.jpg",
-            "20.png",
-            "3.jpg",
-            "4.jpg",
-            "5.jpg",
-            "6.jpg",
-            "7.jpg",
-            "8.png",
-            "9.png"
-          ],
-          "whatsNew": "PR #509\nCursor movements was moving the cursor out of the input box\n\nrefs: #426\nCommit (6a0ca084d96a0f49b9f7edc5f9422629b7312b19): Revert \"sign debug version\""
-        }
-      }
-    },
     {
       "authorName": "8VIM",
       "categories": [
@@ -102,32 +57,6 @@
     }
   ],
   "packages": {
-    "inc.flide.vi8.debug": [
-      {
-        "added": 1715667880000,
-        "apkName": "8vim_debug_pr_509_6a0ca084d96a0f49b9f7edc5f9422629b7312b19.apk",
-        "hash": "e75f00450b982e6509717ae037445dd13aa412c25136158b064bed8cf070ce71",
-        "hashType": "sha256",
-        "minSdkVersion": 24,
-        "packageName": "inc.flide.vi8.debug",
-        "sig": "f19d48e3bab07f7240466df255befa9e",
-        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
-        "size": 18502668,
-        "targetSdkVersion": 34,
-        "uses-permission": [
-          [
-            "android.permission.VIBRATE",
-            null
-          ],
-          [
-            "inc.flide.vi8.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 1715537126,
-        "versionName": "0.17.0-rc.20-509-6a0ca084d9"
-      }
-    ],
     "inc.flide.vi8.rc": [
       {
         "added": 1715454082000,
