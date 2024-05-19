@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1716077701
+      versionName: 0.17.0-pr.490-8bf8e93e18
+Categories:
+    - System
+CurrentVersion: 0.17.0-pr.490-8bf8e93e18
+CurrentVersionCode: 1716077701
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8vim_debug PR: 490'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #490
+    Add the ability for the keyboard to float around the screen
+WebSite: https://github.com/8VIM/8VIM
