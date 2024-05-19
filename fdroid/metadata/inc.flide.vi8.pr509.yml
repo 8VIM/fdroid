@@ -1,0 +1,17 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1716080259
+      versionName: 0.17.0-pr.509-0bda3a7286
+Categories:
+    - System
+CurrentVersion: 0.17.0-pr.509-0bda3a7286
+CurrentVersionCode: 1716080259
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 509'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #509
+    Cursor movements was moving the cursor out of the input box
+
+    refs: #426
+WebSite: https://github.com/8VIM/8VIM
