@@ -7,7 +7,8 @@ import (
 	"metascoop/apps"
 	"os"
 	"path/filepath"
-	"strings"
+
+	"github.com/Masterminds/sprig/v3"
 )
 
 const (
@@ -18,11 +19,11 @@ const (
 	tableTmpl = `
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |{{range .Apps}}
-| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{.name}}**]({{.sourceCode}}) | {{.summary}} | {{.suggestedVersionName}} |{{end}}
+| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{.name}}**]({{.sourceCode}}) | {{.summary | replace "\n" "<br />" | htmlescaper}} | {{.suggestedVersionName}} |{{end}}
 ` + tableEnd
 )
 
-var tmpl = template.Must(template.New("").Parse(tableTmpl))
+var tmpl = template.Must(template.New("").Funcs(sprig.FuncMap()).Parse(tableTmpl))
 
 func RegenerateReadme(repoDir string) (err error) {
 	readmePath := filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "README.md")
@@ -37,11 +38,6 @@ func RegenerateReadme(repoDir string) (err error) {
 	if err != nil {
 		err = fmt.Errorf("reading f-droid repo index: %s\n::endgroup::\n", err.Error())
 		return
-	}
-	for _, apps := range index.Apps {
-		if _, ok := apps["summary"]; ok {
-			apps["summary"] = strings.ReplaceAll(apps["summary"].(string), "\n", "<br />")
-		}
 	}
 
 	var tableStartIndex = bytes.Index(content, []byte(tableStart))
