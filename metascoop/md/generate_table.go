@@ -7,8 +7,7 @@ import (
 	"metascoop/apps"
 	"os"
 	"path/filepath"
-
-	"github.com/Masterminds/sprig/v3"
+	"strings"
 )
 
 const (
@@ -23,7 +22,7 @@ const (
 ` + tableEnd
 )
 
-var tmpl = template.Must(template.New("").Funcs(sprig.FuncMap()).Parse(tableTmpl))
+var tmpl = template.Must(template.New("").Parse(tableTmpl))
 
 func RegenerateReadme(repoDir string) (err error) {
 	readmePath := filepath.Join(filepath.Dir(filepath.Dir(repoDir)), "README.md")
@@ -38,6 +37,11 @@ func RegenerateReadme(repoDir string) (err error) {
 	if err != nil {
 		err = fmt.Errorf("reading f-droid repo index: %s\n::endgroup::\n", err.Error())
 		return
+	}
+	for _, apps := range index.Apps {
+		if _, ok := apps["summary"]; ok {
+			apps["summary"] = strings.ReplaceAll(apps["summary"].(string), "\n", "<br />")
+		}
 	}
 
 	var tableStartIndex = bytes.Index(content, []byte(tableStart))
