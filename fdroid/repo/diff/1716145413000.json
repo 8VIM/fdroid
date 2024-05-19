@@ -1,0 +1,22 @@
+{
+  "repo": {
+    "timestamp": 1716145427000
+  },
+  "packages": {
+    "inc.flide.vi8.pr511": {
+      "metadata": {
+        "name": {
+          "en-US": "8Vim Keyboard Debug PR: 511"
+        }
+      },
+      "versions": {
+        "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (4e64fe8e02a78d993bf6083655345e58c20a086c): Merge branch 'master' into fix/increase-cross-haptics"
+          }
+        }
+      }
+    }
+  }
+}
