@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716148020000,
+    "timestamp": 1716149233000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,8 +17,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.509-0bda3a7286",
-      "suggestedVersionCode": "1716080259",
+      "suggestedVersionName": "0.17.0-pr.509-591911d478",
+      "suggestedVersionCode": "1716148829",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Unknown",
       "name": "8Vim Keyboard Debug PR: 509",
@@ -27,7 +27,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716080660000,
       "packageName": "inc.flide.vi8.pr509",
-      "lastUpdated": 1716080660000,
+      "lastUpdated": 1716149183000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -53,7 +53,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "Commit (0bda3a728698f98ee25c19add63912b04274a4c5): force build"
+          "whatsNew": "Commit (591911d478a22103464fe35b80a027729f309696): Merge branch 'master' into fix/426-cursor-shifting-away"
         }
       }
     },
@@ -70,9 +70,9 @@
       "sourceCode": "https://github.com/8VIM/8VIM",
       "summary": "PR #511\nrefs: #494",
       "webSite": "https://github.com/8VIM/8VIM",
-      "added": 1716147973000,
+      "added": 1716148024000,
       "packageName": "inc.flide.vi8.pr511",
-      "lastUpdated": 1716147973000,
+      "lastUpdated": 1716148024000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -222,6 +222,30 @@
     ],
     "inc.flide.vi8.pr509": [
       {
+        "added": 1716149183000,
+        "apkName": "8vim_debug_pr_509_591911d478a22103464fe35b80a027729f309696.apk",
+        "hash": "08981393c7b9ec46fcf9992618da339e8992237a012ac1f343dfb77ae8838233",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.pr509",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18510860,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.pr509.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1716148829,
+        "versionName": "0.17.0-pr.509-591911d478"
+      },
+      {
         "added": 1716080660000,
         "apkName": "8vim_debug_pr_509_0bda3a728698f98ee25c19add63912b04274a4c5.apk",
         "hash": "5efa759bf9ec5b1d21cb6e8eaa5151c97716e3ab4f7892993c7c935c3f18e665",
@@ -248,7 +272,7 @@
     ],
     "inc.flide.vi8.pr511": [
       {
-        "added": 1716147973000,
+        "added": 1716148024000,
         "apkName": "8vim_debug_pr_511_4e64fe8e02a78d993bf6083655345e58c20a086c.apk",
         "hash": "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8",
         "hashType": "sha256",

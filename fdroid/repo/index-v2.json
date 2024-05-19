@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716148020000
+    "timestamp": 1716149233000
   },
   "packages": {
     "inc.flide.vi8.pr490": {
@@ -191,7 +191,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716080660000,
+        "lastUpdated": 1716149183000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -317,6 +317,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "08981393c7b9ec46fcf9992618da339e8992237a012ac1f343dfb77ae8838233": {
+          "added": 1716149183000,
+          "file": {
+            "name": "/8vim_debug_pr_509_591911d478a22103464fe35b80a027729f309696.apk",
+            "sha256": "08981393c7b9ec46fcf9992618da339e8992237a012ac1f343dfb77ae8838233",
+            "size": 18510860
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.509-591911d478",
+            "versionCode": 1716148829,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr509.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (591911d478a22103464fe35b80a027729f309696): Merge branch 'master' into fix/426-cursor-shifting-away"
+          }
+        },
         "5efa759bf9ec5b1d21cb6e8eaa5151c97716e3ab4f7892993c7c935c3f18e665": {
           "added": 1716080660000,
           "file": {
@@ -353,12 +385,12 @@
     },
     "inc.flide.vi8.pr511": {
       "metadata": {
-        "added": 1716147973000,
+        "added": 1716148024000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716147973000,
+        "lastUpdated": 1716148024000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -486,7 +518,7 @@
       },
       "versions": {
         "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8": {
-          "added": 1716147973000,
+          "added": 1716148024000,
           "file": {
             "name": "/8vim_debug_pr_511_4e64fe8e02a78d993bf6083655345e58c20a086c.apk",
             "sha256": "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8",

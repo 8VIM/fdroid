@@ -6,11 +6,11 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
-| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.pr509/en-US/icon.png" alt="8Vim Keyboard Debug PR: 509 icon" width="36px" height="36px"></a> | [**8Vim Keyboard Debug PR: 509**](https://github.com/8VIM/8VIM) | PR #509<br />Cursor movements was moving the cursor out of the input box<br /><br />refs: #426 | 0.17.0-pr.509-0bda3a7286 |
+| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.pr509/en-US/icon.png" alt="8Vim Keyboard Debug PR: 509 icon" width="36px" height="36px"></a> | [**8Vim Keyboard Debug PR: 509**](https://github.com/8VIM/8VIM) | PR #509<br />Cursor movements was moving the cursor out of the input box<br /><br />refs: #426 | 0.17.0-pr.509-591911d478 |
 | <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.pr511/en-US/icon.png" alt="8Vim Keyboard Debug PR: 511 icon" width="36px" height="36px"></a> | [**8Vim Keyboard Debug PR: 511**](https://github.com/8VIM/8VIM) | PR #511<br />refs: #494 | 0.17.0-pr.511-4e64fe8e02 |
 | <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim.  | 0.17.0-rc.20 |
 | <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.pr490/en-US/icon.png" alt="8vim_debug PR: 490 icon" width="36px" height="36px"></a> | [**8vim_debug PR: 490**](https://github.com/8VIM/8VIM) | PR #490<br />Add the ability for the keyboard to float around the screen | 0.17.0-pr.490-8bf8e93e18 |
-<!-- end apps table --><!-- end apps table -->
+<!-- end apps table --><!-- end apps table --><!-- end apps table -->
 
 ### How to use
 1. At first, you should [install the F-Droid app](https://f-droid.org/), it's an alternative app store for Android.
