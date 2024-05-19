@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716145427000
+    "timestamp": 1716147097000
   },
   "packages": {
     "inc.flide.vi8.pr490": {
@@ -358,7 +358,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716145378000,
+        "lastUpdated": 1716147047000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -485,11 +485,11 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
-        "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8": {
-          "added": 1716145378000,
+        "ca3885c06cc8eff49c46513169f7a8160a7fc379305966834ae187457138f47c": {
+          "added": 1716147047000,
           "file": {
             "name": "/8vim_debug_pr_511_4e64fe8e02a78d993bf6083655345e58c20a086c.apk",
-            "sha256": "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8",
+            "sha256": "ca3885c06cc8eff49c46513169f7a8160a7fc379305966834ae187457138f47c",
             "size": 18510860
           },
           "manifest": {

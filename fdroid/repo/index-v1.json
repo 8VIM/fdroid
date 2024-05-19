@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716145427000,
+    "timestamp": 1716147097000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -72,7 +72,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716077971000,
       "packageName": "inc.flide.vi8.pr511",
-      "lastUpdated": 1716145378000,
+      "lastUpdated": 1716147047000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -248,9 +248,9 @@
     ],
     "inc.flide.vi8.pr511": [
       {
-        "added": 1716145378000,
+        "added": 1716147047000,
         "apkName": "8vim_debug_pr_511_4e64fe8e02a78d993bf6083655345e58c20a086c.apk",
-        "hash": "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8",
+        "hash": "ca3885c06cc8eff49c46513169f7a8160a7fc379305966834ae187457138f47c",
         "hashType": "sha256",
         "minSdkVersion": 24,
         "packageName": "inc.flide.vi8.pr511",
