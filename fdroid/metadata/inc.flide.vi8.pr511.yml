@@ -1,7 +1,5 @@
 AuthorName: 8VIM
 Builds:
-    - versionCode: 1716077639
-      versionName: 0.17.0-pr.511-9b059dea0e
     - versionCode: 1716145080
       versionName: 0.17.0-pr.511-4e64fe8e02
 Categories:
