@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716149233000
+    "timestamp": 1716149440000
   },
   "packages": {
     "inc.flide.vi8.pr490": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716078200000,
+        "lastUpdated": 1716149390000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -135,7 +135,7 @@
         },
         "authorName": "8VIM",
         "name": {
-          "en-US": "8vim_debug PR: 490"
+          "en-US": "8Vim Keyboard Debug PR: 490"
         },
         "summary": {
           "en-US": "PR #490\nAdd the ability for the keyboard to float around the screen"
@@ -150,6 +150,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "e7c8ddf95bbb637dcee7ea5508e818bcc7ee1a1cab57b1e0251057469712abfa": {
+          "added": 1716149390000,
+          "file": {
+            "name": "/8vim_debug_pr_490_7f5ee8de8d587e2ec1d30851ba1ec23edbe9bdd1.apk",
+            "sha256": "e7c8ddf95bbb637dcee7ea5508e818bcc7ee1a1cab57b1e0251057469712abfa",
+            "size": 18560091
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.490-7f5ee8de8d",
+            "versionCode": 1716148845,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr490.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (7f5ee8de8d587e2ec1d30851ba1ec23edbe9bdd1): Merge branch 'master' into feat/landscape-popup-keyboard"
+          }
+        },
         "fe235b511d0bee4d6f546cc994c9f0223d8018490c35b9f4781a38f3909c5254": {
           "added": 1716078200000,
           "file": {
@@ -191,7 +223,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716149183000,
+        "lastUpdated": 1716149237000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -318,7 +350,7 @@
       },
       "versions": {
         "08981393c7b9ec46fcf9992618da339e8992237a012ac1f343dfb77ae8838233": {
-          "added": 1716149183000,
+          "added": 1716149237000,
           "file": {
             "name": "/8vim_debug_pr_509_591911d478a22103464fe35b80a027729f309696.apk",
             "sha256": "08981393c7b9ec46fcf9992618da339e8992237a012ac1f343dfb77ae8838233",

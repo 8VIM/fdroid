@@ -1,0 +1,22 @@
+{
+  "repo": {
+    "timestamp": 1716149440000
+  },
+  "packages": {
+    "inc.flide.vi8.pr490": {
+      "metadata": {
+        "name": {
+          "en-US": "8Vim Keyboard Debug PR: 490"
+        }
+      },
+      "versions": {
+        "e7c8ddf95bbb637dcee7ea5508e818bcc7ee1a1cab57b1e0251057469712abfa": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (7f5ee8de8d587e2ec1d30851ba1ec23edbe9bdd1): Merge branch 'master' into feat/landscape-popup-keyboard"
+          }
+        }
+      }
+    }
+  }
+}
