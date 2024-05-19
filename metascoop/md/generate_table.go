@@ -3,10 +3,10 @@ package md
 import (
 	"bytes"
 	"fmt"
-	"html/template"
 	"metascoop/apps"
 	"os"
 	"path/filepath"
+	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
 )
@@ -19,7 +19,7 @@ const (
 	tableTmpl = `
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |{{range .Apps}}
-| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{.name}}**]({{.sourceCode}}) | {{.summary | replace "\n" "<br />" | htmlescaper}} | {{.suggestedVersionName}} |{{end}}
+| <a href="{{.sourceCode}}"><img src="fdroid/repo/{{.packageName}}/en-US/icon.png" alt="{{.name}} icon" width="36px" height="36px"></a> | [**{{.name}}**]({{.sourceCode}}) | {{.summary | replace "\n" "<br />"}} | {{.suggestedVersionName}} |{{end}}
 ` + tableEnd
 )
 
