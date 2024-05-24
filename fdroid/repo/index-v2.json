@@ -14,17 +14,17 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716528029000
+    "timestamp": 1716529714000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
       "metadata": {
-        "added": 1716527981000,
+        "added": 1716528033000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716527981000,
+        "lastUpdated": 1716528033000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -151,7 +151,7 @@
       },
       "versions": {
         "e9feee5e17e3c6d8aab325866232f34f8517a81f65013781b4e063991f59f9b2": {
-          "added": 1716527981000,
+          "added": 1716528033000,
           "file": {
             "name": "/8vim_debug_pr_483_63b33225c299a4f2574371e68b1020743b6b5da5.apk",
             "sha256": "e9feee5e17e3c6d8aab325866232f34f8517a81f65013781b4e063991f59f9b2",
@@ -589,7 +589,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716148024000,
+        "lastUpdated": 1716529665000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -716,6 +716,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "bd0afb9344dac6d897351fc6f00f77463da552bd462f92f1c0cfe49e90d01fe7": {
+          "added": 1716529665000,
+          "file": {
+            "name": "/8vim_debug_pr_511_af20eb6e31b982ea6ca068d5c98050e5e8f4dbb7.apk",
+            "sha256": "bd0afb9344dac6d897351fc6f00f77463da552bd462f92f1c0cfe49e90d01fe7",
+            "size": 18510860
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.511-af20eb6e31",
+            "versionCode": 1716529371,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr511.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (af20eb6e31b982ea6ca068d5c98050e5e8f4dbb7): Merge branch 'master' into fix/increase-cross-haptics"
+          }
+        },
         "9e28ba0c502b1dcd375937772901b311f08f23bde71514de629e31b3ec1df8d8": {
           "added": 1716148024000,
           "file": {

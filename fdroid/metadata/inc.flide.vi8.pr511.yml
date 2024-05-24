@@ -2,10 +2,12 @@ AuthorName: 8VIM
 Builds:
     - versionCode: 1716145080
       versionName: 0.17.0-pr.511-4e64fe8e02
+    - versionCode: 1716529371
+      versionName: 0.17.0-pr.511-af20eb6e31
 Categories:
     - System
-CurrentVersion: 0.17.0-pr.511-4e64fe8e02
-CurrentVersionCode: 1716145080
+CurrentVersion: 0.17.0-pr.511-af20eb6e31
+CurrentVersionCode: 1716529371
 IssueTracker: https://github.com/8VIM/8VIM/issues
 License: Apache-2.0
 Name: '8Vim Keyboard Debug PR: 511'

@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1716529714000
+  },
+  "packages": {
+    "inc.flide.vi8.pr511": {
+      "versions": {
+        "bd0afb9344dac6d897351fc6f00f77463da552bd462f92f1c0cfe49e90d01fe7": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (af20eb6e31b982ea6ca068d5c98050e5e8f4dbb7): Merge branch 'master' into fix/increase-cross-haptics"
+          }
+        }
+      }
+    }
+  }
+}

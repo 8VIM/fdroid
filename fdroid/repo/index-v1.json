@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716528029000,
+    "timestamp": 1716529714000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -25,9 +25,9 @@
       "sourceCode": "https://github.com/8VIM/8VIM",
       "summary": "PR #483\nContinue the event stream on non-matching event",
       "webSite": "https://github.com/8VIM/8VIM",
-      "added": 1716527981000,
+      "added": 1716528033000,
       "packageName": "inc.flide.vi8.pr483",
-      "lastUpdated": 1716527981000,
+      "lastUpdated": 1716528033000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -152,8 +152,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.511-4e64fe8e02",
-      "suggestedVersionCode": "1716145080",
+      "suggestedVersionName": "0.17.0-pr.511-af20eb6e31",
+      "suggestedVersionCode": "1716529371",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard Debug PR: 511",
@@ -162,7 +162,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716148024000,
       "packageName": "inc.flide.vi8.pr511",
-      "lastUpdated": 1716148024000,
+      "lastUpdated": 1716529665000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -188,7 +188,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "Commit (4e64fe8e02a78d993bf6083655345e58c20a086c): Merge branch 'master' into fix/increase-cross-haptics"
+          "whatsNew": "Commit (af20eb6e31b982ea6ca068d5c98050e5e8f4dbb7): Merge branch 'master' into fix/increase-cross-haptics"
         }
       }
     },
@@ -241,7 +241,7 @@
   "packages": {
     "inc.flide.vi8.pr483": [
       {
-        "added": 1716527981000,
+        "added": 1716528033000,
         "apkName": "8vim_debug_pr_483_63b33225c299a4f2574371e68b1020743b6b5da5.apk",
         "hash": "e9feee5e17e3c6d8aab325866232f34f8517a81f65013781b4e063991f59f9b2",
         "hashType": "sha256",
@@ -366,6 +366,30 @@
       }
     ],
     "inc.flide.vi8.pr511": [
+      {
+        "added": 1716529665000,
+        "apkName": "8vim_debug_pr_511_af20eb6e31b982ea6ca068d5c98050e5e8f4dbb7.apk",
+        "hash": "bd0afb9344dac6d897351fc6f00f77463da552bd462f92f1c0cfe49e90d01fe7",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.pr511",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18510860,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.pr511.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1716529371,
+        "versionName": "0.17.0-pr.511-af20eb6e31"
+      },
       {
         "added": 1716148024000,
         "apkName": "8vim_debug_pr_511_4e64fe8e02a78d993bf6083655345e58c20a086c.apk",
