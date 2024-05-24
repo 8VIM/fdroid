@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1716531491000,
+    "timestamp": 1716532273000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -62,8 +62,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.490-7f5ee8de8d",
-      "suggestedVersionCode": "1716148845",
+      "suggestedVersionName": "0.17.0-pr.490-87a04f231f",
+      "suggestedVersionCode": "1716530476",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Unknown",
       "name": "8Vim Keyboard Debug PR: 490",
@@ -72,7 +72,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716078200000,
       "packageName": "inc.flide.vi8.pr490",
-      "lastUpdated": 1716149444000,
+      "lastUpdated": 1716532219000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -98,7 +98,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "Commit (7f5ee8de8d587e2ec1d30851ba1ec23edbe9bdd1): Merge branch 'master' into feat/landscape-popup-keyboard"
+          "whatsNew": "Commit (87a04f231fedf841a10fcf7622f6c5ce9510405e): Merge branch 'master' into feat/landscape-popup-keyboard"
         }
       }
     },
@@ -162,7 +162,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716148024000,
       "packageName": "inc.flide.vi8.pr511",
-      "lastUpdated": 1716531439000,
+      "lastUpdated": 1716531495000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -291,6 +291,30 @@
     ],
     "inc.flide.vi8.pr490": [
       {
+        "added": 1716532219000,
+        "apkName": "8vim_debug_pr_490_87a04f231fedf841a10fcf7622f6c5ce9510405e.apk",
+        "hash": "b2ad51b320f68258c01adaeaaca62fa9e3965521b62c28ec8cec045ceb67ac89",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.pr490",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18551899,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.pr490.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1716530476,
+        "versionName": "0.17.0-pr.490-87a04f231f"
+      },
+      {
         "added": 1716149444000,
         "apkName": "8vim_debug_pr_490_7f5ee8de8d587e2ec1d30851ba1ec23edbe9bdd1.apk",
         "hash": "e7c8ddf95bbb637dcee7ea5508e818bcc7ee1a1cab57b1e0251057469712abfa",
@@ -415,7 +439,7 @@
     ],
     "inc.flide.vi8.pr511": [
       {
-        "added": 1716531439000,
+        "added": 1716531495000,
         "apkName": "8vim_debug_pr_511_b60772df446ef965d9f287cc3ccaedf9c7acf98e.apk",
         "hash": "3effcf6fc036c422350534a56c1d976b8bea8f07520cba4114ef702080da57d8",
         "hashType": "sha256",
