@@ -4,10 +4,12 @@ Builds:
       versionName: 0.17.0-pr.509-0bda3a7286
     - versionCode: 1716148829
       versionName: 0.17.0-pr.509-591911d478
+    - versionCode: 1716530506
+      versionName: 0.17.0-pr.509-4f002c001c
 Categories:
     - System
-CurrentVersion: 0.17.0-pr.509-591911d478
-CurrentVersionCode: 1716148829
+CurrentVersion: 0.17.0-pr.509-4f002c001c
+CurrentVersionCode: 1716530506
 IssueTracker: https://github.com/8VIM/8VIM/issues
 Name: '8Vim Keyboard Debug PR: 509'
 SourceCode: https://github.com/8VIM/8VIM

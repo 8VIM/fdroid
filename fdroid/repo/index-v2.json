@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716530838000
+    "timestamp": 1716531276000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716530786000,
+        "lastUpdated": 1716530842000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -151,7 +151,7 @@
       },
       "versions": {
         "cb4bbf5349757de5989df8f2a14814b0b8c4529800e47af3b279fe7ca4c15639": {
-          "added": 1716530786000,
+          "added": 1716530842000,
           "file": {
             "name": "/8vim_debug_pr_483_91a8b7952f8fe4fdcef1572b4fa13bb70954e97a.apk",
             "sha256": "cb4bbf5349757de5989df8f2a14814b0b8c4529800e47af3b279fe7ca4c15639",
@@ -422,7 +422,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716149237000,
+        "lastUpdated": 1716531220000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -548,6 +548,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "c0c381bb648609a5a2a4212865b6e48f039b6807272de515d74535c2d56b24a1": {
+          "added": 1716531220000,
+          "file": {
+            "name": "/8vim_debug_pr_509_4f002c001ca254da968069fcca3b7ad88be32621.apk",
+            "sha256": "c0c381bb648609a5a2a4212865b6e48f039b6807272de515d74535c2d56b24a1",
+            "size": 18506764
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.509-4f002c001c",
+            "versionCode": 1716530506,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr509.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (4f002c001ca254da968069fcca3b7ad88be32621): Merge branch 'master' into fix/426-cursor-shifting-away"
+          }
+        },
         "08981393c7b9ec46fcf9992618da339e8992237a012ac1f343dfb77ae8838233": {
           "added": 1716149237000,
           "file": {
