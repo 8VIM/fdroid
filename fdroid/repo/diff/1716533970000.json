@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1716533984000
+  },
+  "packages": {
+    "inc.flide.vi8.pr490": {
+      "versions": {
+        "08bdb60e593755312754f8c422b025c62bb62918ef1076e5d0ad11813a6dc0dd": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (04c1193228b66f7d15fe2c0f673d7b8b78aac73e): set floating keyboard to the centre of the screen"
+          }
+        }
+      }
+    }
+  }
+}

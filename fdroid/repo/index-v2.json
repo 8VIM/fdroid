@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716532273000
+    "timestamp": 1716533984000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
@@ -223,7 +223,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716532219000,
+        "lastUpdated": 1716533929000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -349,8 +349,40 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "08bdb60e593755312754f8c422b025c62bb62918ef1076e5d0ad11813a6dc0dd": {
+          "added": 1716533929000,
+          "file": {
+            "name": "/8vim_debug_pr_490_04c1193228b66f7d15fe2c0f673d7b8b78aac73e.apk",
+            "sha256": "08bdb60e593755312754f8c422b025c62bb62918ef1076e5d0ad11813a6dc0dd",
+            "size": 18551899
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.490-04c1193228",
+            "versionCode": 1716533591,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr490.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (04c1193228b66f7d15fe2c0f673d7b8b78aac73e): set floating keyboard to the centre of the screen"
+          }
+        },
         "b2ad51b320f68258c01adaeaaca62fa9e3965521b62c28ec8cec045ceb67ac89": {
-          "added": 1716532219000,
+          "added": 1716532278000,
           "file": {
             "name": "/8vim_debug_pr_490_87a04f231fedf841a10fcf7622f6c5ce9510405e.apk",
             "sha256": "b2ad51b320f68258c01adaeaaca62fa9e3965521b62c28ec8cec045ceb67ac89",

@@ -1,0 +1,1 @@
+Commit (04c1193228b66f7d15fe2c0f673d7b8b78aac73e): set floating keyboard to the centre of the screen
