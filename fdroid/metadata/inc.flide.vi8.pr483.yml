@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1716527688
+      versionName: 0.17.0-pr.483-63b33225c2
+Categories:
+    - System
+CurrentVersion: 0.17.0-pr.483-63b33225c2
+CurrentVersionCode: 1716527688
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 483'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #483
+    Continue the event stream on non-matching event
+WebSite: https://github.com/8VIM/8VIM
