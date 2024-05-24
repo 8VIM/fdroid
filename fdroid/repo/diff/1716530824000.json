@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1716530838000
+  },
+  "packages": {
+    "inc.flide.vi8.pr483": {
+      "versions": {
+        "cb4bbf5349757de5989df8f2a14814b0b8c4529800e47af3b279fe7ca4c15639": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (91a8b7952f8fe4fdcef1572b4fa13bb70954e97a): Merge branch 'master' into fix/continue-receiving-events"
+          }
+        }
+      }
+    }
+  }
+}

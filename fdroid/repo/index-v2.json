@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1716529714000
+    "timestamp": 1716530838000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716528033000,
+        "lastUpdated": 1716530786000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -150,6 +150,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "cb4bbf5349757de5989df8f2a14814b0b8c4529800e47af3b279fe7ca4c15639": {
+          "added": 1716530786000,
+          "file": {
+            "name": "/8vim_debug_pr_483_91a8b7952f8fe4fdcef1572b4fa13bb70954e97a.apk",
+            "sha256": "cb4bbf5349757de5989df8f2a14814b0b8c4529800e47af3b279fe7ca4c15639",
+            "size": 18506764
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.483-91a8b7952f",
+            "versionCode": 1716530478,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (91a8b7952f8fe4fdcef1572b4fa13bb70954e97a): Merge branch 'master' into fix/continue-receiving-events"
+          }
+        },
         "e9feee5e17e3c6d8aab325866232f34f8517a81f65013781b4e063991f59f9b2": {
           "added": 1716528033000,
           "file": {
@@ -589,7 +621,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716529665000,
+        "lastUpdated": 1716529718000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -717,7 +749,7 @@
       },
       "versions": {
         "bd0afb9344dac6d897351fc6f00f77463da552bd462f92f1c0cfe49e90d01fe7": {
-          "added": 1716529665000,
+          "added": 1716529718000,
           "file": {
             "name": "/8vim_debug_pr_511_af20eb6e31b982ea6ca068d5c98050e5e8f4dbb7.apk",
             "sha256": "bd0afb9344dac6d897351fc6f00f77463da552bd462f92f1c0cfe49e90d01fe7",
