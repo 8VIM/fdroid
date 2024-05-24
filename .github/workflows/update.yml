@@ -1,11 +1,17 @@
 name: Generate F-Droid repo
-concurrency: 
-  group: update
-
 on:
-  repository_dispatch:
-    types: [rc, pr, merge]
-
+  workflow_call: 
+    inputs:
+      type:
+        type: string
+      tag:
+        type: string
+      pr:
+        type: number
+      artifact:
+        type: string
+      sha:
+        type: string
 jobs:
   apps:
     name: "Generate repo from apps listing"
@@ -50,20 +56,20 @@ jobs:
           echo "${{ secrets.KEYSTORE_P12 }}" | base64 -d - > fdroid/keystore.p12
           echo "${{ secrets.CONFIG_YML }}" | base64 -d - > fdroid/config.yml
       - name: Generate RC
-        if: ${{github.event.action=='rc'}}
+        if: ${{inputs.type=='rc'}}
         working-directory: ./metascoop
         run: |
-          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} release 8vim_rc ${{github.event.client_payload.tag}}
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} release 8vim_rc ${{inputs.tag}}
       - name: Generate Pr
-        if: ${{github.event.action=='pr'}}
+        if: ${{inputs.type=='pr'}}
         working-directory: ./metascoop
         run: |
-          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{github.event.client_payload.pr}} add ${{github.event.client_payload.artifact}} ${{github.event.client_payload.sha}}
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{inputs.pr}} add ${{inputs.artifact}} ${{inputs.sha}}
       - name: Merge Pr
-        if: ${{github.event.action=='merge'}}
+        if: ${{inputs.type=='merge'}}
         working-directory: ./metascoop
         run: |
-          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{github.event.client_payload.pr}} delete
+          ./metascoop -a ../apps.yaml -r ../fdroid/repo -t ${{ secrets.GH_ACCESS_TOKEN }} pr --app 8vim_debug --number ${{inputs.pr}} delete
       - name: Commit files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

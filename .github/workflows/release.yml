@@ -1,0 +1,15 @@
+name: Generate F-Droid repo
+concurrency: 
+  group: update
+run-name: 'Update RC ${{github.event.client_payload.tag}}'
+on:
+  repository_dispatch:
+    types: [rc]
+
+jobs:
+  update:
+    uses: ./.github/workflows/update.yml
+    with:
+      type: rc
+      tag: ${{github.event.client_payload.tag}}
+    secrets: inherit

@@ -1,0 +1,15 @@
+name: Generate F-Droid repo
+concurrency: 
+  group: update
+run-name: 'Update merge #${{github.event.client_payload.pr}}'
+on:
+  repository_dispatch:
+    types: [merge]
+
+jobs:
+  update:
+    uses: ./.github/workflows/update.yml
+    with:
+      type: merge
+      pr: ${{github.event.client_payload.pr}}
+    secrets: inherit
