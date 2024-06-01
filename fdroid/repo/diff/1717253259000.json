@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717253273000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "9ad9f82d545504e4de74166fbbefb53d77a45455b9c42b89ee536cb2062f374e": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Reset to the default layer after a layered sequence by @MaethorNaur in #526\n\n\n**Full Changelog**: [v0.17.0-rc.23...v0.17.0-rc.24](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.23...v0.17.0-rc.24)"
+          }
+        }
+      }
+    }
+  }
+}

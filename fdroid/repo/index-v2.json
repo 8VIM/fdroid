@@ -14,17 +14,17 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717252730000
+    "timestamp": 1717253273000
   },
   "packages": {
     "inc.flide.vi8.pr526": {
       "metadata": {
-        "added": 1717252682000,
+        "added": 1717252734000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717252682000,
+        "lastUpdated": 1717252734000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -151,7 +151,7 @@
       },
       "versions": {
         "97db56b4b5c0b7e688c52dbae6a71b405758a413bc38cf5f535c5f6e27406c90": {
-          "added": 1717252682000,
+          "added": 1717252734000,
           "file": {
             "name": "/8vim_debug_pr_526_4c0e7e8163dd5c93dfd43b65a184382ebeb0f034.apk",
             "sha256": "97db56b4b5c0b7e688c52dbae6a71b405758a413bc38cf5f535c5f6e27406c90",
@@ -191,7 +191,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717231133000,
+        "lastUpdated": 1717253223000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -318,6 +318,38 @@
         "preferredSigner": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
       },
       "versions": {
+        "9ad9f82d545504e4de74166fbbefb53d77a45455b9c42b89ee536cb2062f374e": {
+          "added": 1717253223000,
+          "file": {
+            "name": "/8vim_rc_v0.17.0-rc.24.apk",
+            "sha256": "9ad9f82d545504e4de74166fbbefb53d77a45455b9c42b89ee536cb2062f374e",
+            "size": 6723455
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.24",
+            "versionCode": 169924,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Reset to the default layer after a layered sequence by @MaethorNaur in #526\n\n\n**Full Changelog**: [v0.17.0-rc.23...v0.17.0-rc.24](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.23...v0.17.0-rc.24)"
+          }
+        },
         "f6a32cc2eb852d953aea733be772708191a42d7f00a06475ce4bddf4ff524eb8": {
           "added": 1717231133000,
           "file": {

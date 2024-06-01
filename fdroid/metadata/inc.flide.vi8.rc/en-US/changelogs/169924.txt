@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: :bug: Reset to the default layer after a layered sequence by @MaethorNaur in #526
+
+
+**Full Changelog**: [v0.17.0-rc.23...v0.17.0-rc.24](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.23...v0.17.0-rc.24)
