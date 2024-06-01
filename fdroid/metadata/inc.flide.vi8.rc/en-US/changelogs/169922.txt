@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: :bug: Cursor movements was moving the cursor out of the input box by @MaethorNaur in #509
+
+
+**Full Changelog**: [v0.17.0-rc.21...v0.17.0-rc.22](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.21...v0.17.0-rc.22)

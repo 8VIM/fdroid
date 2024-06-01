@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717219449000,
+    "timestamp": 1717222316000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -72,7 +72,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716080660000,
       "packageName": "inc.flide.vi8.pr509",
-      "lastUpdated": 1717219398000,
+      "lastUpdated": 1717219453000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -107,8 +107,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-rc.21",
-      "suggestedVersionCode": "169921",
+      "suggestedVersionName": "0.17.0-rc.22",
+      "suggestedVersionCode": "169922",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard RC",
@@ -117,7 +117,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1717218181000,
+      "lastUpdated": 1717222264000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -143,7 +143,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "## What's Changed\n\n- ci: :construction_worker: publish to open testing after a PR merge by @MaethorNaur in #506\n- fix: increase crossing haptics by @MaethorNaur in #511\n- feat: Floating keyboard option by @MaethorNaur in #490\n\n\n**Full Changelog**: [v0.17.0-rc.20...v0.17.0-rc.21](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.20...v0.17.0-rc.21)"
+          "whatsNew": "## What's Changed\n\n- fix: :bug: Cursor movements was moving the cursor out of the input box by @MaethorNaur in #509\n\n\n**Full Changelog**: [v0.17.0-rc.21...v0.17.0-rc.22](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.21...v0.17.0-rc.22)"
         }
       }
     }
@@ -201,7 +201,7 @@
     ],
     "inc.flide.vi8.pr509": [
       {
-        "added": 1717219398000,
+        "added": 1717219453000,
         "apkName": "8vim_debug_pr_509_3b3ddbbcbdc201af7baa622f4e2aea9b9a8a069b.apk",
         "hash": "0d8813bc87edd07db3dfc638c68ea400ad35c0804e6b2aff506264d9aee1a2f0",
         "hashType": "sha256",
@@ -298,6 +298,30 @@
       }
     ],
     "inc.flide.vi8.rc": [
+      {
+        "added": 1717222264000,
+        "apkName": "8vim_rc_v0.17.0-rc.22.apk",
+        "hash": "cea4efb7f2a942bca4b2acd11d17c2c8b7b00625199853a2f026c1beaa74dd7c",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6732571,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169922,
+        "versionName": "0.17.0-rc.22"
+      },
       {
         "added": 1717218181000,
         "apkName": "8vim_rc_v0.17.0-rc.21.apk",
