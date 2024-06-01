@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: :bug: Keyboard with buttons not registering all touch events by @MaethorNaur in #483
+
+
+**Full Changelog**: [v0.17.0-rc.22...v0.17.0-rc.23](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.22...v0.17.0-rc.23)

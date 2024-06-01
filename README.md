@@ -7,8 +7,8 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for my apps. This 
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
 | <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.pr483/en-US/icon.png" alt="8Vim Keyboard Debug PR: 483 icon" width="36px" height="36px"></a> | [**8Vim Keyboard Debug PR: 483**](https://github.com/8VIM/8VIM) | PR #483<br />Continue the event stream on non-matching event | 0.17.0-pr.483-3ce1a4eda5 |
-| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim.  | 0.17.0-rc.22 |
-<!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table -->
+| <a href="https://github.com/8VIM/8VIM"><img src="fdroid/repo/inc.flide.vi8.rc/en-US/icon.png" alt="8Vim Keyboard RC icon" width="36px" height="36px"></a> | [**8Vim Keyboard RC**](https://github.com/8VIM/8VIM) | A Text Editor inside a keyboard, drawing it's inspiration from 8pen and Vim.  | 0.17.0-rc.23 |
+<!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table --><!-- end apps table -->
 
 ### How to use
 1. At first, you should [install the F-Droid app](https://f-droid.org/), it's an alternative app store for Android.

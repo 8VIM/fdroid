@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717230697000
+    "timestamp": 1717231130000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717230646000,
+        "lastUpdated": 1717230701000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -151,7 +151,7 @@
       },
       "versions": {
         "1c89ef51bdafcb2abe87f1757da2ef7d4345af92123b7b54c7bf5514d61fd3b1": {
-          "added": 1717230646000,
+          "added": 1717230701000,
           "file": {
             "name": "/8vim_debug_pr_483_3ce1a4eda5e740016e6aac91c0ba7a80d7aec061.apk",
             "sha256": "1c89ef51bdafcb2abe87f1757da2ef7d4345af92123b7b54c7bf5514d61fd3b1",
@@ -287,7 +287,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717222320000,
+        "lastUpdated": 1717231083000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -414,6 +414,38 @@
         "preferredSigner": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
       },
       "versions": {
+        "f6a32cc2eb852d953aea733be772708191a42d7f00a06475ce4bddf4ff524eb8": {
+          "added": 1717231083000,
+          "file": {
+            "name": "/8vim_rc_v0.17.0-rc.23.apk",
+            "sha256": "f6a32cc2eb852d953aea733be772708191a42d7f00a06475ce4bddf4ff524eb8",
+            "size": 6731327
+          },
+          "manifest": {
+            "versionName": "0.17.0-rc.23",
+            "versionCode": 169923,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Keyboard with buttons not registering all touch events by @MaethorNaur in #483\n\n\n**Full Changelog**: [v0.17.0-rc.22...v0.17.0-rc.23](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.22...v0.17.0-rc.23)"
+          }
+        },
         "cea4efb7f2a942bca4b2acd11d17c2c8b7b00625199853a2f026c1beaa74dd7c": {
           "added": 1717222320000,
           "file": {
