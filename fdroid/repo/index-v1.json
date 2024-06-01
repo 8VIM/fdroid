@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717222512000,
+    "timestamp": 1717222975000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,8 +17,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.483-91a8b7952f",
-      "suggestedVersionCode": "1716530478",
+      "suggestedVersionName": "0.17.0-pr.483-39236cc3ac",
+      "suggestedVersionCode": "1717222640",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Unknown",
       "name": "8Vim Keyboard Debug PR: 483",
@@ -27,7 +27,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1716528033000,
       "packageName": "inc.flide.vi8.pr483",
-      "lastUpdated": 1716530842000,
+      "lastUpdated": 1717222920000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -53,7 +53,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "Commit (91a8b7952f8fe4fdcef1572b4fa13bb70954e97a): Merge branch 'master' into fix/continue-receiving-events"
+          "whatsNew": "Commit (39236cc3ac09be370c8c1a355e29af52b209b77b): Merge branch 'master' into fix/continue-receiving-events"
         }
       }
     },
@@ -105,6 +105,30 @@
   ],
   "packages": {
     "inc.flide.vi8.pr483": [
+      {
+        "added": 1717222920000,
+        "apkName": "8vim_debug_pr_483_39236cc3ac09be370c8c1a355e29af52b209b77b.apk",
+        "hash": "f6db82e0667587421ca11733663939d1106d468205dbc66b2cdc6ed44d9a583e",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.pr483",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18551899,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1717222640,
+        "versionName": "0.17.0-pr.483-39236cc3ac"
+      },
       {
         "added": 1716530842000,
         "apkName": "8vim_debug_pr_483_91a8b7952f8fe4fdcef1572b4fa13bb70954e97a.apk",

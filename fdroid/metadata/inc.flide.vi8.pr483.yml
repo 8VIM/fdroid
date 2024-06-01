@@ -4,10 +4,12 @@ Builds:
       versionName: 0.17.0-pr.483-63b33225c2
     - versionCode: 1716530478
       versionName: 0.17.0-pr.483-91a8b7952f
+    - versionCode: 1717222640
+      versionName: 0.17.0-pr.483-39236cc3ac
 Categories:
     - System
-CurrentVersion: 0.17.0-pr.483-91a8b7952f
-CurrentVersionCode: 1716530478
+CurrentVersion: 0.17.0-pr.483-39236cc3ac
+CurrentVersionCode: 1717222640
 IssueTracker: https://github.com/8VIM/8VIM/issues
 Name: '8Vim Keyboard Debug PR: 483'
 SourceCode: https://github.com/8VIM/8VIM
