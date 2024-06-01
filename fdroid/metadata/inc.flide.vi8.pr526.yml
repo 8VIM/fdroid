@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1717252397
+      versionName: 0.17.0-pr.526-4c0e7e8163
+Categories:
+    - System
+CurrentVersion: 0.17.0-pr.526-4c0e7e8163
+CurrentVersionCode: 1717252397
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 526'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #526
+    The keyboard wasn't resetting to the default layer after a long layer...
+WebSite: https://github.com/8VIM/8VIM
