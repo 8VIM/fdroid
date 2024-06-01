@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717231130000,
+    "timestamp": 1717231303000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,51 +17,6 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.483-3ce1a4eda5",
-      "suggestedVersionCode": "1717230387",
-      "issueTracker": "https://github.com/8VIM/8VIM/issues",
-      "license": "Unknown",
-      "name": "8Vim Keyboard Debug PR: 483",
-      "sourceCode": "https://github.com/8VIM/8VIM",
-      "summary": "PR #483\nContinue the event stream on non-matching event",
-      "webSite": "https://github.com/8VIM/8VIM",
-      "added": 1716528033000,
-      "packageName": "inc.flide.vi8.pr483",
-      "lastUpdated": 1717230701000,
-      "localized": {
-        "en-US": {
-          "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
-          "phoneScreenshots": [
-            "1.jpg",
-            "10.png",
-            "11.png",
-            "12.png",
-            "13.png",
-            "14.png",
-            "15.png",
-            "16.png",
-            "17.png",
-            "18.png",
-            "19.png",
-            "2.jpg",
-            "20.png",
-            "3.jpg",
-            "4.jpg",
-            "5.jpg",
-            "6.jpg",
-            "7.jpg",
-            "8.png",
-            "9.png"
-          ],
-          "whatsNew": "Commit (3ce1a4eda5e740016e6aac91c0ba7a80d7aec061): fix keyboard on z folds"
-        }
-      }
-    },
-    {
-      "authorName": "8VIM",
-      "categories": [
-        "System"
-      ],
       "suggestedVersionName": "0.17.0-rc.23",
       "suggestedVersionCode": "169923",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
@@ -72,7 +27,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1717231083000,
+      "lastUpdated": 1717231133000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -104,107 +59,9 @@
     }
   ],
   "packages": {
-    "inc.flide.vi8.pr483": [
-      {
-        "added": 1717230701000,
-        "apkName": "8vim_debug_pr_483_3ce1a4eda5e740016e6aac91c0ba7a80d7aec061.apk",
-        "hash": "1c89ef51bdafcb2abe87f1757da2ef7d4345af92123b7b54c7bf5514d61fd3b1",
-        "hashType": "sha256",
-        "minSdkVersion": 24,
-        "packageName": "inc.flide.vi8.pr483",
-        "sig": "f19d48e3bab07f7240466df255befa9e",
-        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
-        "size": 18547803,
-        "targetSdkVersion": 34,
-        "uses-permission": [
-          [
-            "android.permission.VIBRATE",
-            null
-          ],
-          [
-            "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 1717230387,
-        "versionName": "0.17.0-pr.483-3ce1a4eda5"
-      },
-      {
-        "added": 1717222979000,
-        "apkName": "8vim_debug_pr_483_39236cc3ac09be370c8c1a355e29af52b209b77b.apk",
-        "hash": "f6db82e0667587421ca11733663939d1106d468205dbc66b2cdc6ed44d9a583e",
-        "hashType": "sha256",
-        "minSdkVersion": 24,
-        "packageName": "inc.flide.vi8.pr483",
-        "sig": "f19d48e3bab07f7240466df255befa9e",
-        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
-        "size": 18551899,
-        "targetSdkVersion": 34,
-        "uses-permission": [
-          [
-            "android.permission.VIBRATE",
-            null
-          ],
-          [
-            "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 1717222640,
-        "versionName": "0.17.0-pr.483-39236cc3ac"
-      },
-      {
-        "added": 1716530842000,
-        "apkName": "8vim_debug_pr_483_91a8b7952f8fe4fdcef1572b4fa13bb70954e97a.apk",
-        "hash": "cb4bbf5349757de5989df8f2a14814b0b8c4529800e47af3b279fe7ca4c15639",
-        "hashType": "sha256",
-        "minSdkVersion": 24,
-        "packageName": "inc.flide.vi8.pr483",
-        "sig": "f19d48e3bab07f7240466df255befa9e",
-        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
-        "size": 18506764,
-        "targetSdkVersion": 34,
-        "uses-permission": [
-          [
-            "android.permission.VIBRATE",
-            null
-          ],
-          [
-            "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 1716530478,
-        "versionName": "0.17.0-pr.483-91a8b7952f"
-      },
-      {
-        "added": 1716528033000,
-        "apkName": "8vim_debug_pr_483_63b33225c299a4f2574371e68b1020743b6b5da5.apk",
-        "hash": "e9feee5e17e3c6d8aab325866232f34f8517a81f65013781b4e063991f59f9b2",
-        "hashType": "sha256",
-        "minSdkVersion": 24,
-        "packageName": "inc.flide.vi8.pr483",
-        "sig": "f19d48e3bab07f7240466df255befa9e",
-        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
-        "size": 18510860,
-        "targetSdkVersion": 34,
-        "uses-permission": [
-          [
-            "android.permission.VIBRATE",
-            null
-          ],
-          [
-            "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 1716527688,
-        "versionName": "0.17.0-pr.483-63b33225c2"
-      }
-    ],
     "inc.flide.vi8.rc": [
       {
-        "added": 1717231083000,
+        "added": 1717231133000,
         "apkName": "8vim_rc_v0.17.0-rc.23.apk",
         "hash": "f6a32cc2eb852d953aea733be772708191a42d7f00a06475ce4bddf4ff524eb8",
         "hashType": "sha256",
