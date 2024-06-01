@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717222975000
+    "timestamp": 1717230697000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717222920000,
+        "lastUpdated": 1717230646000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -150,8 +150,40 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "1c89ef51bdafcb2abe87f1757da2ef7d4345af92123b7b54c7bf5514d61fd3b1": {
+          "added": 1717230646000,
+          "file": {
+            "name": "/8vim_debug_pr_483_3ce1a4eda5e740016e6aac91c0ba7a80d7aec061.apk",
+            "sha256": "1c89ef51bdafcb2abe87f1757da2ef7d4345af92123b7b54c7bf5514d61fd3b1",
+            "size": 18547803
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.483-3ce1a4eda5",
+            "versionCode": 1717230387,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr483.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (3ce1a4eda5e740016e6aac91c0ba7a80d7aec061): fix keyboard on z folds"
+          }
+        },
         "f6db82e0667587421ca11733663939d1106d468205dbc66b2cdc6ed44d9a583e": {
-          "added": 1717222920000,
+          "added": 1717222979000,
           "file": {
             "name": "/8vim_debug_pr_483_39236cc3ac09be370c8c1a355e29af52b209b77b.apk",
             "sha256": "f6db82e0667587421ca11733663939d1106d468205dbc66b2cdc6ed44d9a583e",

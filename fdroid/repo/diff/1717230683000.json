@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717230697000
+  },
+  "packages": {
+    "inc.flide.vi8.pr483": {
+      "versions": {
+        "1c89ef51bdafcb2abe87f1757da2ef7d4345af92123b7b54c7bf5514d61fd3b1": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (3ce1a4eda5e740016e6aac91c0ba7a80d7aec061): fix keyboard on z folds"
+          }
+        }
+      }
+    }
+  }
+}
