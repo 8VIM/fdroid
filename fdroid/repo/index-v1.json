@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717265021000,
+    "timestamp": 1717266694000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -17,17 +17,17 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-pr.527-6144c12164",
-      "suggestedVersionCode": "1717264683",
+      "suggestedVersionName": "0.17.0-pr.527-9d14c9caa9",
+      "suggestedVersionCode": "1717266248",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Unknown",
       "name": "8Vim Keyboard Debug PR: 527",
       "sourceCode": "https://github.com/8VIM/8VIM",
       "summary": "PR #527\nThe option to dynamically resize the keyboard circle is only shown if...",
       "webSite": "https://github.com/8VIM/8VIM",
-      "added": 1717264972000,
+      "added": 1717265025000,
       "packageName": "inc.flide.vi8.pr527",
-      "lastUpdated": 1717264972000,
+      "lastUpdated": 1717266644000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -53,7 +53,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "Commit (6144c121640fd9ee77ad77e60892dce3de9fc789): feat: :sparkles: Circle dynamic resizing only available if the dynamic circle option is on"
+          "whatsNew": "Commit (9d14c9caa9882f39e722bd1e77fb9ab7f41cadfb): silly me"
         }
       }
     },
@@ -106,7 +106,31 @@
   "packages": {
     "inc.flide.vi8.pr527": [
       {
-        "added": 1717264972000,
+        "added": 1717266644000,
+        "apkName": "8vim_debug_pr_527_9d14c9caa9882f39e722bd1e77fb9ab7f41cadfb.apk",
+        "hash": "513a6ef6b5ffface4507ba0788caadf0716962e837808a94d456b8ed5cf9825f",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.pr527",
+        "sig": "f19d48e3bab07f7240466df255befa9e",
+        "signer": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d",
+        "size": 18560091,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.pr527.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1717266248,
+        "versionName": "0.17.0-pr.527-9d14c9caa9"
+      },
+      {
+        "added": 1717265025000,
         "apkName": "8vim_debug_pr_527_6144c121640fd9ee77ad77e60892dce3de9fc789.apk",
         "hash": "b22894915582b46e84432dd05bedd032b129e840b960bb6d93a7b2f15c66b8b4",
         "hashType": "sha256",

@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717266694000
+  },
+  "packages": {
+    "inc.flide.vi8.pr527": {
+      "versions": {
+        "513a6ef6b5ffface4507ba0788caadf0716962e837808a94d456b8ed5cf9825f": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (9d14c9caa9882f39e722bd1e77fb9ab7f41cadfb): silly me"
+          }
+        }
+      }
+    }
+  }
+}

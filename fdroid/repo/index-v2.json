@@ -14,17 +14,17 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717265021000
+    "timestamp": 1717266694000
   },
   "packages": {
     "inc.flide.vi8.pr527": {
       "metadata": {
-        "added": 1717264972000,
+        "added": 1717265025000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717264972000,
+        "lastUpdated": 1717266644000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -150,8 +150,40 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "513a6ef6b5ffface4507ba0788caadf0716962e837808a94d456b8ed5cf9825f": {
+          "added": 1717266644000,
+          "file": {
+            "name": "/8vim_debug_pr_527_9d14c9caa9882f39e722bd1e77fb9ab7f41cadfb.apk",
+            "sha256": "513a6ef6b5ffface4507ba0788caadf0716962e837808a94d456b8ed5cf9825f",
+            "size": 18560091
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.527-9d14c9caa9",
+            "versionCode": 1717266248,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr527.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (9d14c9caa9882f39e722bd1e77fb9ab7f41cadfb): silly me"
+          }
+        },
         "b22894915582b46e84432dd05bedd032b129e840b960bb6d93a7b2f15c66b8b4": {
-          "added": 1717264972000,
+          "added": 1717265025000,
           "file": {
             "name": "/8vim_debug_pr_527_6144c121640fd9ee77ad77e60892dce3de9fc789.apk",
             "sha256": "b22894915582b46e84432dd05bedd032b129e840b960bb6d93a7b2f15c66b8b4",
