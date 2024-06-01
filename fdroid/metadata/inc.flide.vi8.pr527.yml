@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1717264683
+      versionName: 0.17.0-pr.527-6144c12164
+Categories:
+    - System
+CurrentVersion: 0.17.0-pr.527-6144c12164
+CurrentVersionCode: 1717264683
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 527'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #527
+    The option to dynamically resize the keyboard circle is only shown if...
+WebSite: https://github.com/8VIM/8VIM
