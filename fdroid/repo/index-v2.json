@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717218405000
+    "timestamp": 1717219449000
   },
   "packages": {
     "inc.flide.vi8.pr483": {
@@ -223,7 +223,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1716531280000,
+        "lastUpdated": 1717219398000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -349,6 +349,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "0d8813bc87edd07db3dfc638c68ea400ad35c0804e6b2aff506264d9aee1a2f0": {
+          "added": 1717219398000,
+          "file": {
+            "name": "/8vim_debug_pr_509_3b3ddbbcbdc201af7baa622f4e2aea9b9a8a069b.apk",
+            "sha256": "0d8813bc87edd07db3dfc638c68ea400ad35c0804e6b2aff506264d9aee1a2f0",
+            "size": 18551899
+          },
+          "manifest": {
+            "versionName": "0.17.0-pr.509-3b3ddbbcbd",
+            "versionCode": 1717219175,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr509.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (3b3ddbbcbdc201af7baa622f4e2aea9b9a8a069b): Merge branch 'master' into fix/426-cursor-shifting-away"
+          }
+        },
         "c0c381bb648609a5a2a4212865b6e48f039b6807272de515d74535c2d56b24a1": {
           "added": 1716531280000,
           "file": {

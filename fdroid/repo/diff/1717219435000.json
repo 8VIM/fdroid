@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717219449000
+  },
+  "packages": {
+    "inc.flide.vi8.pr509": {
+      "versions": {
+        "0d8813bc87edd07db3dfc638c68ea400ad35c0804e6b2aff506264d9aee1a2f0": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (3b3ddbbcbdc201af7baa622f4e2aea9b9a8a069b): Merge branch 'master' into fix/426-cursor-shifting-away"
+          }
+        }
+      }
+    }
+  }
+}
