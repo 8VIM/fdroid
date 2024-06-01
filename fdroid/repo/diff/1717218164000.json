@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717218177000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "579f6de80a370652a60d91df41ec27694c88c5e1815699b3f926a4de4ce95ab3": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- ci: :construction_worker: publish to open testing after a PR merge by @MaethorNaur in #506\n- fix: increase crossing haptics by @MaethorNaur in #511\n- feat: Floating keyboard option by @MaethorNaur in #490\n\n\n**Full Changelog**: [v0.17.0-rc.20...v0.17.0-rc.21](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.20...v0.17.0-rc.21)"
+          }
+        }
+      }
+    }
+  }
+}

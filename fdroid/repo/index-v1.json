@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717212041000,
+    "timestamp": 1717218177000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -152,8 +152,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-rc.20",
-      "suggestedVersionCode": "169920",
+      "suggestedVersionName": "0.17.0-rc.21",
+      "suggestedVersionCode": "169921",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard RC",
@@ -162,7 +162,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1716079400000,
+      "lastUpdated": 1717218125000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -188,7 +188,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.0-rc.19...v0.17.0-rc.20](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.19...v0.17.0-rc.20)"
+          "whatsNew": "## What's Changed\n\n- ci: :construction_worker: publish to open testing after a PR merge by @MaethorNaur in #506\n- fix: increase crossing haptics by @MaethorNaur in #511\n- feat: Floating keyboard option by @MaethorNaur in #490\n\n\n**Full Changelog**: [v0.17.0-rc.20...v0.17.0-rc.21](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.20...v0.17.0-rc.21)"
         }
       }
     }
@@ -393,6 +393,30 @@
       }
     ],
     "inc.flide.vi8.rc": [
+      {
+        "added": 1717218125000,
+        "apkName": "8vim_rc_v0.17.0-rc.21.apk",
+        "hash": "579f6de80a370652a60d91df41ec27694c88c5e1815699b3f926a4de4ce95ab3",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6732539,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 169921,
+        "versionName": "0.17.0-rc.21"
+      },
       {
         "added": 1716079400000,
         "apkName": "8vim_rc_v0.17.0-rc.20.apk",

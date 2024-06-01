@@ -1,0 +1,8 @@
+## What's Changed
+
+- ci: :construction_worker: publish to open testing after a PR merge by @MaethorNaur in #506
+- fix: increase crossing haptics by @MaethorNaur in #511
+- feat: Floating keyboard option by @MaethorNaur in #490
+
+
+**Full Changelog**: [v0.17.0-rc.20...v0.17.0-rc.21](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.20...v0.17.0-rc.21)
