@@ -1,1 +1,0 @@
-Commit (6144c121640fd9ee77ad77e60892dce3de9fc789): feat: :sparkles: Circle dynamic resizing only available if the dynamic circle option is on
