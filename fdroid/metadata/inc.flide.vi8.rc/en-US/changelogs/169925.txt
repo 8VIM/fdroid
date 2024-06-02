@@ -1,0 +1,6 @@
+## What's Changed
+
+- feat: :sparkles: Circle dynamic resizing only available if the dynamic circle option is on by @MaethorNaur in #527
+
+
+**Full Changelog**: [v0.17.0-rc.24...v0.17.0-rc.25](https://github.com/8VIM/8VIM/compare/v0.17.0-rc.24...v0.17.0-rc.25)
