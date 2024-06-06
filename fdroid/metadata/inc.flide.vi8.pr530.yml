@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1717651800
+      versionName: 0.18.0-pr.530-bfc72acaf0
+Categories:
+    - System
+CurrentVersion: 0.18.0-pr.530-bfc72acaf0
+CurrentVersionCode: 1717651800
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 530'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #530
+    Create a new page in the settings listing all movements for a layout....
+WebSite: https://github.com/8VIM/8VIM
