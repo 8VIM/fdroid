@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717659835000,
+    "timestamp": 1717660126000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -62,8 +62,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.0-rc.25",
-      "suggestedVersionCode": "179901",
+      "suggestedVersionName": "0.17.2-rc.1",
+      "suggestedVersionCode": "170101",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard RC",
@@ -72,7 +72,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1717316369000,
+      "lastUpdated": 1717660075000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -98,7 +98,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "## What's Changed\n\n- fix: circle resized when dynamic option was off by @MaethorNaur in #529\n\n\n**Full Changelog**: [v0.17.0...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.0...v0.18.0-rc.1)"
+          "whatsNew": "## What's Changed\n\n- fix: :bug: Default settings values were not exported by @MaethorNaur in #531\n\n\n**Full Changelog**: [v0.17.1...v0.17.2-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.1...v0.17.2-rc.1)"
         }
       }
     }
@@ -131,6 +131,30 @@
       }
     ],
     "inc.flide.vi8.rc": [
+      {
+        "added": 1717660075000,
+        "apkName": "8vim_rc_v0.17.2-rc.1.apk",
+        "hash": "035864573ab79fc3eaf1b53f6ba1ab6db085fefbf213a663e1f8f8190d52899e",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 6723755,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 170101,
+        "versionName": "0.17.2-rc.1"
+      },
       {
         "added": 1717316369000,
         "apkName": "8vim_rc_v0.17.0-rc.25.apk",
