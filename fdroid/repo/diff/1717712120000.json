@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717712135000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "0d7fe475c7206ac4ef56f4b6821b4d609fecad24a26e6423197aa9172741c89f": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- feat: :sparkles: Add an alpha slider for the color picker by @MaethorNaur in #535\n\n\n**Full Changelog**: [v0.17.3-rc.1...v0.17.3-rc.2](https://github.com/8VIM/8VIM/compare/v0.17.3-rc.1...v0.17.3-rc.2)"
+          }
+        }
+      }
+    }
+  }
+}
