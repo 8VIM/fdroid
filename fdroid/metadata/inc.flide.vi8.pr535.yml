@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1717690554
+      versionName: 0.17.3-pr.535-1feee16f8a
+Categories:
+    - System
+CurrentVersion: 0.17.3-pr.535-1feee16f8a
+CurrentVersionCode: 1717690554
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 535'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #535
+    You can now set the transparency of color on the color picker
+WebSite: https://github.com/8VIM/8VIM
