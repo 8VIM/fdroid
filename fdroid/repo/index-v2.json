@@ -14,17 +14,17 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717652143000
+    "timestamp": 1717652577000
   },
   "packages": {
     "inc.flide.vi8.pr530": {
       "metadata": {
-        "added": 1717652094000,
+        "added": 1717652527000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717652094000,
+        "lastUpdated": 1717652527000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -150,11 +150,11 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
-        "c797cadee7c97d95f5cbd8e7a8effe7043865b851d3b1489a540efb35e9690ea": {
-          "added": 1717652094000,
+        "3cebca7c7afb1edca623ed792a3d62ddc4fd9044c4fe3678ce07b7b0495a1232": {
+          "added": 1717652527000,
           "file": {
             "name": "/8vim_debug_pr_530_bfc72acaf0a0e2208d1dc9df0d3e3ff538adc8b0.apk",
-            "sha256": "c797cadee7c97d95f5cbd8e7a8effe7043865b851d3b1489a540efb35e9690ea",
+            "sha256": "3cebca7c7afb1edca623ed792a3d62ddc4fd9044c4fe3678ce07b7b0495a1232",
             "size": 18621531
           },
           "manifest": {
