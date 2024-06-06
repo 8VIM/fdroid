@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717316366000
+    "timestamp": 1717643812000
   },
   "packages": {
     "inc.flide.vi8.rc": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717316316000,
+        "lastUpdated": 1717316369000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -152,7 +152,7 @@
       },
       "versions": {
         "601f76744a227d886787c8faeb663b7c0f22765f01985f4b167398f0bf6bc33f": {
-          "added": 1717316316000,
+          "added": 1717316369000,
           "file": {
             "name": "/8vim_rc_v0.17.0-rc.25.apk",
             "sha256": "601f76744a227d886787c8faeb663b7c0f22765f01985f4b167398f0bf6bc33f",

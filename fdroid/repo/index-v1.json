@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1717316366000,
+    "timestamp": 1717643812000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -27,7 +27,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1717316316000,
+      "lastUpdated": 1717316369000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -61,7 +61,7 @@
   "packages": {
     "inc.flide.vi8.rc": [
       {
-        "added": 1717316316000,
+        "added": 1717316369000,
         "apkName": "8vim_rc_v0.17.0-rc.25.apk",
         "hash": "601f76744a227d886787c8faeb663b7c0f22765f01985f4b167398f0bf6bc33f",
         "hashType": "sha256",
