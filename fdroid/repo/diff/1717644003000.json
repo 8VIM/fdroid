@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717644016000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "c0cdbbfc48960a78314e85b459d6e4969e41b83a5b11e9679f4cbdfd05d96565": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: circle resized when dynamic option was off by @MaethorNaur in #529\n\n\n**Full Changelog**: [v0.17.0...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.0...v0.18.0-rc.1)"
+          }
+        }
+      }
+    }
+  }
+}
