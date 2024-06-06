@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717687802000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "3e055437ec51aef592dbb2a9d266071a859ce3cc8606171606b95f970bb090d9": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Cursor movements are selecting text instead of moving by @MaethorNaur in #533\n\n\n**Full Changelog**: [v0.17.2...v0.17.3-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.2...v0.17.3-rc.1)"
+          }
+        }
+      }
+    }
+  }
+}

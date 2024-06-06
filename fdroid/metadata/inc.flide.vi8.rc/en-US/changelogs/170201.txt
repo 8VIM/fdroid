@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: :bug: Cursor movements are selecting text instead of moving by @MaethorNaur in #533
+
+
+**Full Changelog**: [v0.17.2...v0.17.3-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.2...v0.17.3-rc.1)

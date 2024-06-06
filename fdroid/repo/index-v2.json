@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717687505000
+    "timestamp": 1717687802000
   },
   "packages": {
     "inc.flide.vi8.pr530": {
@@ -191,7 +191,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717660129000,
+        "lastUpdated": 1717687749000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -318,6 +318,38 @@
         "preferredSigner": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
       },
       "versions": {
+        "3e055437ec51aef592dbb2a9d266071a859ce3cc8606171606b95f970bb090d9": {
+          "added": 1717687749000,
+          "file": {
+            "name": "/8vim_rc_v0.17.3-rc.1.apk",
+            "sha256": "3e055437ec51aef592dbb2a9d266071a859ce3cc8606171606b95f970bb090d9",
+            "size": 6723699
+          },
+          "manifest": {
+            "versionName": "0.17.3-rc.1",
+            "versionCode": 170201,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Cursor movements are selecting text instead of moving by @MaethorNaur in #533\n\n\n**Full Changelog**: [v0.17.2...v0.17.3-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.2...v0.17.3-rc.1)"
+          }
+        },
         "035864573ab79fc3eaf1b53f6ba1ab6db085fefbf213a663e1f8f8190d52899e": {
           "added": 1717660129000,
           "file": {
