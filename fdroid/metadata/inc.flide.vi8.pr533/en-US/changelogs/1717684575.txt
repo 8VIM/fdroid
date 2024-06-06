@@ -1,0 +1,1 @@
+Commit (ab28616daf265eb17897e839f654ac7238c349bf): fix: :bug: Cursor movements are selecting text instead of moving

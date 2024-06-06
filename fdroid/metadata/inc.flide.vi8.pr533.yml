@@ -1,0 +1,17 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1717684575
+      versionName: 0.17.3-pr.533-ab28616daf
+Categories:
+    - System
+CurrentVersion: 0.17.3-pr.533-ab28616daf
+CurrentVersionCode: 1717684575
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 533'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #533
+    Cursor movements are selecting text instead of just moving it
+
+    refs: ...
+WebSite: https://github.com/8VIM/8VIM
