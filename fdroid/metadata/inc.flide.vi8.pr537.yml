@@ -1,0 +1,15 @@
+AuthorName: 8VIM
+Builds:
+    - versionCode: 1717977087
+      versionName: 0.17.4-pr.537-4a8dd0745d
+Categories:
+    - System
+CurrentVersion: 0.17.4-pr.537-4a8dd0745d
+CurrentVersionCode: 1717977087
+IssueTracker: https://github.com/8VIM/8VIM/issues
+Name: '8Vim Keyboard Debug PR: 537'
+SourceCode: https://github.com/8VIM/8VIM
+Summary: |-
+    PR #537
+    If a visible sector/part/letter had an overriden movement starting wi...
+WebSite: https://github.com/8VIM/8VIM
