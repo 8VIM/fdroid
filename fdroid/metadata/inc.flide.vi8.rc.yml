@@ -116,10 +116,12 @@ Builds:
       versionName: 0.17.3-rc.1
     - versionCode: 170202
       versionName: 0.17.3-rc.2
+    - versionCode: 170301
+      versionName: 0.17.4-rc.1
 Categories:
     - System
-CurrentVersion: 0.17.3-rc.2
-CurrentVersionCode: 170202
+CurrentVersion: 0.17.4-rc.1
+CurrentVersionCode: 170301
 IssueTracker: https://github.com/8VIM/8VIM/issues
 License: Apache-2.0
 Name: 8Vim Keyboard RC

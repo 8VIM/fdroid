@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717980945000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "df0e44c17230a96dbe66191e456dc90dc5cfbaf5ef2356dfdbb3819400844b78": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- fix: :bug: Overriden movements on visibles layers not alwaus trigggered by @MaethorNaur in #537\n\n\n**Full Changelog**: [v0.17.3...v0.17.4-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.3...v0.17.4-rc.1)"
+          }
+        }
+      }
+    }
+  }
+}
