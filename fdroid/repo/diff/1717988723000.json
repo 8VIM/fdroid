@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1717988736000
+  },
+  "packages": {
+    "inc.flide.vi8.pr530": {
+      "versions": {
+        "1d3739de391df4426b050d4ce9a972777704bb246d3d1c25f9bc816cd8c5978f": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "Commit (ad46788cc3eac3595ce4ffcf843dcbd27116d831): Merge origin/feat/help-layout into feat/help-layout"
+          }
+        }
+      }
+    }
+  }
+}

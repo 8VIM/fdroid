@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1717980945000
+    "timestamp": 1717988736000
   },
   "packages": {
     "inc.flide.vi8.pr530": {
@@ -24,7 +24,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717652581000,
+        "lastUpdated": 1717988682000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -150,6 +150,38 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "1d3739de391df4426b050d4ce9a972777704bb246d3d1c25f9bc816cd8c5978f": {
+          "added": 1717988682000,
+          "file": {
+            "name": "/8vim_debug_pr_530_ad46788cc3eac3595ce4ffcf843dcbd27116d831.apk",
+            "sha256": "1d3739de391df4426b050d4ce9a972777704bb246d3d1c25f9bc816cd8c5978f",
+            "size": 18621531
+          },
+          "manifest": {
+            "versionName": "0.18.0-pr.530-ad46788cc3",
+            "versionCode": 1717988371,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr530.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (ad46788cc3eac3595ce4ffcf843dcbd27116d831): Merge origin/feat/help-layout into feat/help-layout"
+          }
+        },
         "3cebca7c7afb1edca623ed792a3d62ddc4fd9044c4fe3678ce07b7b0495a1232": {
           "added": 1717652581000,
           "file": {
@@ -191,7 +223,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1717980891000,
+        "lastUpdated": 1717980948000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -319,7 +351,7 @@
       },
       "versions": {
         "df0e44c17230a96dbe66191e456dc90dc5cfbaf5ef2356dfdbb3819400844b78": {
-          "added": 1717980891000,
+          "added": 1717980948000,
           "file": {
             "name": "/8vim_rc_v0.17.4-rc.1.apk",
             "sha256": "df0e44c17230a96dbe66191e456dc90dc5cfbaf5ef2356dfdbb3819400844b78",
