@@ -1,0 +1,6 @@
+## What's Changed
+
+- fix: :bug: Ranged slider not hidden correctly by @MaethorNaur in #552
+
+
+**Full Changelog**: [v0.17.4...v0.17.5-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.4...v0.17.5-rc.1)
