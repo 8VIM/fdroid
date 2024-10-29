@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1730161485000
+    "timestamp": 1730161871000
   },
   "packages": {
     "inc.flide.vi8.pr530": {
@@ -385,12 +385,12 @@
     },
     "inc.flide.vi8.pr571": {
       "metadata": {
-        "added": 1730161427000,
+        "added": 1730161489000,
         "categories": [
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1730161427000,
+        "lastUpdated": 1730161815000,
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
         "screenshots": {
@@ -516,8 +516,46 @@
         "preferredSigner": "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
       },
       "versions": {
+        "a2743b38e4a80ebf457a6f2a6a65cae8a9e3e0489c2e5ec7e306008f5c7890cd": {
+          "added": 1730161815000,
+          "file": {
+            "name": "/8vim_debug_pr_571_e58a3dee5519ce50f63e58a4c37e100bf1140e37.apk",
+            "sha256": "a2743b38e4a80ebf457a6f2a6a65cae8a9e3e0489c2e5ec7e306008f5c7890cd",
+            "size": 19461757
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "0.18.0-pr.571-e58a3dee55",
+            "versionCode": 1730161542,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "62c76ced86938b6f6a4c0e5f6992eb170a767487325171d74454ecd924c6408d"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.pr571.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "Commit (e58a3dee5519ce50f63e58a4c37e100bf1140e37): increase"
+          }
+        },
         "bbf932c6c16a08b9ee0985cc6f125c1b57da2c91c933f6b21b50b245c5f1c451": {
-          "added": 1730161427000,
+          "added": 1730161489000,
           "file": {
             "name": "/8vim_debug_pr_571_fbacbaec30540c75cabd98b4cb8c9ff14a0c8734.apk",
             "sha256": "bbf932c6c16a08b9ee0985cc6f125c1b57da2c91c933f6b21b50b245c5f1c451",

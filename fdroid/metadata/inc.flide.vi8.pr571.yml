@@ -2,10 +2,12 @@ AuthorName: 8VIM
 Builds:
     - versionCode: 1730160988
       versionName: 0.18.0-pr.571-fbacbaec30
+    - versionCode: 1730161542
+      versionName: 0.18.0-pr.571-e58a3dee55
 Categories:
     - System
-CurrentVersion: 0.18.0-pr.571-fbacbaec30
-CurrentVersionCode: 1730160988
+CurrentVersion: 0.18.0-pr.571-e58a3dee55
+CurrentVersionCode: 1730161542
 IssueTracker: https://github.com/8VIM/8VIM/issues
 Name: '8Vim Keyboard Debug PR: 571'
 SourceCode: https://github.com/8VIM/8VIM
