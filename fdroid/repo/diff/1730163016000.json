@@ -1,0 +1,17 @@
+{
+  "repo": {
+    "timestamp": 1730163030000
+  },
+  "packages": {
+    "inc.flide.vi8.rc": {
+      "versions": {
+        "8ab023e5fea5bc40bdc2ac1bce7195e232a40d57c8775c6b9fb53bb2007bf3be": {
+          "releaseChannels": null,
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.5...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.5...v0.18.0-rc.1)"
+          }
+        }
+      }
+    }
+  }
+}

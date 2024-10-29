@@ -14,7 +14,7 @@
       }
     },
     "address": "https://raw.githubusercontent.com/8VIM/fdroid/main/fdroid/repo",
-    "timestamp": 1730162497000
+    "timestamp": 1730163030000
   },
   "packages": {
     "inc.flide.vi8.pr530": {
@@ -390,7 +390,7 @@
           "System"
         ],
         "issueTracker": "https://github.com/8VIM/8VIM/issues",
-        "lastUpdated": 1719545464000,
+        "lastUpdated": 1730162974000,
         "license": "Apache-2.0",
         "sourceCode": "https://github.com/8VIM/8VIM",
         "webSite": "https://github.com/8VIM/8VIM",
@@ -517,6 +517,44 @@
         "preferredSigner": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
       },
       "versions": {
+        "8ab023e5fea5bc40bdc2ac1bce7195e232a40d57c8775c6b9fb53bb2007bf3be": {
+          "added": 1730162974000,
+          "file": {
+            "name": "/8vim_rc_v0.18.0-rc.1.apk",
+            "sha256": "8ab023e5fea5bc40bdc2ac1bce7195e232a40d57c8775c6b9fb53bb2007bf3be",
+            "size": 7002272
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "0.18.0-rc.1",
+            "versionCode": 179901,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "whatsNew": {
+            "en-US": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.5...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.5...v0.18.0-rc.1)"
+          }
+        },
         "906aeda01c55334b021c5ae2a73fa6d3ae03fa0c2e00a44b20cc595ac8a6dcf6": {
           "added": 1719545464000,
           "file": {

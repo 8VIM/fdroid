@@ -1,6 +1,6 @@
 ## What's Changed
 
-- fix: circle resized when dynamic option was off by @MaethorNaur in #529
+- no matching PRs
 
 
-**Full Changelog**: [v0.17.0...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.0...v0.18.0-rc.1)
+**Full Changelog**: [v0.17.5...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.5...v0.18.0-rc.1)

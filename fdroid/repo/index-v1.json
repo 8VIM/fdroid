@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1730162497000,
+    "timestamp": 1730163030000,
     "version": 20002,
     "name": "8VIM RCs and nightlies",
     "icon": "icon.png",
@@ -107,8 +107,8 @@
       "categories": [
         "System"
       ],
-      "suggestedVersionName": "0.17.5-rc.1",
-      "suggestedVersionCode": "170401",
+      "suggestedVersionName": "0.18.0-rc.1",
+      "suggestedVersionCode": "179901",
       "issueTracker": "https://github.com/8VIM/8VIM/issues",
       "license": "Apache-2.0",
       "name": "8Vim Keyboard RC",
@@ -117,7 +117,7 @@
       "webSite": "https://github.com/8VIM/8VIM",
       "added": 1715454082000,
       "packageName": "inc.flide.vi8.rc",
-      "lastUpdated": 1719545464000,
+      "lastUpdated": 1730162974000,
       "localized": {
         "en-US": {
           "icon": "icon_UgzWpVbB10BJhpbQa3tR7tT3av2GviWW888CfaqXmgs=.png",
@@ -143,7 +143,7 @@
             "8.png",
             "9.png"
           ],
-          "whatsNew": "## What's Changed\n\n- fix: :bug: Ranged slider not hidden correctly by @MaethorNaur in #552\n\n\n**Full Changelog**: [v0.17.4...v0.17.5-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.4...v0.17.5-rc.1)"
+          "whatsNew": "## What's Changed\n\n- no matching PRs\n\n\n**Full Changelog**: [v0.17.5...v0.18.0-rc.1](https://github.com/8VIM/8VIM/compare/v0.17.5...v0.18.0-rc.1)"
         }
       }
     }
@@ -226,6 +226,36 @@
       }
     ],
     "inc.flide.vi8.rc": [
+      {
+        "added": 1730162974000,
+        "apkName": "8vim_rc_v0.18.0-rc.1.apk",
+        "hash": "8ab023e5fea5bc40bdc2ac1bce7195e232a40d57c8775c6b9fb53bb2007bf3be",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "inc.flide.vi8.rc",
+        "sig": "64f722ab6b656555e55b868d72598ef0",
+        "signer": "2808aae6be344d4711f773040f27f48816187c07d1f5bf1a9015b19e4d3f2a48",
+        "size": 7002272,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "inc.flide.vi8.rc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 179901,
+        "versionName": "0.18.0-rc.1"
+      },
       {
         "added": 1719545464000,
         "apkName": "8vim_rc_v0.17.5-rc.1.apk",
